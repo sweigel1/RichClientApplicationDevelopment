@@ -41,31 +41,55 @@ font-weight: normal;
   <body>
     <textarea id="source">
 
-class: center, middle
 
-# ES6_Features
+## 2. Arrow Functions
 
-### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
-####Rich Client Application Development<br/>Brunsmann
+- werden deklariert durch `=>`
+- können dort verwendet werden, wo `function` verwendet wird
+- verkürzen den Code
 
+Beispiel:
+```JavaScript
+let array = [1,7,98,5,4,2]
 
+// ES5 way
+var moreThan20 = array.filter(function (num) {
+  return num > 20
+})
+
+// ES6 way
+let moreThan20 = array.filter(num => num > 20)
+```
+
+???
+
+- => spart den Aufruf "function" und ersetzt das return
+- code wird generell kleiner
+- fehler können einfach gefunden werden
 
 ---
 
-# Vorstellung ES6 und Hauptfeatures
+## 2. Arrow Functions
 
-- Was ist ES6?
-- Vorteile
-- ***Hauptfeatures***
-	0. Let and Const
-	0. Arrow Functions
-	0. Default Parameters
-	0. Destructing
-	0. REST-Parameter and Spread Operator
-	0. Enchanced Object Literals
-	0. Template Literals
-	0. Promises
+Weiteres Beispiel:
 
+```JavaScript
+// Normal Function
+const namedFunction = function (arg1, arg2) { /* do your stuff */}
+
+// Arrow Function
+const namedFunction2 = (arg1, arg2) => {/* do your stuff */}
+
+// Normal function in a callback
+button.addEventListener('click', function () {
+  // Do something
+})
+
+// Arrow function in a callback
+button.addEventListener('click', () => {
+  // Do something
+})
+```
 ---
 name: default
 
@@ -135,50 +159,6 @@ Die Standardwerte für Variablen werden in den Parametern festgelegt.
 
 
 ]
----
-## 2. Arrow Functions
-
-- werden deklariert durch `=>`
-- können dort verwendet werden, wo `function` verwendet wird
-- verkürzen den Code
-
-Beispiel:
-```JavaScript
-let array = [1,7,98,5,4,2]
-
-// ES5 way
-var moreThan20 = array.filter(function (num) {
-  return num > 20
-})
-
-// ES6 way
-let moreThan20 = array.filter(num => num > 20)
-```
-
----
-
-## 2. Arrow Functions
-
-Weiteres Beispiel:
-
-```JavaScript
-// Normal Function
-const namedFunction = function (arg1, arg2) { /* do your stuff */}
-
-// Arrow Function
-const namedFunction2 = (arg1, arg2) => {/* do your stuff */}
-
-// Normal function in a callback
-button.addEventListener('click', function () {
-  // Do something
-})
-
-// Arrow function in a callback
-button.addEventListener('click', () => {
-  // Do something
-})
-```
-
 
     </textarea>
 	<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
