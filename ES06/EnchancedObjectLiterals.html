@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>ES6_Features</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:22px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 90%;
+        float: right;
+        padding-top: 1em;
+		background: #272822;
+		color: rgb(0, 139, 0);
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+# ES_6 Features  : 6.Enchanced Object Literals
+### property value shorthands
+
+- wenn property name und variable name gleich sind reicht es nur den Variablennamen in das Objekt zuschreiben
+
+.code-beispiel[
+Unterschied
+```javascript
+const fullName = 'Zell liew'
+
+//ES6 way
+const Zell = {
+	fullName
+}
+
+//Javascript
+const Zell = {
+	fullName: fullName
+}
+```]
+
+---
+# ES_6 Features  : 6.Enchanced Object Literals
+### method shorthands
+
+- Funktionen in einem Objekt können ohne [**: function**] deklariert werden
+
+
+.code-beispiel[
+Unterschied
+```javascript
+
+//ES6 way
+aShortHandMethod (arg1, arg2) {},
+
+//Javascript
+aLonghandMethod: function(arg1, arg2) {}
+```]
+
+---
+# ES_6 Features  : 6.Enchanced Object Literals
+- es können dynamische Property Namen direkt zugewiesen werden beim Erzeugen eines Objektes
+- Kann durch eckige Klammern geschafft werden
+
+
+
+.code-beispiel[
+Unterschied
+```javascript
+const newPropertyName = 'smile'
+
+//ES6 way
+const anObject = {
+	aProperty: 'a value',
+	//Dynamic property names
+	[newPropertyName]: ':D',
+	['other ' + newPropertyName]: 'XD',
+}
+
+//Javascript
+aLonghandMethod: function(arg1, arg2) {}
+```]
+    </textarea>
+	<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
