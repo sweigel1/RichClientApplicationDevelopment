@@ -21,6 +21,21 @@ font-weight: normal;
 		background: #272822;
 		color: rgb(0, 139, 0);
       }
+	  /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
 </style>
   </head>
   <body>
@@ -261,11 +276,65 @@ Die Standardwerte für Variablen werden in den Parametern festgelegt.
 ]
 ---
 
-# ES_6 Features  : 4.Destructing
+# 4.Destructing (1/3)
 
-- [Unterschied]
+- Extrahieren einzelner Werte aus Arrays oder Objekten
+- Objekte:
+```javascript
+const Human = {
+	firstName: 'Rudolf',
+	lastName: 'Meier' }
+let firstName = Human.firstname;
+let lastName = Human.lastName;
+```
+... oder einfacher mit geschweiften Klammern:
+```javascript
+let {firstName, lastName} = Human;
+```
+Umbenennung bei deklarierten Variablen mit ":"
+```javascript
+let {firstName: vorname} = Human;
+```
+---
+
+# 4.Destructing (2/3)
+
+- Arrays:
+```javascript
+let array = [1,2,3,4,5];
+let [, two, three] = array;
+```	
+	rest-Operator (...) bei restlichen Werten des Arrays	
+```javascript
+let array = [1,2,3,4,5];
+let [, two, three, ...rest] = array;
+console.log(rest); \\[4,5]
+```
+	
+---
+
+# 4.Destructing (3/3)
+
+- Swapping von Variablen aus destructed Arrays	
+```javascript
+let a = 1;
+let b = 2;
+[a,b] = [b,a]
+```
+- Destructing innerhalb der Deklaration von Funktionen
+```javascript
+function destructArray (array) {
+  let [first, second, third] = array
+  return {
+    first: first,
+    second: second,
+    third: third
+  }
+}
+```
 
 ---
+
 
 class: center, middle
 # 5.REST Parameter and spread operator
