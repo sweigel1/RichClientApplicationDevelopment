@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>ES6_Features</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:22px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 90%;
+        float: right;
+        padding-top: 1em;
+		background: #272822;
+		color: rgb(0, 139, 0);
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+# ES_6 Features  : 7. Template Literals
+
+- In Javascript müssen, um Strings zusammenzufassen, die einzelnen Strings per plus und leeren Strings aneinander geschrieben werden
+- in ES6 bekommt man per Gravis einen speziellen Platzhalter (${})
+- dadurch können Strings folgendermaßen zusammengefasst werden
+
+.code-beispiel[
+Unterschied
+
+```javascript
+const firstName = 'Zell'
+const lastName = 'Liew'
+const teamName = 'unaffiliated'
+
+//ES6way
+const theString = `${firstName} ${lastName}, ${teamName}`
+
+//Javascript
+const theString = firstName + ' ' + lastName + ', ' + teamName
+```]
+    </textarea>
+	<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
