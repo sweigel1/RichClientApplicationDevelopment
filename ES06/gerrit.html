@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>ES6_Features</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:26px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 90%;
+        float: right;
+        padding-top: 1em;
+		background: #272822;
+		color: rgb(0, 139, 0);
+      }
+	  /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# ES6_Features
+
+### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
+####Rich Client Application Development<br/>Brunsmann
+
+
+
+---
+
+# Vorstellung ES6 und Hauptfeatures
+
+- Was ist ES6?
+- Vorteile
+- ***Hauptfeatures***
+	0. Let and Const
+	0. Arrow Functions
+	0. Default Parameters
+	0. Destructing
+	0. REST-Parameter and Spread Operator
+	0. Enchanced Object Literals
+	0. Template Literals
+	0. Promises
+
+---
+name: default
+
+.left-column[
+  ## 3. Default Parameters
+### - Problem
+]
+.right-column[
+
+
+```JavaScript
+function generateCircle (radius, color) {
+  console.log('Radius: ' + radius + ' Farbe: ' + color)
+}
+
+generateCircle (75,'blue') 
+// Radius: 75 Farbe: blue
+
+```
+
+In ES5 können keine Standardwerte deklariert werden, so ist bei gegebenem Beispiel nachstehender Aufruf nicht möglich, bzw unzulässig.
+
+```JavaScript
+generateCircle(75)
+// Radius: 75 Farbe: undefined
+```
+
+]
+---
+.left-column[
+  ## How does it work?
+  ### - Markdown
+  ### - Inside HTML
+]
+.right-column[
+A simple HTML document is needed for hosting the styles, Markdown and the generated slides themselves:
+
+```xml
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      /* Slideshow styles */
+    </style>
+  </head>
+  <body>
+*    <textarea id="source">
+      <!-- Slideshow Markdown -->
+    &lt;/textarea&gt;
+*    <script src="remark.js">
+    </script>
+    <script>
+*      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
+```
+
+You may download remark to have your slideshow not depend on any online resources, or reference the [latest version](http://remarkjs.com/downloads/remark-latest.min.js) online directly.
+]
+---
+
+    </textarea>
+	<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
