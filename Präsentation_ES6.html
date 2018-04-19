@@ -14,6 +14,13 @@ font-weight: normal;
 }
 .remark-slide-content { font-size:26px; }
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 90%;
+        float: right;
+        padding-top: 1em;
+		background: #272822;
+		color: rgb(0, 139, 0);
+      }
 </style>
   </head>
   <body>
@@ -21,7 +28,7 @@ font-weight: normal;
 
 class: center, middle
 
-# ES6_ES2015_Features
+# ES6_Features
 
 ### Daniel Haering Michael Frevert Gerrit <br/>Haake Felix Schilk Simeon Weigel
 ####Rich Client Application Development<br/>Brunsmann
@@ -30,35 +37,77 @@ class: center, middle
 
 ---
 
-# Einleitung
+# Vorstellung ES6 und Hauptfeatures
 
-- [Remark](https://github.com/gnab/remark) is a lightweight, javascript based presentation platform.
---
-- You can write [Markdown](https://help.github.com/articles/markdown-basics/) in an HTML file which can be viewed in any browser.
---
-- Uses [MathJax](https://www.mathjax.org/) to render math
---
-- Get around the static limitations of `\( \LaTeX \)`
-	- animated gifs
-	- video
-	- audio
-	- interactive graphics
-
-
-
+- [Was ist ES6?]
+- [Vorteile]
+- [Hauptfeatures]
+- 1. Let and Const
+- 2. Arrow Functions
+- 3. Default Parameters
+- 4. Destructing
+- 5. REST-Parameter and Spread Operator
+- 6. Enchanced Object Literals
+- 7. Template Literals
+- 8. Promises
 
 ---
 
-# ES_6 Features
+# ES_6 Features  : 1.Let and const
 
-- [Remark](https://github.com/gnab/remark) is a lightweight, javascript based presentation platform.
-- You can write [Markdown](https://help.github.com/articles/markdown-basics/) in an HTML file which can be viewed in any browser.
-- Uses [MathJax](https://www.mathjax.org/) to render math
-- Get around the static limitations of `\( \LaTeX \)`
-	- animated gifs
-	- video
-	- audio
-	- interactive graphics
+- [Unterschied]
+
+---
+
+# ES_6 Features  : 2.Arrow Functions
+
+- [Unterschied]
+
+---
+# ES_6 Features  : 3.Default Parameters
+
+- [Unterschied]
+
+---
+
+# ES_6 Features  : 4.Destructing
+
+- [Unterschied]
+
+---
+
+# ES_6 Features  : 5.REST Parameter and spread operator
+
+- [Unterschied]
+
+---
+# ES_6 Features  : 6.Enchanced Object Literals
+
+- [Unterschied]
+
+---
+# ES_6 Features  : 7.Template Literals
+
+- [Unterschied]
+
+---
+
+# ES_6 Features  : 8.Promises
+.code-beispiel[
+Beispiel
+
+```javascript
+let array = [1,7,98,5,4,2]
+
+// ES5 way
+var moreThan20 = array.filter(function (num) {
+  return num > 20
+})
+
+// ES6 way
+let moreThan20 = array.filter(num => num > 20)
+
+```]
 
 
 ---
@@ -69,35 +118,11 @@ class: center, middle
 	- incremental reveal: `--`
 	- presenter notes: `???`
 
---
-- press `?` to see features
-	- presenter mode and cloning: show the notes on your screen and the clone on the projector
-	- timer
-
-???
-
-Here's a list of stuff to say:
-
-- some notes to myself
-- more stuff
-
 ---
 
-# Markdown and HTML
-
-- If markdown isn't cutting it, you can always use HTML directly.
-- Here I resized the image to fit better.
-
-<img src="small-world.gif" alt="Sex ratios and marriage rates by education"
-			style="width:80%;"/> 
 
 
 
-# Usage
-
-Remark is very lightweight: all you need to do is open this HTML file in your browser.
-
-To make your own presentation, just copy this file and edit the slides, which are contained within the `<textarea>` tags.
 
     </textarea>
 	<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
