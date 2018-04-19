@@ -55,7 +55,20 @@ class: center, middle
 
 # Was ist ES6? 
 
+#Eine kurze Historie
+- Oktober 1994 Netscape Navigator
+- 1995 Veröffentlichung von Livescript
+- 1996 Umbenennung in Javascript
+- Microsoft entwickelt JScript
+- Kooperation zur Standardisierung des Sprachkerns
+- TC39Arbeitsgruppe bei Ecma International
 
+???
+Ecma International ist eine private Normungsorganisation
+"European Computer Manufacturers Association" 1961
+Seit 1994 name geändert daher ECMA bedeutungslos
+
+---
 
 # Vorteile
 - Sehr guter Browser Support
@@ -254,9 +267,65 @@ Die Standardwerte für Variablen werden in den Parametern festgelegt.
 
 ---
 
-# ES_6 Features  : 5.REST Parameter and spread operator
+class: center, middle
+# 5.REST Parameter and spread operator
+---
 
-- [Unterschied]
+#Rest Operator
+
+.code-beispiel[
+Beispiel
+
+```javascript
+ function sum (...args) {
+   console.log(args);
+ }
+ sum(1,2,3,4,5);
+```]
+
+???
+Seit ES6 ist es möglich beliebig viele Parameter, die einer Funktion übergeben wurden, abzurufen.
+Die 3 Punkte sind der sogenannte "rest operator"
+
+---
+#Spread Operator
+
+.code-beispiel[
+Beispiel
+
+```javascript
+ function sum (a,b,c) {
+   console.log(a+b+c);
+ }
+ let array = [1,2,3]
+ sum(...array);
+```]
+
+???
+Andersherum kann man aber nicht nur aus einer Menge von Parametern ein Array machen,
+sondern auch ein array vor dem übergeben an die Funktion entpacken.
+
+Die Syntax des Operators bleibt gleich man nennt ihn aber "spread operator"
+
+---
+
+#Wozu ist das gut?
+
+
+.code-beispiel[
+Beispiel
+```javascript
+let array1 = ['one', 'two']
+let array2 = ['three', 'four']
+let array3 = ['five', 'six']
+
+// ohne ES6
+let combinedArray = array1.concat(array2).concat(array3)
+// mit ES6
+let combinedArray = [...array1, ...array2, ...array3]
+```]
+???
+Was würdet ihr verwenden
 
 ---
 # 6.Enchanced Object Literals
@@ -368,7 +437,7 @@ let moreThan20 = array.filter(num => num > 20)
 ---
 </textarea>
 	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>
+	<script>
 var slideshow = remark.create({
 	countIncrementalSlides: false
 });
