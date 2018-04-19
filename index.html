@@ -15,9 +15,9 @@ font-weight: normal;
 .remark-slide-content { font-size:26px; }
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 .code-beispiel {
-        width: 90%;
-        float: right;
-        padding-top: 1em;
+        width: 100%;
+        float: left;
+        padding-top: 5px;
 		background: #272822;
 		color: rgb(0, 139, 0);
       }
@@ -64,12 +64,69 @@ class: center, middle
 - Verkürzung des Programmcodes
 ---
 
-# ES_6 Features  : 1.Let and const
-
-
-
+# 1.Let and const
+- In ES5 wurden Variablen mit dem Schlüsselwort **var** deklariert.
+- ES6 benutzt **let** und **const**.
+- Unterschied zwischen **let** und **var**:<br/>
+	**var** hat eine Gültigkeit innerhalb einer Funktion<br/>
+	Wenn eine Variable mit **var** in einer Funktion deklariert wird, existiert diese auch nur innerhalb der Funktion.<br/>
+	**let** hat eine Gültigkeit innerhalb eines Blockes<br/>
+	Eine Variable, die mit **let** deklariert wurde, existiert nur innerhalb dieses Blockes.<br/>
 ---
+# 1.Let and const
+- Problem bei **var**:
+	Unbeabsichtiges Überschreiben einer Variable<br/>
+	Unerwartete Ausgaben bei Schleifen<br/>
+.code-beispiel[
+Schleife mit var
+```javascript
+for (var i = 1; i < 5; i++) {
+  console.log(i)
+  setTimeout(function () {
+    console.log(i)
+  }, 1000)
+};
+```]
+Ausgabe ist 5x 1
+---
+# 1.Let and const
+Warum? Die Variable i bekommt den Wert 4 bevor die Funktion timeout durchlaufen wird. <br/>
+Abhilfe? Deklaration der Variablen mit **let**<br/>
+.code-beispiel[
+Schleife mit let
+```javascript
+for (let i = 1; i < 5; i++) {
+  console.log(i)
+  setTimeout(function () {
+    console.log(i)
+  }, 1000)
+};
+```]
+Ausgabe ist 8x 1
+---
+# 1. Let and const
+- Unterschied zwischen **let** und **const** <br/>
+**const** und **let** sind beide in einem Block gültig.<br/>
+Der einzige Unterschied besteht darin, dass constVariablen nicht neu zugewiesen werden können.<br/>
+ .code-beispiel[
+Beispiel zur Verwendung von const
+```javascript
+const modalLauncher = document.querySelector('.jsModalLauncher')
+```]
+Man es kann zum Beispiel dazu verwenden,wenn man auf seiner gesamten Website nur einen Button hat, der sich auch nicht ändern soll.
+---
+# 1. Let and const
+ .code-beispiel[
+Neuzuweisung nicht möglich
+```javascript
+const name = 'Wuppie'
+name = 'Fluppie' // TypeError: Assignment to constant variable.
 
+let name1 = 'Wuppie'
+name1 = 'Fluppie'
+console.log(name1) // 'Fluppie'
+```]
+---
 # ES_6 Features  : 2.Arrow Functions
 
 - [Unterschied]
