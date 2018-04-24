@@ -481,28 +481,47 @@ const theString = `${firstName} ${lastName}, ${teamName}`
 const theString = firstName + ' ' + lastName + ', ' + teamName
 ```
 
-
-<!---
-
+---
 
 # 8.Promises
-.code-beispiel[
-Beispiel
+
+- Promises behandeln asynchrone Kommunikationen
+	- bei "resolve" -> then-Callback aufrufen
+	- bei "reject" -> catch-Callback aufrufen
+
+- Aufrufen der Callbacks bei erhaltener Antwort des Request
+
+- Error-Handling durch reject/catch
+
+---
+
+# 8.Promises
+Codebeispiel
+```javascript
+function asyncFunc() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          const result = Math.random();
+          result > 0.5 ? resolve(result) : reject('Result lower than 0.5')
+        }, 1)
+    });
+}
+
+for (let i=0; i<5; i++) {
+	asyncFunc()
+    	.then(result => console.log('Result is: ' + result))
+    	.catch(result => console.log('Error: ' + result))
+}
+```
 
 ```javascript
-let array = [1,7,98,5,4,2]
+Result is: 0.7930997430022211 
+Error: Result lower than 0.5 
+Result is: 0.6412258210597288 
+Result is: 0.7890325910244533 
+Error: Result lower than 0.5
+```
 
-// ES5 way
-var moreThan20 = array.filter(function (num) {
-  return num > 20
-})
-
-// ES6 way
-let moreThan20 = array.filter(num => num > 20)
-
-```]
-
---->
 </textarea>
 	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 	<script>
