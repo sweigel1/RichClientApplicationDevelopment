@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>ES6_Features</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:26px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+
+        width: 90%;
+        float: right;
+        padding-top: 1em;
+		background: #272822;
+		color: rgb(0, 139, 0);
+      }
+	  /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 40%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 60%;
+        float: right;
+        padding-top: 1em;
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# React
+
+### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
+####Rich Client Application Development<br/>Brunsmann
+
+
+
+---
+
+# Vorstellung ES6 und Hauptfeatures
+
+- Was ist React?
+- Vorteile
+- ***Hauptfeatures***
+	0. Let and Const
+	0. Arrow Functions
+	0. Default Parameters
+	0. Destructing
+	0. REST-Parameter and Spread Operator
+	0. Enchanced Object Literals
+	0. Template Literals
+	<!--0. Promises-->
+
+---
+
+# Historie
+
+- Entwicklung: 2011
+- Erfinder Jordan Walke (Facebook)
+- Open-Source Veröffentlichung: 2013
+- BSD-Lizenz mit Patentlizenz (Konflikpotential)
+
+---
+
+# Was ist React?
+
+## Frontend Framework
+- Declarative
+- Component-Based
+- Independent
+
+---
+# Einstieg
+
+.left-column[
+  ### - Component
+  ### - Render function
+  ### - ReactDOM
+  ### - JSX
+  ### - braces
+  ### - props
+]
+
+.right-column[
+
+```javascript
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  mountNode
+);
+```
+]
+
+---
+# States
+
+
+.left-column[
+  ### - definition
+  ### - manipulation
+  ### - rendering
+]
+
+.right-column[
+
+```javascript
+class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { seconds: 0 };
+  }
+
+  tick() {
+    this.setState(prevState => ({
+      seconds: prevState.seconds + 1
+    }));
+  }
+  render() {
+    return (
+      <div>
+        Seconds: {this.state.seconds}
+      </div>
+    );
+  }
+}
+```
+]
+
+---
+
+# Funktionen
+
+
+.left-column[
+  ### - bind this
+  ### - call in render
+  ### - rendering
+]
+
+.right-column[
+
+```javascript
+class TodoApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { items: [], text: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>TODO</h3>
+        <TodoList items={this.state.items} />
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="new-todo">
+            What needs to be done?
+          </label>
+          <input
+            id="new-todo"
+            onChange={this.handleChange}
+            value={this.state.text}
+          />
+          <button>
+            Add #{this.state.items.length + 1}
+          </button>
+        </form>
+      </div>
+    );
+  }
+
+  handleChange(e) {
+    this.setState({ text: e.target.value });
+  }
+}
+```
+]
+
+
+
+
+</textarea>
+	<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
