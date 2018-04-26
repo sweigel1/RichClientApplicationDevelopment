@@ -1,6 +1,6 @@
 ﻿# Rich Client Development
 
-## Themenverteilung RactJS
+## Themenverteilung ReactJS
 ## Präsentation fertig bis : Sonntag, 29.04.18, 20.00 Uhr
 Nr | Thema | Verantwortlicher
 ----- | ------------ | --- |
