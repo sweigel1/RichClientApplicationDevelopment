@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <title>ES6_Features</title>
+	  <title>React</title>
     <meta charset="utf-8">
 <style>
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -25,7 +25,7 @@ font-weight: normal;
 	  /* Two-column layout */
       .left-column {
         color: #777;
-        width: 40%;
+        width: 30%;
         height: 92%;
         float: left;
       }
@@ -33,7 +33,7 @@ font-weight: normal;
           color: #000;
         }
       .right-column {
-        width: 60%;
+        width: 70%;
         float: right;
         padding-top: 1em;
       }
@@ -203,11 +203,47 @@ class TodoApp extends React.Component {
 ```
 ]
 
+---
+
+# Schleifen
+
+
+.left-column[
+  ### - bind this
+  ### - call in render
+  ### - rendering
+]
+
+.right-column[
+
+```javascript
+class TodoApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { items: [], text: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
+    var rows = [];
+    for (var i = 0; i < numrows; i++) {
+    rows.push(<ObjectRow key={i} />);
+    }
+    return <tbody>{rows}</tbody>;
+  }
+
+  handleChange(e) {
+    this.setState({ text: e.target.value });
+  }
+}
+```
+]
 
 
 
 </textarea>
-	<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
 <script>
 var slideshow = remark.create({
