@@ -87,7 +87,7 @@ class: center, middle
 	- Use the key prop when Rendering a List with React
 	- Make HTTP Requests with React
 	- Build and deploy a React Application
-	
+
 ---
 # Create element API
 
@@ -114,13 +114,146 @@ ReactDom.render(element, rootElement)
 </script>
 ```
 ---
-# Replace React createElement Function Call with JSX
+# Components and JSX
+.left-column[
+  ### - Component
+]
+
+.right-column[
+
+```javascript
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  mountNode
+);
+```
+]
+---
+# Components and JSX
+.left-column[
+  ### - Component
+  ### - Render function
+]
+
+.right-column[
+
+```javascript
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  mountNode
+);
+```
+]
+---
+# Components and JSX
+.left-column[
+  ### - Component
+  ### - Render function
+  ### - JSX
+]
+
+.right-column[
+
+```javascript
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  mountNode
+);
+```
+]
+---
+# Components and JSX
+.left-column[
+  ### - Component
+  ### - Render function
+  ### - JSX
+  ### - braces
+]
+
+.right-column[
+
+```javascript
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  mountNode
+);
+```
+]
+---
+# Components and JSX
+.left-column[
+  ### - Component
+  ### - Render function
+  ### - JSX
+  ### - braces
+  ### - props
+]
+
+.right-column[
+
+```javascript
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  mountNode
+);
+```
+]
 ---
 # Reusable React Component
 
 .left-column[
-  ## - JavaScript 
-  ### - React 
+  ## - JavaScript
+  ### - React
 ]
 
 .right-column[
@@ -148,8 +281,8 @@ ReactDom.render(element, rootElement)
 # Reusable React Component
 
 .left-column[
-  ### - JavaScript 
-  ## - React 
+  ### - JavaScript
+  ## - React
 ]
 
 .right-column[
@@ -165,7 +298,7 @@ const Massage = props => <div>{props.msg}</div>
 const element = (
 	<div className="container">
 		<Massage msg="Hello World" />
-		<Massage msg="Goodbye World" />		
+		<Massage msg="Goodbye World" />
 	</div>
 )
 ReactDom.render(element, rootElement)
@@ -175,6 +308,26 @@ ReactDom.render(element, rootElement)
 ]
 ---
 # Validate Custom React Component Props with PropTypes
+
+- seit v15.5 externe library
+- Typescript light
+
+```JavaScript
+import PropTypes from 'prop-types';
+
+class Greeting extends React.Component {
+  render() {
+    return (
+      <h1>Hello, {this.props.name}</h1>
+    );
+  }
+}
+
+Greeting.propTypes = {
+  name: PropTypes.string
+};
+
+```
 ---
 # Conditionally Render a React Component
 
@@ -200,7 +353,7 @@ ReactDOM.render(
 # Rerendering
 
 - Aktualisieren bestimmter Inhalte
-	
+
 	- Beispiel: Zeitangabe mit fortlaufender Uhr
 	- nur einzelner Wert
 	- kein kompletter DOM-Teil notwendig
@@ -233,7 +386,7 @@ setInterval(tick,1000)
 - in React nicht als String, sondern als Objekt mit Key-Value-Paar
 
 	- Key: camelCased Version des Style-Namen
-	
+
 	- Value: Wert des Styles (meist als String)
 
 ---
@@ -263,7 +416,7 @@ var boxExample = {
 
 - nur syntaktische Unterschiede zu herkömmlichem JS
 
-- ES6-Konvention: zur Übersichtlichkeit Event Handler als Funktion definieren  
+- ES6-Konvention: zur Übersichtlichkeit Event Handler als Funktion definieren
 
 
 ---
@@ -291,6 +444,73 @@ function App() {
   );
 }
 ```
+---
+# States
+
+
+.left-column[
+  ### - definition
+]
+
+.right-column[
+
+```javascript
+class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { seconds: 0 };
+  }
+
+  tick() {
+    this.setState(prevState => ({
+      seconds: prevState.seconds + 1
+    }));
+  }
+  render() {
+    return (
+      <div>
+        Seconds: {this.state.seconds}
+      </div>
+    );
+  }
+}
+```
+]
+
+---
+# States
+
+
+.left-column[
+  ### - definition
+  ### - manipulation
+]
+
+.right-column[
+
+```javascript
+class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { seconds: 0 };
+  }
+
+  tick() {
+    this.setState(prevState => ({
+      seconds: prevState.seconds + 1
+    }));
+  }
+  render() {
+    return (
+      <div>
+        Seconds: {this.state.seconds}
+      </div>
+    );
+  }
+}
+```
+]
+
 ---
 # States
 
@@ -327,11 +547,11 @@ class Timer extends React.Component {
 ]
 
 ---
-# *ComponentWillUnmount* 
-	Lifecycle Method in React 
+# *ComponentWillUnmount*
+	Lifecycle Method in React
 
 - *componentWillUnmount()* wird unmittelbar aufgerufen, bevor eine Komponente unmounted und zerstört wird
-- jegliches Aufräumen wird in dieser Methode durchgeführt 
+- jegliches Aufräumen wird in dieser Methode durchgeführt
 	- z.B. Timer ungültig machen, abbrechen von Netzwerkanfragen
 	- aufräumen von Komponenten, die mit *componentDidMount()* erstellt wurden
 - Freigabe von Ressourcen
@@ -351,7 +571,7 @@ class Timer extends React.Component {
 ## Beispiel Use Class Components
 ```javascript
 class PasswordForm extends React.Component{
-	checkPassword(password) { return [ . . . ]; } 
+	checkPassword(password) { return [ . . . ]; }
 onPasswordChange(input) {
 	this.setState({password: input});}  // 2. Zustand neu setzen
  render() {    // 3. Löst rendern der gesamten Komponente aus
@@ -374,8 +594,8 @@ const checks = this.checkPassword(this.state.password);
 ## Beispiel Callback
 ```javascript
 class PasswordApp extends React.Component{
-							// 3. Event verarbeiten (ggbf. Zustand setzen) 
-	onSetPassword(password) { . . .}  
+							// 3. Event verarbeiten (ggbf. Zustand setzen)
+	onSetPassword(password) { . . .}
  render() {
 	return . . .
 	<PasswordForm .. .
@@ -407,7 +627,7 @@ PasswordForm.propTypes =
 - Wann nutzt man Refs:
 	- Bei der Verwaltung von: focus, text selection oder Medienwiedergabe
 	- Interagieren mit 3.Anbieter DOM-Bibliotheken
-	
+
 
 
 ---
@@ -418,7 +638,7 @@ PasswordForm.propTypes =
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.myRef = React.createRef(); 
+    this.myRef = React.createRef();
   }
   render() {
     return <div ref={this.myRef} />;
@@ -492,7 +712,7 @@ class App extends React.Component {
 - Verwendung von promises (ES6)
 	- then (resolved/erfolgreich)
 	- catch (reject/Fehler)
-	
+
 - Behandlung der Response in then-Callback
 
 - Benutzen der Daten mit Hilfe von destructing
@@ -518,9 +738,9 @@ function simpleGet() {
 ---
 # Build and deploy a React Apllication
 
-- Mit Codesandbox (Online Web Application Editor) 
+- Mit Codesandbox (Online Web Application Editor)
 		--> React Editor	www.codesandbox.io
-		
+
 - sofortige Aktualisierung der Ausgabe
 
 - Einfache Veröffentlichung der Applikation über *www.netlify.com*
@@ -572,7 +792,7 @@ ReactDOM.render(
 ]
 
 -->
-<!-- 
+<!--
 
 ---
 
@@ -615,7 +835,3 @@ class TodoApp extends React.Component {
 ]
 
 -->
-
-
-
-
