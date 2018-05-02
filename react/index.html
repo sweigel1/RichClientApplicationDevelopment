@@ -226,7 +226,35 @@ tick()
 setInterval(tick,1000)
 ```
 ---
-#Style React Components with className and In Line Styles
+# Style React Components with className and In Line Styles
+
+- *className* anstatt *class* in React benutzen
+
+- in React nicht als String, sondern als Objekt mit Key-Value-Paar
+
+	- Key: camelCased Version des Style-Namen
+	
+	- Value: Wert des Styles (meist als String)
+
+---
+# Style React Components with className and In Line Styles
+
+## Beispiel
+```javascript
+var boxExample = {
+  className: 'box box--small',
+  color: 'white',
+  height: '20px',	//<=> 20
+  width: 20,		//<=> '20px'
+  backgroundImage: 'url(' + imgUrl + ')'
+};
+```
+
+- bei height/width können die Werte bspw. als Integer mitgegeben werden
+
+
+
+
 ---
 # Event Handler
 
@@ -237,7 +265,9 @@ setInterval(tick,1000)
 
 - ES6-Konvention: zur Übersichtlichkeit Event Handler als Funktion definieren  
 
+
 ---
+
 # Event Handler
 
 ## Beispiel Event Handler
