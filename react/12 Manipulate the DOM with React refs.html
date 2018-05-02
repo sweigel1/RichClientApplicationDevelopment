@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>React</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:26px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 90%;
+        float: right;
+        padding-top: 1em;
+		background: #272822;
+		color: rgb(0, 139, 0);
+      }
+	  /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 30%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 70%;
+        float: right;
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# React
+
+### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
+####Rich Client Application Development<br/>Brunsmann
+
+
+
+---
+# Manipulate the DOM with React refs
+
+
+- Referenzen werden einer Instanz zugewiesen, wenn diese erstellt wird
+
+
+
+
+- Wann nutzt man Refs:
+	- Bei der Verwaltung von: focus, text selection oder Medienwiedergabe
+	- Interagieren mit 3.Anbieter DOM-Bibliotheken
+	
+
+
+---
+# Manipulate the DOM with React refs
+
+## Beispiel Refs erstellen
+```javascript
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef(); 
+  }
+  render() {
+    return <div ref={this.myRef} />;
+  }
+}
+
+
+```
+---
+# Manipulate the DOM with React refs
+## Beispiel Adding a Ref to a DOM Element
+```javascript
+class CustomTextInput extends React.Component {
+  constructor(props) {
+    super(props);
+    // ref erstellen, um  textInput im DOM element zu speichern
+    this.textInput = React.createRef();
+    this.focusTextInput = this.focusTextInput.bind(this);
+  }
+  focusTextInput() {
+    this.textInput.current.focus();
+  }
+  render() {
+    // verknüpfen des  <input> ref mit dem `textInput`
+	// , den wir im Konsttruktor erstellt haben
+    return (
+      <div>
+        <input
+          type="text"
+          ref={this.textInput} />
+        <input
+          type="button"
+          value="Focus the text input"
+          onClick={this.focusTextInput}/></div> );}}
+```
+
+
+
+
+</textarea>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<script src="http://5tephen.com/slideshow/remark.min.js"></script>
+<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
