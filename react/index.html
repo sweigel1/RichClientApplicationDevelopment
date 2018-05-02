@@ -676,10 +676,274 @@ class CustomTextInput extends React.Component {
 ```
 ---
 # Make Basic Forms with React
+
+.left-column[
+  ## - Erklärung 
+  ### - Beispiel
+]
+
+.right-column[
+
+- "class" wird benötigt, die React.Component erweitert
+- in dieser Class wird render Methode geschrieben
+- ebenfalls eine Methode(als Event) was mit den Daten der Form passieren soll
+
+
+]
+---
+
+# Make Basic Forms with React
+
+.left-column[
+  ### - Erklärung 
+  ## - Beispiel
+]
+
+.right-column[
+
+```javascript
+class NameForm extends React.Component {
+	handleSubmit = event => {
+		console.log(event.target[0].value)
+		console.log(event.target.elements.username.value)
+	}
+	render(){
+		return(
+			<form onSubmit={this.handleSubmit}>
+				<label>
+					Name:
+					<input type="text" name="username"/>
+				</label>
+				<button type="submit">Submit</button>
+			</form>
+		)
+	}
+}
+```
+
+]
 ---
 # Make Dynamic Forms with React
+
+.left-column[
+  ## - class NameFrom
+  ### - handleChange
+  ### - componentDidMount
+  ### - render
+  ### - ReactDom.render
+]
+
+.right-column[
+
+- "class" die React.Component erweitert
+- Methode handleSubmit als Event was mit den Daten der Form passieren soll
+
+```javascript
+class NameForm extends React.Component {
+	state = {error: null}
+	handleSubmit = event => {
+		event.preventDefault()
+		const value = event.target.elements.username.value
+		const error=this.props.getErrorMessage(value)
+		if(error){
+			alert('error: ${error}')
+		}else{
+			alert('success: ${value}')
+		}
+	}
+```
+]
+---
+
+# Make Dynamic Forms with React
+
+.left-column[
+  ### - class NameFrom
+  ## - handleChange
+  ## - componentDidMount
+  ### - render
+  ### - ReactDom.render
+]
+
+.right-column[
+
+- Eventhandler für das dynamische überprüfen der Daten, bei Änderungen
+- Methode für das erste Aufrufen der Form
+
+```javascript
+	handleChange=(event)=>{
+		const {value} = event.target
+		this.setState({
+			error: this.props.getErrorMessage(value)
+		})
+	}
+	componentDidMount(){
+		this.setState({
+			error: this.props.getErrorMessage('')
+		})
+	}
+	```
+]
+---
+# Make Dynamic Forms with React
+
+.left-column[
+  ### - class NameFrom
+  ### - handleChange
+  ### - componentDidMount
+  ## - render
+  ### - ReactDom.render
+]
+
+.right-column[
+- erstellen der Form, wie bei HTML
+- form ruft bei submit den vorher erstellten Eventhandler auf
+- die input box ruft bei Änderungen die dynamische Überprüfung auf
+- Submit button wird nur enabled wenn kein Fehler existiert
+
+```javascript
+	render(){
+	const {error} = this.state
+		return(
+			<form onSubmit={this.handleSubmit}>
+				<label>
+					Name:
+					<input type="text" onChange={this.handleChange} name="username"/>
+				</label>
+				<button disabled={Boolean(error)} type="submit">Submit</button>
+			</form>
+		)
+	}
+	```
+]
+---
+# Make Dynamic Forms with React
+
+.left-column[
+  ### - class NameFrom
+  ### - handleChange
+  ###  /componentDidMount
+  ### - render
+  ## - ReactDom.render
+]
+
+.right-column[
+
+- Methode zum überprüfen der Daten die der Form übergeben werden
+
+```javascript
+ReactDom.render(
+	<NameForm getErrorMessage={value => {
+		if(value.length<3){
+			return 'Value must be at least 3 characters'
+		}
+		if(!value.includes('s')){
+			return 'Value doesn't include "s"'
+		}
+		return null
+	}}
+	/>
+document.getElementById('root')
+```
+
+]
 ---
 # Controlling Form Values with React
+
+.left-column[
+## - Singleline value
+### - multiline value
+### - render
+]
+
+.right-column[
+
+- die benötigten Variablen werden deklariert (Zeile 1)
+- der Eventhandler für einzeilige Values
+- der Value der Inputbox wird übergeben (Zeile 3)
+- State wird geändert damit den Variablen der Value zugeteilt wird 
+
+```javascript
+state = {multiline: '', commaSpeparated: ''}
+handleCommaSeparatedChange = event => {
+	const {value} = event.target
+	this.setState({
+		commaSpeparated:value,
+		multiline: value
+			.split(',')
+			.map(v=> v.trim())
+			.filter(Boolean)
+			.join(\'n')
+	})
+}
+
+```
+]
+---
+
+# Controlling Form Values with React
+
+.left-column[
+### - Singleline value
+## - multiline value
+### - render
+]
+
+.right-column[
+
+- der Eventhandler für mehrzeilge Values
+- der Value der Inputbox wird übergeben (Zeile 2)
+- State wird geändert damit den Variablen der Value zugeteilt wird 
+
+```javascript
+handleMultilineChange = event => {
+	const {value} = event.target
+	this.setState({
+		multiline: value
+		commaSpeparated: value
+			.split('\n')
+			.map(v=>v.trim())
+			.filter(Boolean)
+			.join(',')
+	})
+}
+	```
+]
+---
+# Controlling Form Values with React
+
+.left-column[
+### - Singleline value
+### - multiline value
+## - render
+]
+
+.right-column[
+
+- Inputbox mit enptsprechendem Eventhandler und Variablen
+- Textarea mit enptsprechendem Eventhandler und Variablen
+```javascript
+render() {
+	const {commaSpeparated, multiline} = this.state
+	return(
+		<form>
+			<input
+				type="text"
+				value={commaSpeparated}
+				onChange={
+					this.handleCommaSeparatedChange
+				}
+			/>
+			<textarea
+				value={multiline}
+				rows={Form.availableOptions.length}
+				onChange={this.handleMultilineChange}
+			/>					
+		</form>
+	)
+}
+```
+]
 ---
 # Key Prop
 
