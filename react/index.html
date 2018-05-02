@@ -15,7 +15,6 @@ font-weight: normal;
 .remark-slide-content { font-size:26px; }
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 .code-beispiel {
-
         width: 90%;
         float: right;
         padding-top: 1em;
@@ -51,20 +50,12 @@ class: center, middle
 
 
 ---
+# Was ist React?
 
-# Vorstellung ES6 und Hauptfeatures
-
-- Was ist React?
-- Vorteile
-- ***Hauptfeatures***
-	0. Let and Const
-	0. Arrow Functions
-	0. Default Parameters
-	0. Destructing
-	0. REST-Parameter and Spread Operator
-	0. Enchanced Object Literals
-	0. Template Literals
-	<!--0. Promises-->
+## Frontend Framework
+- Declarative
+- Component-Based
+- Independent
 
 ---
 
@@ -74,48 +65,202 @@ class: center, middle
 - Erfinder Jordan Walke (Facebook)
 - Open-Source Veröffentlichung: 2013
 - BSD-Lizenz mit Patentlizenz (Konflikpotential)
-
 ---
-
-# Was ist React?
-
-## Frontend Framework
-- Declarative
-- Component-Based
-- Independent
-
+- ***Inhaltsverzeichnis 1/2***
+	 - Create Element API
+	 - Replace React createElement Function Call with JSX
+	 - Reusable React Component
+	 - Validate Custom React Component Props with PropTypes
+	 - Conditionally Render A React Component
+	 - Rerender a React Application
+	 - Style React Components with className and In Line Styles
+	 - Use Event Handlers with React
+	 - Use Component State with React
 ---
-# Einstieg
+- ***Inhaltsverzeichnis 2/2***
+	- componentWillUnmount Lifecycle Method in React
+	- Use Class Components with React
+	- Manipulate the DOM with React refs
+	- Make Basic Forms with React
+	- Make Dynamic Forms with React
+	- Controlling Form Values with React
+	- Use the key prop when Rendering a List with React
+	- Make HTTP Requests with React
+	- Build and deploy a React Application
+	
+---
+# Create element API
+
+- React hat eine eigene Funktion `createElement`
+- ist vergleichbar mit `document.createElement`
+- Aufbau eines Elements erfolg in einer Methode mittels JSON
+- Anstelle von `appenChild` wird ReactDom's `render` Funktion benutzt.
+
+
+```javascript
+<script type="javascript">
+const rootElement = document.getElementByID('root')
+// Standard JavaScript
+// const element = document.createElement('div')
+// element.textContent = 'Hello World'
+// element.className = 'container'
+// rootElement.appenChild(element)
+const element = React.createElement('div', {
+	className: 'container',
+	children: 'Hello World',					//Hello World
+//children: ['HelloWorld', 'Goodbye World'],	//Hello World Goodbye World
+})
+ReactDom.render(element, rootElement)
+</script>
+```
+---
+# Replace React createElement Function Call with JSX
+---
+# Reusable React Component
 
 .left-column[
-  ### - Component
-  ### - Render function
-  ### - ReactDOM
-  ### - JSX
-  ### - braces
-  ### - props
+  ## - JavaScript 
+  ### - React 
 ]
 
 .right-column[
 
-```javascript
-class HelloMessage extends React.Component {
-  render() {
-    return (
-      <div>
-        Hello {this.props.name}
-      </div>
-    );
-  }
-}
+- In Standard JavaScript werden wiederverwendbare Komponenten in der Regel wie folgt dargestellt:
 
-ReactDOM.render(
-  <HelloMessage name="Taylor" />,
-  mountNode
-);
+```javascript
+<div id='root'></div>
+<script type="text/babel">
+const rootElement = document.getElementByID('root')
+const massage = props => <div>{props.msg}</div>
+const element = (
+	<div className="container">
+		{message({msg: 'Hello World'})}
+		{message({msg: 'Goodbye World'})}
+	</div>
+)
+ReactDom.render(element, rootElement)
+</script>
 ```
+
+]
+---
+
+# Reusable React Component
+
+.left-column[
+  ### - JavaScript 
+  ## - React 
 ]
 
+.right-column[
+
+- In React werden "Funktionen" Elemente denen props übergeben werden
+- Diese Funktionen lassen sich dann wie unten im Beispiel gezeigt, als HMTL-Elemente mit Attributen verwenden
+
+```javascript
+<div id='root'></div>
+<script type="text/babel">
+const rootElement = document.getElementByID('root')
+const Massage = props => <div>{props.msg}</div>
+const element = (
+	<div className="container">
+		<Massage msg="Hello World" />
+		<Massage msg="Goodbye World" />		
+	</div>
+)
+ReactDom.render(element, rootElement)
+</script>
+```
+
+]
+---
+# Validate Custom React Component Props with PropTypes
+---
+# Conditionally Render a React Component
+
+- Durch wiederverwendbare Komponenten kann man Bedingungen bei der Ausgabe erstellen.
+- Das im anschließendem Beispiel gezeigte Element `Message` gibt "No Message" aus, wenn die eingabe `Null` ist oder die entsprechende Nachricht
+
+```javascript
+<div id="root"><div>
+<script type"text/babel">
+function Message({message}) {
+return message
+	? React.createElement('div', null, message)
+	: React.createElement('div', null, 'No Message')
+}
+ReactDOM.render(
+  <Message message={null} />, // Ausgabe No Message
+  <Message message='Hello World' />, // Ausgabe Hello World
+  document.getElementById('root'),
+);
+</script>
+```
+---
+# Rerendering
+
+- Aktualisieren bestimmter Inhalte
+	
+	- Beispiel: Zeitangabe mit fortlaufender Uhr
+	- nur einzelner Wert
+	- kein kompletter DOM-Teil notwendig
+
+- Maus-Focus bleibt trotz Aktualisierung erhalten
+
+---
+# Rerendering
+
+## Beispiel Zeitaktualisierung
+```javascript
+const rootElement = document.getElementById('root')
+function tick() {
+  const time = new Date().toLocaleTimeString()
+  const element = (
+    <div>
+      <input value ={time}/>
+    </div>
+  )
+  render(element,rootElement)
+}
+tick()
+setInterval(tick,1000)
+```
+---
+#Style React Components with className and In Line Styles
+---
+# Event Handler
+
+- bspw. Tastendruck, Mausklick, etc.
+	- mögliche Handler: onClick, onChange, onFocus, etc.
+
+- nur syntaktische Unterschiede zu herkömmlichem JS
+
+- ES6-Konvention: zur Übersichtlichkeit Event Handler als Funktion definieren  
+
+---
+# Event Handler
+
+## Beispiel Event Handler
+```javascript
+const state = { eventCount: 0, username: "" };
+
+function App() {
+  return (
+    <div>
+      <p>There have been {state.eventCount} events</p>
+      <p>
+        <button onClick={increment}>just a btn</button>
+      </p>
+      <p>You typed: {state.username}</p>
+      <p>
+        <input onChange={
+			event => setState({ username: event.target.value })
+		} />
+      </p>
+    </div>
+  );
+}
+```
 ---
 # States
 
@@ -150,6 +295,254 @@ class Timer extends React.Component {
 }
 ```
 ]
+
+---
+# *ComponentWillUnmount* 
+	Lifecycle Method in React 
+
+- *componentWillUnmount()* wird unmittelbar aufgerufen, bevor eine Komponente unmounted und zerstört wird
+- jegliches Aufräumen wird in dieser Methode durchgeführt 
+	- z.B. Timer ungültig machen, abbrechen von Netzwerkanfragen
+	- aufräumen von Komponenten, die mit *componentDidMount()* erstellt wurden
+- Freigabe von Ressourcen
+---
+# Use class Components with React 1/3
+
+- eine typische React-Komponente ist eine Klasse, die von React.Component erbt.
+
+
+- Callback-Methoden sind noch nicht an *this* gebunden
+
+
+- Callbacks werden im Konstruktor gebunden
+---
+# Use Class Components with React 2/3
+
+## Beispiel Use Class Components
+```javascript
+class PasswordForm extends React.Component{
+	checkPassword(password) { return [ . . . ]; } 
+onPasswordChange(input) {
+	this.setState({password: input});}  // 2. Zustand neu setzen
+ render() {    // 3. Löst rendern der gesamten Komponente aus
+const checks = this.checkPassword(this.state.password);
+  return . . .
+
+   <input value={this.state.password}
+	onChange={e=>this.onPasswordChange(e.target.value)}// 1. Event tritt ein
+/>
+<CheckLabelList checks={checks} />
+<Button enabled={passwordValid} />
+}
+}
+```
+---
+# Use Class Components with React 3/3
+
+
+
+## Beispiel Callback
+```javascript
+class PasswordApp extends React.Component{
+							// 3. Event verarbeiten (ggbf. Zustand setzen) 
+	onSetPassword(password) { . . .}  
+ render() {
+	return . . .
+	<PasswordForm .. .
+		// 1.Callback übergeben
+		onSetPasswordHandler={p=>this.onSetPassword(p)}/>; }}
+class PasswordForm extends React.Component{
+ render() {
+  return . . .
+	<input value=“. . .” onChange=“. . .” />
+   <Button label=“Set new Password” />
+   onClickHandler=
+ //2. Callback aufrufen
+ {()=>this.props.onSetPasswordHandler(this.state.password)}
+
+ }
+}
+PasswordForm.propTypes =
+{onSetPasswordHandler:React.PropTypes.func.isRequired}
+```
+---
+# Manipulate the DOM with React refs
+
+
+- Referenzen werden einer Instanz zugewiesen, wenn diese erstellt wird
+
+
+
+
+- Wann nutzt man Refs:
+	- Bei der Verwaltung von: focus, text selection oder Medienwiedergabe
+	- Interagieren mit 3.Anbieter DOM-Bibliotheken
+	
+
+
+---
+# Manipulate the DOM with React refs
+
+## Beispiel Refs erstellen
+```javascript
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef(); 
+  }
+  render() {
+    return <div ref={this.myRef} />;
+  }
+}
+
+
+```
+---
+# Manipulate the DOM with React refs
+## Beispiel Adding a Ref to a DOM Element
+```javascript
+class CustomTextInput extends React.Component {
+  constructor(props) {
+    super(props);
+    // ref erstellen, um  textInput im DOM element zu speichern
+    this.textInput = React.createRef();
+    this.focusTextInput = this.focusTextInput.bind(this);
+  }
+  focusTextInput() {
+    this.textInput.current.focus();
+  }
+  render() {
+    // verknüpfen des  <input> ref mit dem `textInput`
+	// , den wir im Konsttruktor erstellt haben
+    return (
+      <div>
+        <input
+          type="text"
+          ref={this.textInput} />
+        <input
+          type="button"
+          value="Focus the text input"
+          onClick={this.focusTextInput}/></div> );}}
+```
+---
+# Make Basic Forms with React
+---
+# Make Dynamic Forms with React
+---
+# Controlling Form Values with React
+---
+# Key Prop
+
+- beim Rendern einer Liste sollte man immer die Key Prop von React verwenden (siehe Beispiel)
+
+```JavaScript
+class App extends React.Component {
+	static allItems = [
+		{id: 'a', calue: 'apple'},
+		{id: 'o', calue: 'orange'},
+		{id: 'g', calue: 'grape'},
+		{id: 'p', calue: 'pear'},
+	]
+	render() {
+		return (
+			<div>
+			 {app.allItems.map(item => (
+				<div key={item.id}>{item.value}</div> // Ausgabe der Liste
+			 )
+			</div>
+)}}
+```
+
+- Sollte man in der Oberfläche, an der Liste etwas verändern wird immer das letzte Element verändert, wenn kein eindeutiger Key angegeben wird
+---
+# HTTP Request
+
+- XMLHttpRequest mit Hilfe von Axios
+
+- Verwendung von promises (ES6)
+	- then (resolved/erfolgreich)
+	- catch (reject/Fehler)
+	
+- Behandlung der Response in then-Callback
+
+- Benutzen der Daten mit Hilfe von destructing
+
+---
+# HTTP Request
+
+## Beispiel mit Axios
+```javascript
+function simpleGet() {
+  axios
+    .get("https://api.github.com/users/maecapozzi")
+    .then(response => {
+      console.log(response);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+}
+```
+- GET auf https://api.github.com/users/maecapozzi
+- Ausgabe der Response in der Console
+---
+# Build and deploy a React Apllication
+
+- Mit Codesandbox (Online Web Application Editor) 
+		--> React Editor	www.codesandbox.io
+		
+- sofortige Aktualisierung der Ausgabe
+
+- Einfache Veröffentlichung der Applikation über *www.netlify.com*
+
+
+
+
+
+</textarea>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
+
+<!--# Einstieg
+
+.left-column[
+  ### - Component
+  ### - Render function
+  ### - ReactDOM
+  ### - JSX
+  ### - braces
+  ### - props
+]
+
+.right-column[
+
+```javascript
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  mountNode
+);
+```
+]
+
+-->
+<!-- 
 
 ---
 
@@ -191,52 +584,8 @@ class TodoApp extends React.Component {
 ```
 ]
 
----
-
-# Schleifen
-
-
-.left-column[
-  ### - bind this
-  ### - call in render
-  ### - rendering
-]
-
-.right-column[
-
-```javascript
-class TodoApp extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { items: [], text: '' };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  render() {
-    var rows = [];
-    for (var i = 0; i < numrows; i++) {
-    rows.push(<ObjectRow key={i} />);
-    }
-    return <tbody>{rows}</tbody>;
-  }
-
-  handleChange(e) {
-    this.setState({ text: e.target.value });
-  }
-}
-```
-]
+-->
 
 
 
-</textarea>
-	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
-<script>
-var slideshow = remark.create({
-	countIncrementalSlides: false
-});
-</script>
-  </body>
-</html>
+
