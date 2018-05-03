@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>ES6_Features</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:26px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 100%;
+        float: left;
+        padding-top: 1em;
+		background: white;
+		color: rgb(0, 139, 0);
+      }
+	  /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# ES6_Features
+
+### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
+####Rich Client Application Development<br/>Brunsmann
+
+
+
+---
+
+# Vorstellung NPM und Webpack
+
+- Was ist ES6?
+- Vorteile
+- ***Hauptfeatures***
+	0. Let and Const
+	0. Arrow Functions
+	0. Default Parameters
+	0. Destructing
+	0. REST-Parameter and Spread Operator
+	0. Enchanced Object Literals
+	0. Template Literals
+	<!--0. Promises-->
+
+---
+
+# Was ist ES6? 
+
+#Eine kurze Historie
+- Oktober 1994 Netscape Navigator
+- 1995 Veröffentlichung von Livescript
+- 1996 Umbenennung in Javascript
+- Microsoft entwickelt JScript
+- Kooperation zur Standardisierung des Sprachkerns
+- TC39Arbeitsgruppe bei Ecma International
+
+???
+Ecma International ist eine private Normungsorganisation
+"European Computer Manufacturers Association" 1961
+Seit 1994 name geändert daher ECMA bedeutungslos
+
+---
+
+# Vorteile
+- Sehr guter Browser Support
+- Es werden keine komplizierten Tools benötigt
+- Vereinfachung der Programmierung
+- Verkürzung des Programmcodes
+---
+
+# 1.Let and const
+- In ES5 wurden Variablen mit dem Schlüsselwort **var** deklariert.
+- ES6 benutzt **let** und **const**.
+- Unterschied zwischen **let** und **var**:<br/>
+	**var** hat eine Gültigkeit innerhalb einer Funktion<br/>
+	Wenn eine Variable mit **var** in einer Funktion deklariert wird, existiert diese auch nur innerhalb der Funktion.<br/>
+	**let** hat eine Gültigkeit innerhalb eines Blockes<br/>
+	Eine Variable, die mit **let** deklariert wurde, existiert nur innerhalb dieses Blockes.<br/>
+---
+# 1.Let and const
+- Problem bei **var**:
+	Unbeabsichtiges Überschreiben einer Variable<br/>
+	Unerwartete Ausgaben bei Schleifen<br/>
+.code-beispiel[
+Schleife mit var
+```javascript
+for (var i = 1; i < 5; i++) {
+  console.log(i)
+  setTimeout(function () {
+    console.log(i)
+  }, 1000)
+};
+```]
+Ausgabe ist 5x 1
+---
+
+
+</textarea>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+	<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
