@@ -28,8 +28,9 @@ Falls Sie möchten, können Sie ihre eigenen Daten auf den Server laden und für
 Bei einer Feinstaubbelastung zu einer gewissen Uhrzeit bei einem bestimmten Wert bekommt man eine Pushbenachrichtigung.
 Der Zugriff auf die API wird von außerhalb geregelt.
 
-## LuftDATA-Control Anforderungen
-#DieselNSA?
+## LuftDATA-Control
+##### DieselNSA?
+
 Wir brauchen noch nen coolen Namen und natürlich auch einen inoffiziellen Arbeitstitel.
 Vorschläge hierhin:
 
@@ -37,13 +38,15 @@ Vorschläge hierhin:
 - ...
 - ...
 
-Ein Server soll zur Verfügung gestellt werden, der das Verwalten von Luftsensoren kontrollieren und die vorhandenen Daten auswerten kann.
-Die Sensoren sollen mit einem Rasperry Pie die Daten des Sensors in regelmäßigen Intervalen an den Server senden.
-Der Interval soll sich durch den Server konfigurieren lassen.
-Der Server soll auch offline als PWA (mit möglichst keinen Einschränkungen der bis dahin verfügbaren Daten) verfügbar sein.
-Es sollen Grenzwerte definiert werden können, die bei Überschreitung Push-Notifications verschicken können.
-Daten sollen auf dem Raspberry solange vorbehalten werden bis diese erfolgreich auf den Server transferiert wurden.
-Es sollen externe Luftdaten APis zusätzliche Daten bereitstellen bsp (public.opendatasoft.com/explore/dataset/api-luftdateninfo)
+### Anforderungen
+
+1. Ein Server soll zur Verfügung gestellt werden, der das Verwalten von Luftsensoren kontrollieren und die vorhandenen Daten auswerten kann.
+2. Die Sensoren sollen mit einem Rasperry Pie die Daten des Sensors in regelmäßigen Intervalen an den Server senden.
+3. Der Interval soll sich durch den Server konfigurieren lassen.
+4. Der Server soll auch offline als PWA (mit möglichst keinen Einschränkungen der bis dahin verfügbaren Daten) verfügbar sein.
+5. Es sollen Grenzwerte definiert werden können, die bei Überschreitung Push-Notifications verschicken können.
+6. Daten sollen auf dem Raspberry solange vorbehalten werden bis diese erfolgreich auf den Server transferiert wurden.
+7. Es sollen externe Luftdaten APis zusätzliche Daten bereitstellen bsp (public.opendatasoft.com/explore/dataset/api-luftdateninfo)
 
 
 
