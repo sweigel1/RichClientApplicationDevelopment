@@ -2,6 +2,7 @@
 
 1. [Präsentation ES06](https://sweigel1.github.io/RichClientApplicationDevelopment/ES06/index.html#1) 
 2. [Präsentation React](https://sweigel1.github.io/RichClientApplicationDevelopment/react/index.html)
+3. [Präsentation NPM und Webpack ](https://sweigel1.github.io/RichClientApplicationDevelopment/NPM_WEBPACK/index.html)
 
 # Zweck
 
