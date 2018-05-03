@@ -26,12 +26,10 @@ Repository zur LV RichClientApplication an der FH Bielefeld - Campus Minden
 Als Projekt möchten wir eine Single-Page-Webanwendung erstellen, die eine Offline-Unterstützung anbietet.
 Auf DesktopPCs, sowie mobilen Endgeräten, sollen offline gespeicherte Inhalte und Daten bei späterer Verbindung 
 mit dem Server automatisch synchronisiert werden. Die Daten sollen zudem analysiert und grafisch aufgearbeitet werden.
-Dies soll mit einer MVC- Architektur realisiert werden. Ein mögliches Szenario ist, dass verschiedene Personen in Deutschland über eine Bluetoothschnittstelle/USB-Schnittstelle Daten einspeisen können und direkt und offline aufarbeiten und bearbeiten können. 
-Falls Sie möchten, können Sie die Daten auf den Server laden und für alle zur Verfügung stellen. 
+Dies soll mit einer MVC- Architektur realisiert werden. Ein mögliches Szenario ist, dass verschiedene Personen in Deutschland über eine Bluetoothschnittstelle/USB-Schnittstelle Daten von einem Luftsensor einspeisen können und direkt und offline aufarbeiten und bearbeiten können. 
+Falls Sie möchten, können Sie die Daten auf den Server laden und für alle zur Verfügung stellen. Auf der Apllikation können Werte nach Regionen, Städten und verschiedenen Bezirken nach Grad der Belastung angezeigt werden. 
 
 IDEE:
-Feinstaub von verschiedenen Personen und Standorten in Datenbank gespeichert und aufbereiten.
-Welche Daten?!
-Vorschläge:
+Evtl. Hardware:
 https://www.rasppishop.de/Raspberry-Pi-Sense-HAT
-https://www.youtube.com/watch?v=8oLCTeCfabU
+
