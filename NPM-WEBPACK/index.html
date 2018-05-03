@@ -43,80 +43,18 @@ font-weight: normal;
 
 class: center, middle
 
-# ES6_Features
+# NPM + Webpack
 
 ### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
 ####Rich Client Application Development<br/>Brunsmann
-
-
 
 ---
 
 # Vorstellung NPM und Webpack
 
-- Was ist ES6?
-- Vorteile
-- ***Hauptfeatures***
-	0. Let and Const
-	0. Arrow Functions
-	0. Default Parameters
-	0. Destructing
-	0. REST-Parameter and Spread Operator
-	0. Enchanced Object Literals
-	0. Template Literals
-	<!--0. Promises-->
-
----
-
-# Was ist ES6? 
-
-#Eine kurze Historie
-- Oktober 1994 Netscape Navigator
-- 1995 Veröffentlichung von Livescript
-- 1996 Umbenennung in Javascript
-- Microsoft entwickelt JScript
-- Kooperation zur Standardisierung des Sprachkerns
-- TC39Arbeitsgruppe bei Ecma International
-
-???
-Ecma International ist eine private Normungsorganisation
-"European Computer Manufacturers Association" 1961
-Seit 1994 name geändert daher ECMA bedeutungslos
-
----
-
-# Vorteile
-- Sehr guter Browser Support
-- Es werden keine komplizierten Tools benötigt
-- Vereinfachung der Programmierung
-- Verkürzung des Programmcodes
----
-
-# 1.Let and const
-- In ES5 wurden Variablen mit dem Schlüsselwort **var** deklariert.
-- ES6 benutzt **let** und **const**.
-- Unterschied zwischen **let** und **var**:<br/>
-	**var** hat eine Gültigkeit innerhalb einer Funktion<br/>
-	Wenn eine Variable mit **var** in einer Funktion deklariert wird, existiert diese auch nur innerhalb der Funktion.<br/>
-	**let** hat eine Gültigkeit innerhalb eines Blockes<br/>
-	Eine Variable, die mit **let** deklariert wurde, existiert nur innerhalb dieses Blockes.<br/>
----
-# 1.Let and const
-- Problem bei **var**:
-	Unbeabsichtiges Überschreiben einer Variable<br/>
-	Unerwartete Ausgaben bei Schleifen<br/>
-.code-beispiel[
-Schleife mit var
-```javascript
-for (var i = 1; i < 5; i++) {
-  console.log(i)
-  setTimeout(function () {
-    console.log(i)
-  }, 1000)
-};
-```]
-Ausgabe ist 5x 1
----
+- Was ist NPM?
+- Was ist Webpack?
+	    
 
 
 </textarea>
