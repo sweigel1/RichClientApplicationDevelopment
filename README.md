@@ -21,12 +21,11 @@ Repository zur LV RichClientApplication an der FH Bielefeld - Campus Minden
 - Simeon Weigel
 - Michael Frevert
 
-## Projektbeschreibung(1.Entwurf)
+## Projektbeschreibung
 
-Ein mögliches Szenario ist, dass verschiedene Personen in Deutschland über eine Bluetoothschnittstelle/USB-Schnittstelle Daten von einem Luftsensor einspeisen können und auf einem Server aufarbeiten, ansehen  und bearbeiten können.
-Falls Sie möchten, können Sie ihre eigenen Daten auf den Server laden und für alle zur Verfügung stellen. Es können Werte nach Regionen, Städten und verschiedenen Bezirken nach Grad der Belastung angezeigt werden.
-Bei einer Feinstaubbelastung zu einer gewissen Uhrzeit bei einem bestimmten Wert bekommt man eine Pushbenachrichtigung.
-Der Zugriff auf die API wird von außerhalb geregelt.
+Unser Projekt beinhaltet das Einlesen, Aufbereiten und Visualisieren von Luftdaten. Verschiedene Personen in Deutschland lesen über einen Raspberry Pi Daten von einem Luftsensor ein und und können diese auf einem Server aufarbeiten, ansehen  und bearbeiten. Zusätzlich zu diesen selbst eingearbeiteten Daten greifen wir auf eine zentrale Datenbank von Deutschland zu.
+Es können Werte nach Regionen, Städten und verschiedenen Bezirken nach Grad der Belastung angezeigt und analysiert werden.
+Bei einer Feinstaubbelastung zu einer gewissen Uhrzeit bei einem bestimmten Wert bekommt man eine Pushbenachrichtigung auf sein mobiles Endgerät.
 
 ## LuftDATA-Control
 ##### DieselNSA?
@@ -34,7 +33,7 @@ Der Zugriff auf die API wird von außerhalb geregelt.
 Wir brauchen noch nen coolen Namen und natürlich auch einen inoffiziellen Arbeitstitel.
 Vorschläge hierhin:
 
-- ...
+- APC - AirPollutionControl
 - ...
 - ...
 
