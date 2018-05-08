@@ -23,8 +23,8 @@ font-weight: normal;
       }
 	  /* Two-column layout */
       .left-column {
-        color: #777;
-        width: 20%;
+        color: #000;
+        width: 50%;
         height: 92%;
         float: left;
       }
@@ -32,9 +32,18 @@ font-weight: normal;
           color: #000;
         }
       .right-column {
-        width: 75%;
+        width: 50%;
         float: right;
-        padding-top: 1em;
+      }
+	  img {
+        width: 95%;
+      }
+	  .flex {
+        display: flex;
+      }
+      .item {
+        flex-grow: 1;
+        flex-basis: 0;
       }
 </style>
   </head>
@@ -58,12 +67,17 @@ class: center, middle
 ---
 # Webpack
 
+  .item[
+    ![Right-aligned image](./what-is-webpack.PNG)
+  ]
+.left-column[
 - Was ist Webpack?
 - Wozu Webpack?
+]
+.right-column[
 - Benutzung
-- Vorteile
-- Nachteile
 - Fazit
+] 
 
 ---
 
@@ -72,6 +86,7 @@ class: center, middle
 - Webpack dient dazu PAckete zu bündeln
 - Hauptzweck ist es, JavaScript-Dateien für die Verwendung im Browser zu bündeln
 - außerdem können Ressourcen transformiert, gebündelt oder gepackt werden
+- Transpiler
 
 ---
 
@@ -84,16 +99,96 @@ class: center, middle
 
 ---
 
+# Features
+
+- File-loader
+- JSON-loader
+- Transpiling
+ - z.B. Babel, TypeScript, CoffeeScript, etc.
+- Templating
+ - z.B. HTML-NPM, Markdown, etc.
+- Styling
+ - z.B. CSS, LESS, SASS/SCSS, etc.
+- Frameworks
+ - Vue, Angular2,
+- Testing
+
+---
+
 # Benutzung
 
 ## Insatllation
+
+- NPM:
 ```
 npm install --save-dev webpack
 ```
-oder
+- Yarn
 ```
 yarn add webpack --dev
 ```
+---
+# Benutzung
+
+## Konfiguration (Beispiel)
+
+- Bündelung von (JavaScript-) Dateien erfolgt meist über eine `config`-Datei
+
+```JavaScript
+module.exports = {
+  entry: ["./global.js", "./app.js"],
+  output: {
+    filename: "bundle.js"
+  }
+}
+```
+
+- In diesem Fall `global.js` und `app.js` zu `bundle.js`
+
+---
+# Benutzung
+
+## Konfiguration (Beispiel)
+
+- in der HTML-Datei muss dann nur `bundle.js` importiert werden
+
+```HTML
+<html>
+  <body>
+    <script src="bundle.js"></script>
+  </body>
+</html>
+```
+
+---
+
+# Benutzung
+
+- mit Webpack können auch sogenannte Loader verwendet werden
+- z.B.
+ - Babel
+ - JSHint
+ - etc.
+- Mit diesen Loadern wird dann der Code geladen und passend transformiert
+
+---
+
+# Vorteile
+
+- Konfiguration über eine Datei
+- Bundler und Build-System in einem
+- verkürtze Ladezeiten während der Laufzeit
+
+---
+
+# Fazit
+
+Webpack ist ein Module-Bundler und ein Build-System und kombiniert diese beiden Features.
+
+Webpack ermöglicht es dem Entwickler mehrere Dateien, Sprachen, Templates, etc. innerhalb eines Projekts über ein Programm bzw. eine Konfiguration zu verwalten.
+
+Sämtliche Abhängigkeiten können mittels Webpack importiert, manipuliert uznd am Ende ins finale Bundle gepackt werden.
+
 
 
 
