@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>NPM-Webpack</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:26px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 100%;
+        float: left;
+        padding-top: 1em;
+		background: white;
+		color: rgb(0, 139, 0);
+      }
+	  /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+      img {
+        width: 95%;
+      }
+      .flex {
+        display: flex;
+      }
+      .item {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .center {
+        text-align: center;
+      }
+      .shrink {
+        transform: scale(0.8);
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# NPM
+
+### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
+####Rich Client Application Development<br/>Brunsmann
+
+---
+
+# NPM
+
+- Was ist npm?
+- Wozu benötige ich npm?
+- Was ist eine package.json
+- Was für Vorteile hat npm?
+- Was für Nachteile hat npm?
+- Fazit
+
+---
+
+## Was ist npm?
+
+- früher auch node package manager
+- JavaScript Packet management tool
+- 3 Komponente:
+ 1. Website
+ 2. CLI
+ 3. Registry
+- Grobe Analogien:
+ - apt-get (linux)
+ - composer (php)
+ - maven (java)
+
+---
+
+## Website
+
+.flex[
+  .item[
+- Pakete durchsuchen
+- Pakete verwalten
+- Pakete veröffentlichen
+  ]
+  .item[
+    ![Right-aligned image](./npmWebsite.PNG)
+  ]
+]
+
+---
+
+## CLI
+Häufige Befehle
+
+- npm init
+- npm install <package name>
+- npm install <package name> -g(global)
+- npm uninstall <package name>
+- npm search <package name>
+
+---
+
+## Registry
+
+Bezeichnung für die Datenbank der JavaScript Pakete
+
+.flex[
+  .item[
+    Meist installierte Pakete:
+    1. broserify
+    2. grunt-cli
+    3. bowser
+  ]
+  .item[
+    Meist installierte Abhängigkeiten:
+    1. lodash
+    2. request
+    3. chalk
+  ]
+]
+
+---
+
+## Wozu benötige ich npm?
+
+- strukturierte Organisation von verwendeten Paketen
+- Verbreitung von Paketen
+- Auflösen von Abhängigkeiten
+
+---
+
+## Was ist eine package.json
+
+.flex[
+  .item[
+  - name und version Pflicht
+  - Trennung dev/production
+  - Script definierung
+  - einstiegs File "main"
+  ]
+  .item[.shrink.Right-aligned[
+  ``` json
+  {
+"name": "timesheetmanagement",
+"version": "0.0.0",
+"author": "dhaering <******>",
+"description": "LRT Client for timesheetmanagement",
+"license": "MIT",
+"main": "./dist/electron/main.js",
+"scripts": {
+  "build": "node .electron-vue/build.js && electron-builder",
+  "dev": "node .electron-vue/dev-runner.js",
+},
+"dependencies": {
+  "axios": "^0.16.1",
+  "bookshelf": "^0.13.3",
+  "sqlite3": "^4.0.0",
+  "vue": "^2.4.2",
+  "vue-electron": "^1.0.6",
+  "vuetify": "1.0.0",
+},
+"devDependencies": {
+  "babel-core": "^6.25.0",
+  "cross-env": "^5.0.5",
+  "electron": "^1.7.5",
+  "webpack": "^3.5.2",
+},
+}
+  ```
+  ]]
+]
+
+---
+
+## Was für Vorteile hat npm?
+
+- kein Suchen an unterschiedlichen Stellen
+- keine Sorgen um Abhängigkeiten
+- Definierung in verteilbarer Config-Datei
+- Skriptbefehle in Config integriert
+- Trennung von dev und production dependencies
+
+---
+
+## Was für Nachteile hat npm?
+
+- Meist viele Abhängigkeiten bei Projekten
+- Sicherheitslücken verbreiten sich auf vom Paket verwendete Projekte
+- Build-Probleme wenn verwendete Pakete nicht mehr funktionieren/existieren
+- unvorhergesehene Abhängigkeiten
+- native Pakete müssen evtl trotzdem manuell kompiliert werden
+
+---
+
+## Fazit
+
+NPM macht die Arbeit von Javascript Entwicklern in vielen Bereichen einfacher.<br>
+Egal ob klassisch clientseitig oder mit Node als Server. <br>
+Man sollte aber gut überlegen welche Pakete man wirklich braucht <br> und wie man reagiert wenn sie mal nicht mehr existieren<br>
+
+
+
+
+
+
+
+
+
+
+</textarea>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+	<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
