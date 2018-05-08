@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>NPM-Webpack</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:26px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 100%;
+        float: left;
+        padding-top: 1em;
+		background: white;
+		color: rgb(0, 139, 0);
+      }
+	  /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# NPM + Webpack
+
+### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
+####Rich Client Application Development<br/>Brunsmann
+
+---
+
+# Vorstellung NPM und Webpack
+
+- Was ist NPM?
+- Was ist Webpack?
+	    
+---
+# Webpack
+
+- Was ist Webpack?
+- Wozu Webpack?
+- Benutzung
+- Vorteile
+- Nachteile
+- Fazit
+
+---
+
+# Was ist Webpack?
+
+- Webpack dient dazu PAckete zu bündeln
+- Hauptzweck ist es, JavaScript-Dateien für die Verwendung im Browser zu bündeln
+- außerdem können Ressourcen transformiert, gebündelt oder gepackt werden
+
+---
+
+# Wozu Webpack?
+
+- strukturierte Organisation von verwendeten Dateien
+- organisiert Dateien und Bundles die zur Laufzeit geladen werden um z.B. initalie Ladezeiten zu reduzieren
+- Auflösen von Abhängigkeiten beim Kompilieren (verringert die Laufzeitgröße)
+- Vorverarbeitung von Dateien beim Kompilieren (TypeScript --> Javascript | image --> Base64 | etc.)
+
+---
+
+# Benutzung
+
+## Insatllation
+```
+npm install --save-dev webpack
+```
+oder
+```
+yarn add webpack --dev
+```
+
+
+
+</textarea>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+	<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
