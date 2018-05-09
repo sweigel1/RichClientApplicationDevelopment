@@ -23,8 +23,8 @@ font-weight: normal;
       }
 	  /* Two-column layout */
       .left-column {
-        color: #777;
-        width: 20%;
+        color: #000;
+        width: 50%;
         height: 92%;
         float: left;
       }
@@ -32,9 +32,24 @@ font-weight: normal;
           color: #000;
         }
       .right-column {
-        width: 75%;
+        width: 50%;
         float: right;
-        padding-top: 1em;
+      }
+	  img {
+        width: 95%;
+      }
+      .flex {
+        display: flex;
+      }
+      .item {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .center {
+        text-align: center;
+      }
+      .shrink {
+        transform: scale(0.8);
       }
 </style>
   </head>
@@ -54,7 +69,285 @@ class: center, middle
 
 - Was ist NPM?
 - Was ist Webpack?
-	    
+
+---
+
+# NPM
+
+- Was ist npm?
+- Wozu benötige ich npm?
+- Was ist eine package.json
+- Was für Vorteile hat npm?
+- Was für Nachteile hat npm?
+- Fazit
+
+---
+
+## Was ist npm?
+
+- früher auch node package manager
+- JavaScript Packet management tool
+- 3 Komponente:
+ 1. Website
+ 2. CLI
+ 3. Registry
+- Grobe Analogien:
+ - apt-get (linux)
+ - composer (php)
+ - maven (java)
+
+---
+
+## Website
+
+.flex[
+  .item[
+- Pakete durchsuchen
+- Pakete verwalten
+- Pakete veröffentlichen
+  ]
+  .item[
+    ![Right-aligned image](./npmWebsite.PNG)
+  ]
+]
+
+---
+
+## CLI
+Häufige Befehle
+
+- npm init
+- npm install <package name>
+- npm install <package name> -g(global)
+- npm uninstall <package name>
+- npm search <package name>
+
+---
+
+## Registry
+
+Bezeichnung für die Datenbank der JavaScript Pakete
+
+.flex[
+  .item[
+    Meist installierte Pakete:
+    1. broserify
+    2. grunt-cli
+    3. bowser
+  ]
+  .item[
+    Meist installierte Abhängigkeiten:
+    1. lodash
+    2. request
+    3. chalk
+  ]
+]
+
+---
+
+## Wozu benötige ich npm?
+
+- strukturierte Organisation von verwendeten Paketen
+- Verbreitung von Paketen
+- Auflösen von Abhängigkeiten
+
+---
+
+## Was ist eine package.json
+
+.flex[
+  .item[
+- name und version Pflicht
+- Trennung dev/production
+- Script definierung
+- einstiegs File "main"
+  ]
+  .item[.shrink.Right-aligned[
+  ``` json
+  {
+"name": "timesheetmanagement",
+"version": "0.0.0",
+"author": "dhaering <******>",
+"description": "LRT Client for timesheetmanagement",
+"license": "MIT",
+"main": "./dist/electron/main.js",
+"scripts": {
+  "build": "node .electron-vue/build.js && electron-builder",
+  "dev": "node .electron-vue/dev-runner.js",
+},
+"dependencies": {
+  "axios": "^0.16.1",
+  "bookshelf": "^0.13.3",
+  "sqlite3": "^4.0.0",
+  "vue": "^2.4.2",
+  "vue-electron": "^1.0.6",
+  "vuetify": "1.0.0",
+},
+"devDependencies": {
+  "babel-core": "^6.25.0",
+  "cross-env": "^5.0.5",
+  "electron": "^1.7.5",
+  "webpack": "^3.5.2",
+},
+}
+  ```
+  ]]
+]
+
+---
+
+## Was für Vorteile hat npm?
+
+- kein Suchen an unterschiedlichen Stellen
+- keine Sorgen um Abhängigkeiten
+- Definierung in verteilbarer Config-Datei
+- Skriptbefehle in Config integriert
+- Trennung von dev und production dependencies
+
+---
+
+## Was für Nachteile hat npm?
+
+- Meist viele Abhängigkeiten bei Projekten
+- Sicherheitslücken verbreiten sich auf vom Paket verwendete Projekte
+- Build-Probleme wenn verwendete Pakete nicht mehr funktionieren/existieren
+- unvorhergesehene Abhängigkeiten
+- native Pakete müssen evtl trotzdem manuell kompiliert werden
+
+---
+
+## Fazit
+
+NPM macht die Arbeit von Javascript Entwicklern in vielen Bereichen einfacher.<br>
+Egal ob klassisch clientseitig oder mit Node als Server. <br>
+Man sollte aber gut überlegen welche Pakete man wirklich braucht <br> und wie man reagiert wenn sie mal nicht mehr existieren<br>
+
+---
+
+# Webpack
+
+  .item[
+    ![Right-aligned image](./what-is-webpack.PNG)
+  ]
+.left-column[
+- Was ist Webpack?
+- Wozu Webpack?
+]
+.right-column[
+- Benutzung
+- Fazit
+]
+
+---
+
+# Was ist Webpack?
+
+- Webpack dient dazu Pakete zu bündeln
+- Hauptzweck ist es, JavaScript-Dateien für die Verwendung im Browser zu bündeln
+- außerdem können Ressourcen transformiert, gebündelt oder gepackt werden
+- Transpiler
+
+---
+
+# Wozu Webpack?
+
+- strukturierte Organisation von verwendeten Dateien
+- organisiert Dateien und Bundles die zur Laufzeit geladen werden um z.B. initiale Ladezeiten zu reduzieren
+- Auflösen von Abhängigkeiten beim Kompilieren (verringert die Laufzeitgröße)
+- Vorverarbeitung von Dateien beim Kompilieren (TypeScript --> Javascript | image --> Base64 | etc.)
+
+---
+
+# Features
+
+- File-loader
+- JSON-loader
+- Transpiling
+ - z.B. Babel, TypeScript, CoffeeScript, etc.
+- Templating
+ - z.B. HTML-NPM, Markdown, etc.
+- Styling
+ - z.B. CSS, LESS, SASS/SCSS, etc.
+- Frameworks
+ - Vue, Angular2,
+- Testing
+
+---
+
+# Benutzung
+
+## Insatllation
+
+- NPM:
+```
+npm install --save-dev webpack
+```
+- Yarn
+```
+yarn add webpack --dev
+```
+---
+# Benutzung
+
+## Konfiguration (Beispiel)
+
+- Bündelung von (JavaScript-) Dateien erfolgt meist über eine `config`-Datei
+
+```JavaScript
+module.exports = {
+  entry: ["./global.js", "./app.js"],
+  output: {
+    filename: "bundle.js"
+  }
+}
+```
+
+- In diesem Fall `global.js` und `app.js` zu `bundle.js`
+
+---
+# Benutzung
+
+## Konfiguration (Beispiel)
+
+- in der HTML-Datei muss dann nur `bundle.js` importiert werden
+
+```HTML
+<html>
+  <body>
+    <script src="bundle.js"></script>
+  </body>
+</html>
+```
+
+---
+
+# Benutzung
+
+- mit Webpack können auch sogenannte Loader verwendet werden
+- z.B.
+ - Babel
+ - JSHint
+ - etc.
+- Mit diesen Loadern wird dann der Code geladen und passend transformiert
+
+---
+
+# Vorteile
+
+- Konfiguration über eine Datei
+- Bundler und Build-System in einem
+- verkürtze Ladezeiten während der Laufzeit
+
+---
+
+# Fazit
+
+Webpack ist ein Module-Bundler und ein Build-System und kombiniert diese beiden Features.
+
+Webpack ermöglicht es dem Entwickler mehrere Dateien, Sprachen, Templates, etc. innerhalb eines Projekts über ein Programm bzw. eine Konfiguration zu verwalten.
+
+Sämtliche Abhängigkeiten können mittels Webpack importiert, manipuliert und am Ende ins finale Bundle gepackt werden.
+
 
 
 </textarea>
