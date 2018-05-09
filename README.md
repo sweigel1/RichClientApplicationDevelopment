@@ -27,14 +27,10 @@ Unser Projekt beinhaltet das Einlesen, Aufbereiten und Visualisieren von Luftdat
 Es können Werte nach Regionen, Städten und verschiedenen Bezirken nach Grad der Belastung angezeigt und analysiert werden.
 Bei einer Feinstaubbelastung zu einer gewissen Uhrzeit bei einem bestimmten Wert bekommt man eine Pushbenachrichtigung auf sein mobiles Endgerät.
 
-## LuftDATA-Control
-##### DieselNSA?
-
-Wir brauchen noch nen coolen Namen und natürlich auch einen inoffiziellen Arbeitstitel.
-Vorschläge hierhin:
+## Name?
 
 - APC - AirPollutionControl
-- ...
+- LuftDATA-Control
 - ...
 
 ### Anforderungen
