@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>SnaphotTesting</title>
+    <meta charset="utf-8">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+body { font-family: 'Droid Serif';}
+h1, h2, h3 {
+font-family: 'Yanone Kaffeesatz';
+font-weight: normal;
+}
+.remark-slide-content { font-size:26px; }
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.code-beispiel {
+        width: 90%;
+        float: right;
+        padding-top: 1em;
+		background: #272822;
+		color: rgb(0, 139, 0);
+      }
+	  /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 30%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 70%;
+        float: right;
+      }
+</style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Snapshot Testing
+
+### Daniel Haering Michael Frevert Gerrit Haake <br/> Felix Schilk Simeon Weigel
+####Rich Client Application Development<br/>Brunsmann
+
+
+
+---
+# Snapshot Testing React with Jest
+
+Was ist Snapshot Testing?
+
+- Jest rendert eine UI(User Interface) Komponente und speichert den Zustand in einer Momentaufnahme(snapshot)
+- Jest vergleicht aktuellen Zustand mit gespeicherten snapshots
+- Snapshot-Tests sind ein sehr nützliches Tool, wenn man sicherstellen möchte, dass sich die UI nicht unerwartet ändert
+- Komponenten müssen vor ersten Test schon funktionieren
+---
+# Snapshot Testing React with Jest
+
+## Einrichten von Jest
+Installation
+```javascript
+npm install react-test-renderer
+```
+Benötigter Import
+```javascript
+import renderer from 'react-test-renderer';
+```
+---
+# Snapshot Testing React with Jest
+- In einer funktionierender Komponente müssen folgende Codezeilen enthalten sein, damit Snapshots erstellt werden und der Test ausgeführt wird
+
+
+
+```javascript
+it('renders correctly', () => {
+  const tree = renderer.create(<App />).toJSON();//Rendern der Komponente
+  expect(tree).toMatchSnapshot(); //Vergleicht oder erstellt Snapshots
+});
+```
+Tests starten mit
+```javascript
+npm <App>
+```
+---
+# Beispiel eines SnapshotsFiles
+```javascript
+exports[`test renders a snapshot 1`] = `
+<div
+  className="App">
+  <div
+    className="App-header">
+    <img
+      alt="logo"
+      className="App-logo"
+      src="test-file-stub" />
+    <h2>
+      Welcome to React
+    </h2>
+  </div>
+  <p
+    className="App-intro">
+    To get started, edit
+    <code>
+      src/App.js
+    </code>
+     and save to reload.
+  </p>
+</div>
+`;
+});
+```
+---
+# Fehlgeschlagene Tests
+- Sollte sich der aktuelle Zustand der Komponente mit der in dem Snapshot gespeicherten Zustand unterscheiden, schlägt der Test fehl
+<img src="failedSnapshotTest.png" width="100%" height="auto" alt="failedSnapshotTest">
+---
+# Fehlgeschlagene Tests
+- In Grün wird der Zustand des letzten Snapshots angezeigt und in rot die des aktuellen Zustandes.
+	- 2 Möglichkeiten für das weitere Vorgehen:
+0. Updaten des Snaphots durch Eingabe -u (Snapshot wird auf aktuellen Stand aktualisiert)
+0. Interaktiven Modus benutzen um Snapshots entweder zu aktualisieren oder zu überspringen (Nächste Seite)
+---
+# Interaktiver Modus
+<img src="interactiveSnapshotUpdate.gif" width="100%" height="auto" alt="failedSnapshotTest">
+
+
+
+</textarea>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<script src="http://5tephen.com/slideshow/remark.min.js"></script>
+<script>
+var slideshow = remark.create({
+	countIncrementalSlides: false
+});
+</script>
+  </body>
+</html>
