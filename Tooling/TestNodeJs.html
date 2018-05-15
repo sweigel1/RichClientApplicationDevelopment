@@ -111,6 +111,68 @@ sinon
 - liefern wie Stubs festgelegte Daten zurück
 
 
+---
+
+# How to test nodejs apps - Testing
+
+Beispiel Stub: eingeloggter Benutzer 
+```js
+describe("getIndexPage", function() {
+  it("send hey when user is logged in", function() {...});
+  it("send something else when user is NOT logged in", function() {
+    let user = {isLoggedIn: function(){}}
+    
+	//Stub isLoggedIn function and make it return false always
+    const isLoggedInStub = sinon.stub(user, "isLoggedIn").returns(false);
+    //pass user into the req object
+    let req = {user: user}
+    
+	//Have `res` have a send key because we use `res.send()` in our function
+    //replace empty function with a spy
+    
+	let res = {send: sinon.spy()}
+    indexPage.getIndexPage(req, res);
+    //let's see what we get on res.send
+    //console.log(res.send); -> `res.send` called once
+    expect(res.send.calledOnce).to.be.true;
+    expect(res.send.firstCall.args[0]).to.equal("You need to log in");
+    // assert that the stub is logged in at least once
+    expect(isLoggedInStub.calledOnce).to.be.true;
+  })
+});
+```
+
+---
+
+# How to test nodejs apps - Testing
+
+Beispiel Mock: eingeloggter Benutzer 
+```js
+describe("getIndexPage", function() {
+  it("should send hey when user is logged in", function() {
+    //instantiate a user object with an empty isLoggedIn function
+    let user = {isLoggedIn: function(){}}
+    //Stub isLoggedIn function and make it return true always
+    const isLoggedInStub = sinon.stub(user, "isLoggedIn").returns(true);
+    //pass user into the req object
+    let req = {user: user}
+    //Have `res` have a send key because we use `res.send()` in our function
+    let res = {send: function(){}}
+    //mock res
+    const mock = sinon.mock(res);
+    //build how we expect it to work
+    mock.expects("send").once().withExactArgs("Hey");
+    indexPage.getIndexPage(req, res);
+    expect(isLoggedInStub.calledOnce).to.be.true;
+    //verify that mock works as expected
+    mock.verify();
+  });
+});
+```
+
+
+
+
 </textarea>
 	<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
