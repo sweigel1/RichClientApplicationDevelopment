@@ -59,7 +59,54 @@ class: center, middle
 0. Snapshot Testing react with jest
 	
 ---
-	    # Testing functional javascript
+# Testing functional javascript
+## functional javascript
+
+- besteht aus kleinen, wiederverwendbare und zusammensetzbare Funktionen
+- Die Funktionen haben nur eine spezifische Aufgabe und geben den Wert zurück für den selben Input jedesmal
+- So eine Funktion heißt pure function
+- pure functions machen es einfacher Unit Test zu schreiben
+---
+
+# Testing functional javascript
+## Testing
+
+- können in ein separates Dokument oder in ein "script" element auf der Seite
+```javascript
+describe("isPalindrome", () => {
+	it("returns true if the string is a palindrome", () => {
+		expect(isPalindrome("abba")).toEqual(true);
+		});
+	});
+```
+- erzeugt bei Aufruf einen Fehler, da die Funktion "isPalindrome()" nicht implementiert ist
+
+```js
+const isPalindrome = (str) => true;
+```
+- Mit der Implementierung dieser Funktion und Neuaufruf ist der Test erfolgreich
+---
+# Testing functional javascript
+## Testing
+```js
+describe("isPalindrome",()=>{
+	it("returns true if the string is a palindrome", () => {
+		expect(isPalindrome("abba")).toEqual(true);
+	});
+	it("return false if the string isn't a palindrome",() => {
+		expect(isPalindrome("Bubba")).toEqual(false);
+	});
+});
+```
+
+- Erweiterung des ersten Tests um einen Test der ein Problem ausgibt
+- Die zuprüfende Funktion gibt nur true zurück und kein false und muss erweitert werden
+		
+```js
+const isPalindrome = (str) =>{
+	return str.split("").reverse().join("") === str;
+};
+```
 ---
 
 # How to test nodejs apps using mocha chai and sinonjs
