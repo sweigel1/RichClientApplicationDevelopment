@@ -37,3 +37,4 @@
 - [ ] Datenbank aufbauen (Couch/Pouch DB)
 - [ ] Serververbindung
 - [ ] PWA implementieren
+- [ ] Grafische Darstellung von Daten (Highchart, ChartJS, etc.)
