@@ -7,7 +7,7 @@
 |Simeon Weigel | Projektleitung |
 |Felix Schilk | Raspberry|
 |Michael Frevert | Backend|
-|Gerrit Haake | Backend|
+|Gerrit Haake | Frontend|
 |Daniels Haering | Frontend|
 
 ## ToDo
