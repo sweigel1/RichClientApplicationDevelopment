@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Air Quality at Home</title>
+    <style>
+      body { background: lightgray; }
+      nav { text-align: center; color: gray; }
+      nav a:link, nav a:visited { color: #555; }
+      ul.graphs { list-style-type: none; text-align: center; }
+      ul.graphs li { margin-bottom: 1em; }
+      ul.graphs img { height: 249px; width: 641px; }
+      footer p { text-align: right; color: darkgray; }
+    </style>
+  </head>
+  <body>
+    <nav>Time span:
+      <a href="#1d">1d</a> |
+      <a href="#1w">1w</a> |
+      <a href="#1m">1m</a>
+    </nav>
+    <ul class="graphs">
+      <li>
+        <img data-name="temp" src="graph/temp-1d.svg" alt="Graph for temperature." />
+      </li><li>
+        <img data-name="humi" src="graph/humi-1d.svg" alt="Graph for humidity." />
+      </li><li>
+        <img data-name="dust" src="graph/dust-1d.svg" alt="Graph for dust density." />
+      </li>
+    </ul>
+    <footer>
+      <p>Data source: DHT22 (temperature &amp; humidity), GP2Y1010AU0F (dust).</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+      $(document).ready(function () {
+      });
+
+      $(window).on('hashchange', function() {
+        var time = (location.hash.replace(/^#/, "") || "1d");
+        $('img').each(function () {
+          var $img = $(this);
+          var src = "graph/" + $img.data('name') + "-" + time + ".svg";
+          console.log(src);
+          $img.attr('src', src);
+        });
+      });
+    </script>
+  </body>
+</html>
