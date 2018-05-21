@@ -7,7 +7,7 @@
 
 
 ## Inhaltsverzeichnis
-   [1.	EINFÜHRUNG](#3-Technische-Beschreibung)	
+   [1.	EINFÜHRUNG](#Einführung)	
  
  
             1.1 BESCHREIBUNG	
@@ -36,8 +36,8 @@
             5.3	INDEX	
 
 
-# 1 Einführung
-### My Multi Word Header
+# Einführung
+
 ## 1.1 Beschreibung
 Unser Projekt  **APC – AirPollutionControl** beinhaltet das Einlesen, Aufbereiten und Visualisieren von Luftdaten. Verschiedene Personen in Deutschland lesen über einen Raspberry Pi Daten von einem Luftsensor ein und und können diese auf einem Server aufarbeiten, ansehen und bearbeiten. Zusätzlich zu diesen selbst eingearbeiteten Daten greifen wir auf eine zentrale Datenbank von Deutschland zu. Es können Werte nach Regionen, Städten und verschiedenen Bezirken nach Grad der Belastung angezeigt und analysiert werden. Bei einer Feinstaubbelastung zu einer gewissen Uhrzeit bei einem bestimmten Wert bekommt man eine Pushbenachrichtigung auf sein mobiles Endgerät.
 
@@ -88,7 +88,7 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 |:-----|:----------:|:-------------------|:-------------|:---------|:----------------|
 | Lernen  |Benutzer| bei Fehleingabe die Lösung angezeigt bekommen|ich lernen kann| Lösung wird angezeigt | Muss |
 
-# Foo
+
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
