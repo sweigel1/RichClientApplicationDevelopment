@@ -2,35 +2,32 @@
 ![APC Titelbild](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Titelbild.png)
 
 
-[Einführung](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#einf%C3%BChrung)
-
-
-
 ## Inhaltsverzeichnis
-            1.1 BESCHREIBUNG	
-            1.2 ZIELE	
-    2.	ANFORDERUNGEN	
-            2.1 FUNKTIONALE ANFORDERUNGEN	
-            2.2 NICHT-FUNKTIONALE ANFORDERUNGEN	
-                2.2.1 Rahmenbedingungen	
-                2.2.2 Betriebsbedingungen	
-                2.2.3 Qualitätsmerkmale	
-            2.3 GRAPHISCHE BENUTZERSCHNITTSTELLE	
-            2.4 ANFORDERUNGEN IM DETAIL	
-    3.	TECHNISCHE BESCHREIBUNG	
-            3.1 SYSTEMÜBERSICHT	
-            3.2 SOFTWAREARCHITEKTUR	
-            3.3 DATENMODELL
-            3.4	ABLÄUFE	
-            3.5	ENTWURF	
-    4 	PROJEKTORGANISATION	
-            4.1	ANNAHMEN	
-            4.2	VERANTWORTLICHKEITEN	
-            4.3	GROBER PROJEKTPLAN	
-    5	ANHÄNGE	
-            5.1 GLOSSAR	
-            5.2 REFERENZEN	
-            5.3	INDEX	
+ 1. [Einführung](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#einf%C3%BChrung)  
+ 1.1 Beschreibung  
+ 1.2 Ziele  
+ 2. [Anforderungen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#2-anforderungen)  
+ 2.1 Funktionale Anforderungen  
+ 2.2 Nicht-funktionale-Anforderungen  
+             2.2.1 Rahmenbedingungen  
+             2.2.2 Betriebsbedingungen  
+             2.2.3 Qualitätsmerkmale  
+ 2.3 Graphische Benutzerschnittstelle  
+ 2.4 Anforderungen im Detail  
+ 3. [Technische Beschreibung](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#3-technische-beschreibung)  
+             3.1 Systemübersicht  
+             3.2 Softwarearchitektur  
+             3.3 Datenmodell  
+             3.4	Abläufe  
+             3.5	Entwurf  
+ 4. [Projektorganisation](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#4-projektorganisation)  
+             4.1	Annahmen  
+             4.2	Verantwortlichkeiten  
+             4.3	Grober Projektplan  
+ 5. [Anhänge](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#5-anh%C3%A4nge)  
+             5.1 Glossar  
+             5.2 Referenzen  
+             5.3 Index  
 
 
 # Einführung
@@ -116,10 +113,33 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 
 ## 4.2 Verantwortlichkeiten
     - Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
-    - Rollendefinition und Zuordnung
+# Rollenzuordnung
+
+|Name | Fachgebiet|
+|-----|-----------|
+|Simeon Weigel | Projektleitung |
+|Felix Schilk | Raspberry|
+|Michael Frevert | Backend|
+|Gerrit Haake | Frontend|
+|Daniels Haering | Frontend|
 
 ## 4.3 Grober Projektplan
-    - Meilensteine
+# Meilensteine
+|Meilenstein | Datum|
+|-----|-----------|
+|Pflichtenheft , Server, Sensorhardware | 24.05.2018 |
+|Sensorhardware | 24.05.2018 |
+|Server | 24.05.2018 |
+|GUI-Komponenten |07.06.2018|
+|Server (Node und DB) |07.06.2018|
+|Datenauslesen |07.06.2018|
+|Daten cachen |14.06.2018|
+|GUI-Komponenten zusammengefügt |14.06.2018|
+|Daten senden |21.06.2018|
+|PWA |21.06.2018|
+|Connection Raspberry-Server |28.06.2018|
+|Datenbank Frontend <--> Backend |28.06.2018|
+|Fertigstellung | 09.07.2018 |
 
 # 5 Anhänge
 
