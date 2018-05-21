@@ -1,4 +1,8 @@
 # Pflichtenheft APC - AirPollutionControl
+![APC Titelbild](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Titelbild.png)
+
+
+
 ## Inhaltsverzeichnis
 
     1.	EINFÜHRUNG	
