@@ -1,6 +1,32 @@
-# Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
+# Pflichtenheft APC - AirPollutionControl
+## Inhaltsverzeichnis
 
-Titel, Autoren, (Inhaltsverzeichnis)
+    1.	EINFÜHRUNG	
+        1.1 BESCHREIBUNG	
+        1.2 ZIELE	
+    2.	ANFORDERUNGEN	
+        2.1 FUNKTIONALE ANFORDERUNGEN	
+        2.2 NICHT-FUNKTIONALE ANFORDERUNGEN	
+            2.2.1 Rahmenbedingungen	
+            2.2.2 Betriebsbedingungen	
+            2.2.3 Qualitätsmerkmale	
+        2.3 GRAPHISCHE BENUTZERSCHNITTSTELLE	
+        2.4 ANFORDERUNGEN IM DETAIL	
+    3.	TECHNISCHE BESCHREIBUNG	
+        3.1 SYSTEMÜBERSICHT	
+        3.2 SOFTWAREARCHITEKTUR	
+        3.3 DATENMODELL
+        3.4	ABLÄUFE	
+        3.5	ENTWURF	
+    4 	PROJEKTORGANISATION	
+        4.1	ANNAHMEN	
+        4.2	VERANTWORTLICHKEITEN	
+        4.3	GROBER PROJEKTPLAN	
+    5	ANHÄNGE	
+        5.1 GLOSSAR	
+        5.2 REFERENZEN	
+        5.3	INDEX	
+
 
 # 1 Einführung
 
