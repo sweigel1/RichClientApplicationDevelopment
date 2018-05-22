@@ -58,7 +58,20 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 ## 2.3 Graphische Benutzerschnittstelle
     - GUI-Mockups passend zu User Stories
     - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
-
+### Mockup zur User Storie(ID 1)
+![GuiMockup1](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/APIList.png)
+### Mockup zur User Storie(ID 2)
+![GuiMockup2](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20API.png)
+### Mockup zur User Storie(ID 4)
+![GuiMockup4](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/SensorList.png)
+### Mockup zur User Storie(ID 5)
+![GuiMockup5](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20Sensor.png)
+### Mockup zur User Storie(ID 6)
+![GuiMockup6](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Dashboard.png)
+### Mockup zur User Storie(ID 7)
+![GuiMockup7-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Loginpage.png)
+### Mockup zur User Storie(ID 8)
+![GuiMockup8-Sensoreinstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Sensoreinstellungen.png)
 ## 2.4 Anforderungen im Detail
     - User Stories mit Akzeptanzkritierien 
     - Optional: Name (oder ID) und Priorität ("Must", "Should", "Could", "Won't")
