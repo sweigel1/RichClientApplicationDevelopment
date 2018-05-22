@@ -78,8 +78,8 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 | 10 |Benutzer| Daten, die ich offline gemessen habe, nachträglich mit Standortdaten eintragen(GoogleMapApi)   | die Daten im System gespeichert werden  | die Daten korrekt gespeichert und visualisiert werden | Sollte |
 | 11 |Benutzer| bei kleineren Problemen eine Hilfeseite aufrufen können  | ich mein Problem ggbf. lösen kann | Hilfestellung ausreichend dokumentiert ist | Sollte |
 | 12 |Benutzer| auch offline auf meine Daten zugreifen können  | ich diese im Dashboard angezeigt bekomme | die Daten korrekt angezeigt werden | Sollte |
-| 13 |Entwickler| auf die Daten zugreifen, die auf dem Server gespeichert sind| ich bei Problemen ggbf. nachhelfen kann | Sollte |
-| 14 |Entwickler| nach Zustimmung des Nutzers auf die Registrierungsdaten zugreifn können| ich diese bei Problemem einsehen kann | Sollte |
+| 13 |Entwickler| auf die Daten zugreifen, die auf dem Server gespeichert sind| ich bei Problemen ggbf. nachhelfen kann | Daten können eingesehen und bearbeitet werden| Sollte |
+| 14 |Entwickler| nach Zustimmung des Nutzers auf die Registrierungsdaten zugreifen können| ich diese bei Problemem einsehen kann | man die Daten ändern kann | Sollte |
 
 # 3 Technische Beschreibung
 
