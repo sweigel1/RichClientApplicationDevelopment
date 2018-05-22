@@ -72,6 +72,12 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 ![GuiMockup7-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Loginpage.png)
 ### Mockup zur User Storie(ID 8)
 ![GuiMockup8-Sensoreinstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Sensoreinstellungen.png)
+
+### Zustandsdiagramm Mockups
+![Zustandsdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Zustandsdiagramm_Mockups.png)
+
+
+
 ## 2.4 Anforderungen im Detail
     - User Stories mit Akzeptanzkritierien 
     - Optional: Name (oder ID) und Priorität ("Must", "Should", "Could", "Won't")
