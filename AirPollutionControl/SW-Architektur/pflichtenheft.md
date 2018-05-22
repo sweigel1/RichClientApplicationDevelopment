@@ -43,6 +43,14 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 ## 2.1 Funktionale Anforderungen
     - Use-Case Diagramme
     - Strukturierung der Diagramme in funktionale Gruppen
+### USE-Case-Diagramme
+![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_USE_CASE.png)    
+![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_USE_CASE2.png)    
+![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_USE_CASE3.png)    
+    
+
+
+
 
 ## 2.2 Nicht-funktionale Anforderungen 
 
