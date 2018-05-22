@@ -1,0 +1,62 @@
+.glass::before {
+    filter: blur(5px);
+    background-size: cover;
+    opacity: 0.9;
+    z-index: 0;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/blur-bg.jpg);
+    background-attachment: fixed;
+    filter: blur(3px) drop-shadow(1px 1px 2px black);
+    /* transform: scale(1.03); */
+    top:0px;
+    left:0px;
+
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.6);
+    min-height: 150px;
+    opacity: 1.0;
+    color: white;
+    margin: 1rem; 
+    padding: 0rem; 
+    
+}
+.glass:hover {
+    background-color: rgba(0,150,136 ,1);
+    cursor: pointer;
+}
+
+.title {
+   
+    font-weight: bold;
+}
+.subtitle {
+   
+    margin-top: -10px;
+    font-weight: lighter;
+}
+
+.sensor-image {
+    max-height: 120px;
+    max-width: 100px;
+    width: auto;
+}
+
+.time-label {
+    font-size: 12px;
+    padding:0;
+}
+
+.glass > .card-body {
+    background-color: rgba(255, 255, 255, 1);
+    color: white;
+}
+
+.card-header {
+    color: white;
+}
