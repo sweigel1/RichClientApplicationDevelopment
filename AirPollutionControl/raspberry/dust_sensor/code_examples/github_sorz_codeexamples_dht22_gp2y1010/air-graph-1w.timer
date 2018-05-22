@@ -1,0 +1,10 @@
+[Unit]
+Description=Redraw air graphs.
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=3h
+Unit=air-graph@1w.service
+
+[Install]
+WantedBy=multi-user.target

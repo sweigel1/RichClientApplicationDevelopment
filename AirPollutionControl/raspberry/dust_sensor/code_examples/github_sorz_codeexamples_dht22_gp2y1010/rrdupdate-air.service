@@ -1,0 +1,11 @@
+[Unit]
+Description=Run rrdupdate for air data collecting.
+
+[Service]
+Type=simple
+ExecStart=/home/xierch/arduino/arduino-uart.py
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

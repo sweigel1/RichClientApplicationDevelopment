@@ -1,0 +1,8 @@
+[Unit]
+Description=Execute a script to (re)draw RRD graphs once.
+
+[Service]
+Type=simple
+User=xierch
+Group=xierch
+ExecStart=/home/xierch/arduino/graph.sh %i
