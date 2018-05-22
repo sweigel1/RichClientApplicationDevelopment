@@ -64,24 +64,22 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
     - Optional: Name (oder ID) und Priorität ("Must", "Should", "Could", "Won't")
     - Strukturierung der User Stories in funktionale Gruppen
 
-### Schablone für User Stories
-
-| **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
-| :------ | :----- | :------ | :-------- |
-| Wer | Was | Warum | Wann akzeptiert |
-
-### Beispiel 1
-
-| **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
-| :------ | :----- | :------ | :-------- |
-| Benutzer | bei Fehleingabe die Lösung angezeigt bekommen | ich lernen kann | Lösung wird angezeigt |
-
-### Beispiel 2
-
-| **Name**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
+| **ID**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
 |:-----|:----------:|:-------------------|:-------------|:---------|:----------------|
-| Lernen  |Benutzer| bei Fehleingabe die Lösung angezeigt bekommen|ich lernen kann| Lösung wird angezeigt | Muss |
-
+| 1  |Benutzer| unter dem Reiter Externe Apis alle meine eingebundenen APIS in einer Übersicht aufgelistet haben|ich eine Übersicht meiner APIs habe | APIs korrekt aufgelistet und eingebunden sind | Muss |
+| 2  |Benutzer| eine neue API hinzufügen| diese später in meiner Übersicht zu sehen ist| API korrekt gespeichert und aufgelistet | Muss |
+| 3  |Benutzer| eine neue API hinzufügen| ich Daten von dieser API nutzen kann| Daten korrekt gespeichert und eingearbeitet sind | Muss |
+| 4  |Benutzer| unter dem Reiter Sensoren alle meine eingerichteten Sensoren in einer Übersicht aufgelistet haben | Sensoren korrekt aufgelistet | Muss |
+| 5  |Benutzer| eine neuen Sensor hinzufügen und einrichten können | der Sensor in meiner Übersicht zu sehen ist | Sensor korrekt gespeichert und aufgelistet | Muss |
+| 6  |Benutzer| auf dem Dashboard eine grafische Übersicht der Messdaten meiner Sensoren sehen  | ich den Grad der Luftverschmutzung direkt einsehen kann | Daten korrekt visualisiert und eingelesen sind | Muss |
+| 7  |Benutzer| mich auf der Startsteite(Loginpage) mit meinem Benutzernamen und meinem Passwort anmelden können  | ich auf dem Dashboard meine aktuellen Messdaten grafisch aufbereitet ansehen kann | nach verifiziertem Login das Dashboard angezeigt wird | Muss |
+| 8  |Benutzer| unter dem Menü Einstellungen(Nach Auwahl eines Sensors) die Konfiguration des Sensors ändern (Verbindungsinertervall mit dem Server, Name, Bild)   | die Einstellungen geändert werden | die Einstellungen korrekt gespeichert werden | Muss |
+| 9  |Benutzer| unter dem Menü Einstellungen(Nach Auwahl eines Sensors) einen Grenzwert für die Luftbelastung einstellen können   | ich eine Pushmitteilung auf meinem mobilen Endgerät erhalte | die Push-Mitteilung beim Erreichen des eingestellten Grenzwertes auf meinem mobilen Endgerät angezeigt wird | kann |
+| 10 |Benutzer| Daten, die ich offline gemessen habe, nachträglich mit Standortdaten eintragen(GoogleMapApi)   | die Daten im System gespeichert werden  | die Daten korrekt gespeichert und visualisiert werden | Sollte |
+| 11 |Benutzer| bei kleineren Problemen eine Hilfeseite aufrufen können  | ich mein Problem ggbf. lösen kann | Hilfestellung ausreichend dokumentiert ist | Sollte |
+| 12 |Benutzer| auch offline auf meine Daten zugreifen können  | ich diese im Dashboard angezeigt bekomme | die Daten korrekt angezeigt werden | Sollte |
+| 13 |Entwickler| auf die Daten zugreifen, die auf dem Server gespeichert sind| ich bei Problemen ggbf. nachhelfen kann | Sollte |
+| 14 |Entwickler| nach Zustimmung des Nutzers auf die Registrierungsdaten zugreifn können| ich diese bei Problemem einsehen kann | Sollte |
 
 # 3 Technische Beschreibung
 
