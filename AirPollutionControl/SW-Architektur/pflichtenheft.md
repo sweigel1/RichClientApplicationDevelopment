@@ -79,7 +79,7 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 ### Mockup zur User Storie(ID 7)
 ![GuiMockup7-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Login.png)
 ### Mockup zur User Storie(ID 11)
-![GuiMockup7-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Einstellungen.png)
+![GuiMockup8-Einstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Einstellungen.png)
 
 ### Zustandsdiagramm Mockups
 ![Zustandsdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Zustandsdiagramm_Mockups.png)
