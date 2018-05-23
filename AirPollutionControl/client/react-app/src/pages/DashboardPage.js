@@ -14,25 +14,24 @@ export default class DashboardPage extends React.Component {
     }
     render() {
         return (
-            <div>
-                <div className="container">
+            <div className="full-height">
+                
                     <div className="row">
                         <div className="col-md-3 col-sm-6 col-xs-12">
-                            <Panel title="Einstellungen">
-
-                            </Panel>
+                            <Panel title="Einstellungen"/>
                         </div>
                         <div className="col-md-3 col-sm-6 col-xs-12">
-                          
+                            <Panel title="Einstellungen"/>
                         </div>
                         <div className="col-md-3 col-sm-6 col-xs-12">
-                           
+                            <Panel title="Einstellungen"/>
                         </div>
-                        <div className="col-md-3 col-sm-6 col-xs-12" style={{ alignSelf: 'center' }} >
-                            <button className="btn btn-primary btn-circle btn-xl" ><i className="fas fa-plus"></i></button>
+                        <div className="col-md-3 col-sm-6 col-xs-12">
+                            <Panel title="Einstellungen"/>
                         </div>
+                        
                     </div>
-                </div>
+                
             </div>
 
         )

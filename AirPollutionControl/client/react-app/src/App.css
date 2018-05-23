@@ -113,3 +113,13 @@
 .full-width {
   width: 100%;
 }
+
+.content {
+  height: calc( 100vh - 80px);
+  padding: 1px;
+}
+
+.content-view {
+  margin: 1rem;
+  height: calc(100% - 2rem);
+}
