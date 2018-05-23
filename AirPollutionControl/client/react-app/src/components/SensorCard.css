@@ -2,7 +2,7 @@
     filter: blur(5px);
     background-size: cover;
     opacity: 0.9;
-    z-index: 0;
+    z-index: -99;
     display: block;
     position: absolute;
     content: '';
@@ -17,13 +17,19 @@
 
 }
 
+.card-body {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+
 .glass {
     background-color: rgba(255, 255, 255, 0.6);
     min-height: 150px;
     opacity: 1.0;
     color: white;
     margin: 1rem; 
-    padding: 0rem; 
+    padding: 0rem;
+    z-index: -100;
     
 }
 .glass:hover {

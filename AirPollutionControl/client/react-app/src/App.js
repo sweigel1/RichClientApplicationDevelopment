@@ -18,6 +18,7 @@ import Header from './components/Header';
 
 import SensorPage from './pages/SensorPage';
 import DashboardPage from './pages/DashboardPage';
+import OptionsPage from './pages/OptionsPage';
 
 
 const routes = [
@@ -31,8 +32,8 @@ const routes = [
     component: SensorPage
   },
   {
-    path: "/shoelaces",
-    component: () => <h2>Shoelaces</h2>
+    path: "/options",
+    component: OptionsPage
   }
 ];
 
@@ -91,19 +92,22 @@ class App extends Component {
                   sidebarClassName="sidebar"
         >
         <Header></Header>
-        {routes.map((route, index) => (
-          // Render more <Route>s with the same paths as
-          // above, but different components this time.
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            component={route.component}
-          />
-        ))}
-          </Sidebar>
-       
+          <div className="content">
+            <div className="content-view">
+              {routes.map((route, index) => (
+                // Render more <Route>s with the same paths as
+                // above, but different components this time.
+                <Route
+                  key={index}
+                  path={route.path}
+                  exact={route.exact}
+                  component={route.component}
+                />
+              ))}
+            </div>
+          </div>
         
+        </Sidebar>
       </div>
       </Router>
     );
