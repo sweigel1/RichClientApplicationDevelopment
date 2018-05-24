@@ -109,9 +109,9 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 | 13 |Benutzer| auch offline auf meine Daten zugreifen können  | ich diese im Dashboard angezeigt bekomme | die Daten korrekt angezeigt werden | Sollte |
 | 14 |Entwickler| auf die Daten zugreifen, die auf dem Server gespeichert sind| ich bei Problemen ggbf. nachhelfen kann | Daten können eingesehen und bearbeitet werden| Sollte |
 | 15 |Entwickler| nach Zustimmung des Nutzers auf die Registrierungsdaten zugreifen können| ich diese bei Problemem einsehen kann | man die Daten ändern kann | Sollte |
-| 16  |Entwickler| neue Benutzer mit Benutzernamen und Passwort regisitrieren können  | der User sich danach einloggen kann | Benutzer erfolgreich angelegt | Muss |
-| 17 |Benutzer| mich ausloggen können | ich wieder auf dem Loginbildschirm lande | user korrekt ausgeloggt und weitergeleitet | Muss |
-| 18 |Benutzer| das Programm beenden können | sich das Programm beendet und mich korrekt ausloggt | user korrekt ausgeloggt und Programm beendet | Muss |
+| 16  |Entwickler| neue Benutzer mit Benutzernamen und Passwort regisitrieren können  | der Benutzer sich danach einloggen kann | Benutzer erfolgreich angelegt | Muss |
+| 17 |Benutzer| mich ausloggen können | ich wieder auf dem Loginbildschirm lande | Benutzer korrekt ausgeloggt und weitergeleitet | Muss |
+| 18 |Benutzer| das Programm beenden können | sich das Programm beendet und mich korrekt ausloggt | Benutzer korrekt ausgeloggt und Programm beendet | Muss |
 
 # 3 Technische Beschreibung
 
