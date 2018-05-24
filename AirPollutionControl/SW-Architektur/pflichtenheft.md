@@ -72,7 +72,7 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 ![GuiMockup2](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20API.png)
 ### Mockup zur User Storie(ID 4)
 ![GuiMockup4](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/SensorList.png)
-### Mockup zur User Storie(ID 5/9/10)
+### Mockup zur User Storie(ID 5/9)
 ![GuiMockup5](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20Sensor.png)
 ### Mockup zur User Storie(ID 6)
 ![GuiMockup6](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Dashboard.png)
