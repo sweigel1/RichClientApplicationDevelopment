@@ -1,14 +1,13 @@
 import time
 import json
+import os
 
 class JsonFile:
     'Makes a File with Timestamp as name and fills it with Json'
     filename = ""
-    timestamp = 0
 
     def __init__(self, filename = "queue.json"):
         self.filename = filename
-        self.timestamp = int(time.time())
         
     def initFile(self):
         try:
@@ -16,8 +15,13 @@ class JsonFile:
         except IOError:
             fo = open(self.filename, "w")
             fo.write("{}")
-        #fileObject.write("{\n\tTimestamp: %i\",\n\tTest2: \"Json halt :)\"\n}" % (self.timestamp))
         return fo.close()
+    
+    
+    def deleteFile(self):
+        print "x"
+            
+        
         
     
     def getJson(self):
@@ -33,7 +37,7 @@ class JsonFile:
         return jsonPython
             
     
-    def addFetch(self, humidity, temperature, dust):
+    def addFetch(self, humidity, temperature, dust, ts = "0"):
         ts = int(time.time())
         try:
             float(humidity)
@@ -44,7 +48,6 @@ class JsonFile:
             humidity = temperature = dust = dummy
             
         json2add_str = ("{\"%i\" : {\"humidity\" : \"%f\", \"temperature\" : \"%f\", \"dust\" : \"%f\"}}" % (ts, humidity, temperature, dust))
-        #json2add_str = ("{{\"id\" : \"%i\",\"humidity\" : \"%f\", \"temperature\" : \"%f\"}}" % (ts, humidity, temperature))
         #print(json2add_str)
         json2add = json.loads(json2add_str)
         #print(json2add)
