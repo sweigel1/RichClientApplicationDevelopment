@@ -126,7 +126,7 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 ### Aktivitätsdiagramm API Hinzufügen
 ![Aktivitätsdiagramm API hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_API_Hinzuf%C3%BCgen.png)
 ### Aktivitätsdiagramm Sensor Hinzufügen
-![Aktivitätsdiagramm Sensor hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_API_Hinzuf%C3%BCgen.png)
+![Aktivitätsdiagramm Sensor hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_SensorHinzuf%C3%BCgen.png)
 
 
 
