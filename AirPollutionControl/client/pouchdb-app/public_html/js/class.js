@@ -15,7 +15,7 @@ class ApcDatabase {
         this.dbport = dbport;
         this.pouchDB = new PouchDB(dbname);
         this.remoteDB = 'http://' + dbuser + ':' + dbpassword + '@' + dbhost + ':5984/' + dbname;
-        this.data;
+        this.data = " ";
         this.logging = true;
     }
 
@@ -49,29 +49,18 @@ class ApcDatabase {
         this.pouchDB.allDocs({
             include_docs: true,
             attachments: true
-        }).then(function (result) {
-            // normally set dataRows(result.rows)
-            if(logging) {
-                console.log(result.rows);
-            }
-        }).catch(function (err) {
-            if(logging) {
-                console.log(result.rows);
-            }
+        }).then( (result) => {
+            this.data = result.rows;
+        }).catch((err) => {
+            this.synclogger(err);
         });
     }
 
     deleteRowByID(id) {
-        this.pouchDB.get(id).then(function (doc) {
+        this.pouchDB.get(id).then((doc) => {
             this.pouchDB.remove(doc);
-            if(logging) {
-                console.log(result.rows);
-            }
-        }).catch(function (err) {
-            console.log(err);
-            if(logging) {
-                console.log(result.rows);
-            }
+        }).catch( (err) => {
+            this.syncError(err);
         });
         
     }
