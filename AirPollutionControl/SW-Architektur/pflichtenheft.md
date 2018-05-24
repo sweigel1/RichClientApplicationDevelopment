@@ -2,7 +2,7 @@
 
 
 ## Inhaltsverzeichnis
- 1. [Einführung](pflichtenheft.md#Einführung)
+ 1. [Einführung](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#1-einführung)
  1.1 Beschreibung  
  1.2 Ziele  
  2. [Anforderungen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#2-anforderungen)  
