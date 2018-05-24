@@ -9,3 +9,7 @@ Grove Dust Sensor PPD42NS
 https://github.com/otonchev/grove_dust
 
 https://www.seeedstudio.com/Grove-Dust-Sensor%EF%BC%88PPD42NS%EF%BC%89-p-1050.html
+
+
+USB Sensor
+https://zefanjas.de/wie-man-feinstaub-mit-einem-raspberry-pi-messen-kann/

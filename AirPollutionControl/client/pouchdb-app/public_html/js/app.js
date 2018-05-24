@@ -31,6 +31,7 @@
         db.allDocs({include_docs: true, descending: true}, function (err, doc) {
             console.log(doc.rows);
         });
+        
     }
 
     function deleteReading(reading) {
