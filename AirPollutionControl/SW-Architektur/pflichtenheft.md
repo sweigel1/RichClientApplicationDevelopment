@@ -40,8 +40,6 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 # 2 Anforderungen
 
 ## 2.1 Funktionale Anforderungen
-    - Use-Case Diagramme
-    - Strukturierung der Diagramme in funktionale Gruppen
 ### USE-Case-Diagramme
 ![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_USE_CASE.png)    
 ![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_USE_CASE2.png)    
@@ -63,20 +61,18 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
     - Externe Qualitätsanforderungen (z.B. Performance, Sicherheit, Zuverlässigkeit, Benutzerfreundlichkeit)
 
 ## 2.3 Graphische Benutzerschnittstelle
-    - GUI-Mockups passend zu User Stories
-    - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
 ### Mockup zur User Storie(ID 1)
-![GuiMockup1](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/APIList.png)
+![GuiMockup1-API-Übersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/APIList.png)
 ### Mockup zur User Storie(ID 2)
-![GuiMockup2](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20API.png)
+![GuiMockup2-neueAPI](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20API.png)
 ### Mockup zur User Storie(ID 4)
-![GuiMockup4](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/SensorList.png)
+![GuiMockup4-Sensorübersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/SensorList.png)
 ### Mockup zur User Storie(ID 5/9)
-![GuiMockup5](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20Sensor.png)
+![GuiMockup5-NeuerSensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20Sensor.png)
 ### Mockup zur User Storie(ID 8)
-![GuiMockup6](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Sensor%20Notifications.png)
+![GuiMockup6-SensorNotfifications](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Sensor%20Notifications.png)
 ### Mockup zur User Storie(ID 6)
-![GuiMockup7](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Dashboard.png)
+![GuiMockup7-Dashboard](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Dashboard.png)
 ### Mockup zur User Storie(ID 7)
 ![GuiMockup8-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Login.png)
 ### Mockup zur User Storie(ID 10)
@@ -88,10 +84,6 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 
 
 ## 2.4 Anforderungen im Detail
-    - User Stories mit Akzeptanzkritierien 
-    - Optional: Name (oder ID) und Priorität ("Must", "Should", "Could", "Won't")
-    - Strukturierung der User Stories in funktionale Gruppen
-
 | **ID**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
 |:-----|:----------:|:-------------------|:-------------|:---------|:----------------|
 | 1  |Benutzer| unter dem Reiter Externe Apis alle meine eingebundenen APIS in einer Übersicht aufgelistet haben|ich eine Übersicht meiner APIs habe | APIs korrekt aufgelistet und eingebunden sind | Muss |
@@ -127,8 +119,17 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
     - Konzeptionelles Analyseklassendiagramm
 
 ## 3.4 Abläufe
-    - Aktivitätsdiagramme für relevante Use Cases
-    - Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
+### Aktivitätsdiagramm Gesamt
+![Aktivitätsdiagramm Gesamt](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_Gesamt.png)
+### Aktivitätsdiagramm Login
+![Aktivitätsdiagramm Login](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_Login.png)
+### Aktivitätsdiagramm API Hinzufügen
+![Aktivitätsdiagramm API hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_API_Hinzuf%C3%BCgen.png)
+### Aktivitätsdiagramm Sensor Hinzufügen
+![Aktivitätsdiagramm Sensor hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_API_Hinzuf%C3%BCgen.png)
+
+
+
 
 ## 3.5 Entwurf
     - Detaillierte UML-Diagramme für relevante Softwarebausteine
