@@ -56,7 +56,7 @@ Gesetzliche Vorschriften:
 In Europa und somit auch in Deutschland wurden mit der Richtlinie 80/779/EWG vom 15.Juli 1980 die Grenzwerte für Feinstaub festgelegt. 
 Seit dem Jahr 2010 ist ein Jahresmittelwert für PM10 auf 40 µg/m³ festgelegt. Zudem wurde die EU-Richtlinie 2008/50/EG mit der 
 39. Bundes-Immissionsschutzverordnung neue Luftqualitätstandards für PM 2,5 festgelegt. (Siehe Grafik 1)
-[Grenzwerte-Feinstaub](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/11_tab_grenzwerte-feinstaub_2016-11-15.png "Grafik 1")
+![Grenzwerte-Feinstaub](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/11_tab_grenzwerte-feinstaub_2016-11-15.png "Grafik 1")
 	
 Standards:
 Mit einem Luftqualitätsindex wird in verschiedenen Ländern der Grad der Luftverschmutzung angezeigt.
