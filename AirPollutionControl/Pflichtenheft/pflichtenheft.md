@@ -41,9 +41,9 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 
 ## 2.1 Funktionale Anforderungen
 ### USE-Case-Diagramme
-![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_USE_CASE.png)    
-![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_USE_CASE2.png)    
-![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_USE_CASE3.png)    
+![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/USE-Cases/APC_USE_CASE.png)    
+![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/USE-Cases/APC_USE_CASE2.png)    
+![USE-CASES](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/USE-Cases/APC_USE_CASE3.png)    
     
 
 
@@ -52,14 +52,76 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 ## 2.2 Nicht-funktionale Anforderungen 
 
 ### 2.2.1 Rahmenbedingungen
-    - Normen, Standards, Protokolle, Hardware, externe Vorgaben
+Gesetzliche Vorschriften:
+In Europa und somit auch in Deutschland wurden mit der Richtlinie 80/779/EWG vom 15.Juli 1980 die Grenzwerte für Feinstaub festgelegt. 
+Seit dem Jahr 2010 ist ein Jahresmittelwert für PM10 auf 40 µg/m³ festgelegt. Zudem wurde die EU-Richtlinie 2008/50/EG mit der 
+39. Bundes-Immissionsschutzverordnung neue Luftqualitätstandards für PM 2,5 festgelegt. (Siehe Grafik 1)
+[11_tab_grenzwerte-feinstaub_2016-11-15.pdf](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/sonstiges/11_tab_grenzwerte-feinstaub_2016-11-15.pdf "Grafik 1")
+	
+Standards:
+Mit einem Luftqualitätsindex wird in verschiedenen Ländern der Grad der Luftverschmutzung angezeigt.
+In den jeweiligen Ländern sind die Grenzwerte und der Luftqualitätsindex anders festgelegt. 
+Für die Anwendung wird der **Common Air Quality Index(CAQI)** angewendet. Dieser wird seit dem Jahr 2006 in Europa verwendet 
+und stellt somit den Standard in unserer Anwendung dar. Hierbei wird ein stündlicher Mittelwert von PM10 und PM 2,5 Partikeln berechnet.
+Dieser Index beinhaltet 5 verschiedene Grade der Luftverschmutzung auf einer Skala von 0-100. (Siehe Grafik 2)
+Alle Schadstoffe bilden einen stündlichen Mittelwert, der in Dichte (μg / m 3) gemessen wird.
+Für unsere Anwendung betrachten wir nur die Werte PM 10 und PM 2,5.
+![CAQI_Index](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/CAQI_Index.png "Grafik2")
+
+Hardware:
+Für die Hardware wird ein Raspberry Pi 3 B+ , sowie ein daran angeschlossener Nova SDS011 Feinstaubsensor verwendet.
+Außerdem wird die Lufttemperatur, sowie die Luftfeuchtigkeit mit einem DHT22-Sensor gemessen.
+Dieser misst die Partikel  PM10 und PM2,5 mittels Streulichtverfahren.
+Theoretisch ist eine Verwendung von älteren Modellen Raspberry Pis möglich, wird jedoch nicht empfohlen, da durch den Raspberry Pi 3 B+ eine bessere Performance und Systemsicherheit gewährleistet ist.
+![Datenblatt Raspberry Pi 3 B+](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_Raspberry.pdf)
+![Datenblatt Feinstaubsensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_SDS011.pdf)
+![Datenblatt Temp/Feuchtsensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_DHT22.pdf)  
+
+Test-Vorgaben:
+In unserem Testverfahren wird es folgende Gliederung und Tests geben:
+
+1. **Unittest** :Einzelne Komponenten des Frontends werden auf korrekte Funktionalität getestet.
+2. **Integrationstest** : Der Integrationstest prüft das Zusammenspiel der integrierten Einheiten und stellt sicher, dass die Schnittstellen zwischen den einzelnen Softwareeinheiten korrekt umgesetzt wurden.
+3. **E2E (End 2 End)** : Das komplette Softwaresystem, mit allen Komponenten, wird auf Funktionalität und Fehler getestet.
 
 ### 2.2.2 Betriebsbedingungen
-    - Vorgaben des Kunden (z.B. Web Browser / Betriebssystem Versionen, Programmiersprache)
+Die Softwareanwendung wird als PWA(Progressive Web App) implementiert.  
+Dieses wird mit HTML5, CSS3, JavaScript, Service Worker und dem react Framework realisiert.   
+Als Webbrowser soll die Kompabilität und Unterstützung bei Mozilla Firefox (ab Version 58) und  Chrome(ab Version 64.0.3282) gewährleistet sein.
+Als Betriebssystem soll Windows (Windows 7/8/10), Linux , sowie Androidsysteme unterstützt werden.
+Eine Unterstützung für iOS-Geräte muss nicht verfügbar sein.
 
 ### 2.2.3 Qualitätsmerkmale
-    - Externe Qualitätsanforderungen (z.B. Performance, Sicherheit, Zuverlässigkeit, Benutzerfreundlichkeit)
-
+Die Anforderungen an die Softwarequalität wird im Folgenden an Hand der ISO 25010 aufgezeigt:
+[Funktionalität](mark-50x50.png)  
+Funktionalität:  
+Die Aufgaben, die an das System gestellt werden, werden laut Anforderungen und Spezifikationen des Pflichtenhefts korrekt ausgeführt.
+Die Anforderungen mit dem Prioritätslevel "muss", müssen in das System implementiert werden und auch in Ausnahmefällen korrekt funktionieren.  
+[Effizienz](speed-meter-50x50.png)
+Effizienz: 
+Die Ladezeit der PWA(Progressive Web App) darf 1000ms (1 Sekunde) in keinem Fall überschreiten. 
+Der Ressourcenverbrauch ist bei einer mobilen Datenübertragung so gering wie möglich zu halten.  
+Die Stabilität des Systems muss zu jeder Zeit gewährleistet werden.    
+[Kompabilität](interface-50x50.png)
+Kompabilität:  
+Die einzelnen Softwarebausteine sollen weitesgehend auch einzelnd auch mit anderen Systemen kombiniert werden können.
+[Benutzbarkeit](cursor-50x50.png)
+Benutzbarkeit:  
+Die Software soll leicht zu bedienen sein und Benutzereingaben sollen validiert werden, um mögliche spätere Fehlfunktionen des Systems zu verhindern.
+[Zuverlässigkeit](power-50x50.png)
+Zuverlässigkeit:  
+Die Verfügbarkeit des Systems soll auch bei außergewöhnlichen Bedingungen (z.B. plötzlicher Verbindungsabbruch)  gegeben sein.  
+[Sicherheit](weapon-50x50.png)
+Sicherheit:  
+Persönliche Daten, die im System hinterlegt sind, dürfen auf keinen Fall von unberechtigten Personen eingesehen oder kopiert werden können.  
+Daher muss eine dementsprechende Verschlüsselung bzw. Maßnahme implementiert werden. 
+[Wartbarkeit](wrench-50x50.png)
+Wartbarkeit:   
+Das System muss wie in 2.2.1 Rahmenbedingungen / Testvorgaben beschriebenen Fällen getestet werden können.  
+Bei einer Veränderung von DIN-Normen o.ä. muss es möglich sein, das System schnell und einfach anzupassen.
+[Portabilität](printed-circuit-50x50.png)
+Portabilität:  
+Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht verständlich und einfach durchführbar sein.
 ## 2.3 Graphische Benutzerschnittstelle
 ### Mockup zur User Storie(ID 1)
 ![GuiMockup1-API-Übersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/APIList.png)
