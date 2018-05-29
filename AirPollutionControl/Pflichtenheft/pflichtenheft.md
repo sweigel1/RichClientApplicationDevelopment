@@ -199,7 +199,7 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
-![Systemarchitekturdiagramm]https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png  
+![Systemarchitekturdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png)  
     - Schnittstellenbeschreibung
     - Kommunikationsprotokolle, Datenformate
 
@@ -232,9 +232,9 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
     - Verwendete Technologien (Programmiersprache, Frameworks, etc.)
     - Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
     - Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
-**Verwendete Technologien**
-Programmiersprache:
-Frameworks:
+**Verwendete Technologien**  
+Programmiersprache:  
+Frameworks:  
 
 
 
