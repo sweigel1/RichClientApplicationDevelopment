@@ -121,7 +121,7 @@ Die Ladezeit der PWA(Progressive Web App) darf 1000ms (1 Sekunde) in keinem Fall
 Die einzelnen Softwarebausteine sollen weitesgehend auch einzelnd auch mit anderen Systemen kombiniert werden können.
 ![Benutzbarkeit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/cursor-50x50.png)  
 
-*Benutzbarkeit: *  
+*Benutzbarkeit:*  
 Die Software soll leicht zu bedienen sein und Benutzereingaben sollen validiert werden, um mögliche spätere Fehlfunktionen des Systems zu verhindern.  
 ![Zuverlässigkeit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/power-50x50.png)  
 
