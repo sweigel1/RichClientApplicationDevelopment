@@ -52,13 +52,13 @@ Das Projekt  **APC – AirPollutionControl**  richtet sich vor allem an Privatpe
 ## 2.2 Nicht-funktionale Anforderungen 
 
 ### 2.2.1 Rahmenbedingungen
-Gesetzliche Vorschriften:
+Gesetzliche Vorschriften:  
 In Europa und somit auch in Deutschland wurden mit der Richtlinie 80/779/EWG vom 15.Juli 1980 die Grenzwerte für Feinstaub festgelegt. 
 Seit dem Jahr 2010 ist ein Jahresmittelwert für PM10 auf 40 µg/m³ festgelegt. Zudem wurde die EU-Richtlinie 2008/50/EG mit der 
 39. Bundes-Immissionsschutzverordnung neue Luftqualitätstandards für PM 2,5 festgelegt. (Siehe Grafik 1)
 ![Grenzwerte-Feinstaub](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/11_tab_grenzwerte-feinstaub_2016-11-15.png "Grafik 1")
 	
-Standards:
+Standards:  
 Mit einem Luftqualitätsindex wird in verschiedenen Ländern der Grad der Luftverschmutzung angezeigt.
 In den jeweiligen Ländern sind die Grenzwerte und der Luftqualitätsindex anders festgelegt. 
 Für die Anwendung wird der **Common Air Quality Index(CAQI)** angewendet. Dieser wird seit dem Jahr 2006 in Europa verwendet 
@@ -68,7 +68,7 @@ Alle Schadstoffe bilden einen stündlichen Mittelwert, der in Dichte (μg / m 3)
 Für unsere Anwendung betrachten wir nur die Werte PM 10 und PM 2,5.
 ![CAQI_Index](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/CAQI_Index.png "Grafik2")
 
-Hardware:
+Hardware:  
 Für die Hardware wird ein Raspberry Pi 3 B+ , sowie ein daran angeschlossener Nova SDS011 Feinstaubsensor verwendet.
 Außerdem wird die Lufttemperatur, sowie die Luftfeuchtigkeit mit einem DHT22-Sensor gemessen.
 Dieser misst die Partikel  PM10 und PM2,5 mittels Streulichtverfahren.
@@ -77,28 +77,28 @@ Theoretisch ist eine Verwendung von älteren Modellen Raspberry Pis möglich, wi
 ![Datenblatt Feinstaubsensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_SDS011.pdf)
 ![Datenblatt Temp/Feuchtsensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_DHT22.pdf)  
 
-Test-Vorgaben:
-In unserem Testverfahren wird es folgende Gliederung und Tests geben:
+Test-Vorgaben:  
+In unserem Testverfahren wird es folgende Gliederung und Tests geben:  
 
-1. **Unittest** :Einzelne Komponenten des Frontends werden auf korrekte Funktionalität getestet.
-2. **Integrationstest** : Der Integrationstest prüft das Zusammenspiel der integrierten Einheiten und stellt sicher, dass die Schnittstellen zwischen den einzelnen Softwareeinheiten korrekt umgesetzt wurden.
-3. **E2E (End 2 End)** : Das komplette Softwaresystem, mit allen Komponenten, wird auf Funktionalität und Fehler getestet.
+1. **Unittest** :Einzelne Komponenten des Frontends werden auf korrekte Funktionalität getestet.  
+2. **Integrationstest** : Der Integrationstest prüft das Zusammenspiel der integrierten Einheiten und stellt sicher, dass die Schnittstellen zwischen den einzelnen Softwareeinheiten korrekt umgesetzt wurden.  
+3. **E2E (End 2 End)** : Das komplette Softwaresystem, mit allen Komponenten, wird auf Funktionalität und Fehler getestet.  
 
 ### 2.2.2 Betriebsbedingungen
 Die Softwareanwendung wird als PWA(Progressive Web App) implementiert.  
-Dieses wird mit HTML5, CSS3, JavaScript, Service Worker und dem react Framework realisiert.   
+Dieses wird mit HTML5, CSS3, JavaScript, Service Worker und dem react Framework realisiert.  
 Als Webbrowser soll die Kompabilität und Unterstützung bei Mozilla Firefox (ab Version 58) und  Chrome(ab Version 64.0.3282) gewährleistet sein.  
 Als Betriebssystem soll Windows (Windows 7/8/10), Linux , sowie Androidsysteme unterstützt werden.
 Eine Unterstützung für iOS-Geräte muss nicht verfügbar sein.
 
 ### 2.2.3 Qualitätsmerkmale
-Die Anforderungen an die Softwarequalität wird im Folgenden an Hand der ISO 25010 aufgezeigt:
+Die Anforderungen an die Softwarequalität wird im Folgenden an Hand der ISO 25010 aufgezeigt:  
 [Funktionalität](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/mark-50x50.png)  
 Funktionalität:  
 Die Aufgaben, die an das System gestellt werden, werden laut Anforderungen und Spezifikationen des Pflichtenhefts korrekt ausgeführt.
 Die Anforderungen mit dem Prioritätslevel "muss", müssen in das System implementiert werden und auch in Ausnahmefällen korrekt funktionieren.  
 [Effizienz](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/speed-meter-50x50.png)
-Effizienz: 
+Effizienz:  
 Die Ladezeit der PWA(Progressive Web App) darf 1000ms (1 Sekunde) in keinem Fall überschreiten. 
 Der Ressourcenverbrauch ist bei einer mobilen Datenübertragung so gering wie möglich zu halten.  
 Die Stabilität des Systems muss zu jeder Zeit gewährleistet werden.    
