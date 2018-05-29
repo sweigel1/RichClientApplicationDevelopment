@@ -6,7 +6,7 @@
 2. [Präsentation React](https://sweigel1.github.io/RichClientApplicationDevelopment/react/index.html)
 3. [Präsentation NPM und Webpack ](https://sweigel1.github.io/RichClientApplicationDevelopment/NPM-WEBPACK/index.html)
 4. [Tooling](https://sweigel1.github.io/RichClientApplicationDevelopment/Tooling/index.html)
-5. [Pflichtenheft APC](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md)
+5. [Pflichtenheft APC](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/pflichtenheft.md)
 
 # Zweck
 
