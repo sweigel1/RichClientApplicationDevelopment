@@ -254,7 +254,7 @@ Frameworks:
 # Meilensteine
 |Meilenstein | Datum|
 |-----|-----------|
-|Pflichtenheft | 24.05.2018 |
+|Pflichtenheft | 31.05.2018 |
 |Sensorhardware | 24.05.2018 |
 |Server | 24.05.2018 |
 |GUI-Komponenten |07.06.2018|
