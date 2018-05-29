@@ -123,49 +123,61 @@ Bei einer Veränderung von DIN-Normen o.ä. muss es möglich sein, das System sc
 Portabilität:  
 Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht verständlich und einfach durchführbar sein.
 ## 2.3 Graphische Benutzerschnittstelle
-### Mockup zur User Storie(ID 1)
-![GuiMockup1-API-Übersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/APIList.png)
-### Mockup zur User Storie(ID 2)
-![GuiMockup2-neueAPI](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20API.png)
-### Mockup zur User Storie(ID 4)
-![GuiMockup4-Sensorübersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/SensorList.png)
-### Mockup zur User Storie(ID 5/9)
-![GuiMockup5-NeuerSensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20Sensor.png)
-### Mockup zur User Storie(ID 8)
-![GuiMockup6-SensorNotfifications](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Sensor%20Notifications.png)
-### Mockup zur User Storie(ID 6)
-![GuiMockup7-Dashboard](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Dashboard.png)
-### Mockup zur User Storie(ID 7)
+### Loginpage
 ![GuiMockup8-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Login.png)
-### Mockup zur User Storie(ID 10)
+### Allgemeine Einstellungen
 ![GuiMockup9-Einstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Einstellungen.png)
-
+### Dashboard
+![GuiMockup7-Dashboard](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Dashboard.png)
+### API-Übersicht
+![GuiMockup1-API-Übersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/APIList.png)
+### API - Hinzufügen
+![GuiMockup2-neueAPI](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20API.png)
+### Sensorübersicht
+![GuiMockup4-Sensorübersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/SensorList.png)
+### Sensor hinzufügen
+![GuiMockup5-NeuerSensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20Sensor.png)
+### Sensoreinstellungen bearbeiten
+![GuiMockup6-SensorNotfifications](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Sensor%20Notifications.png)
 ### Zustandsdiagramm Mockups
 ![Zustandsdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Zustandsdiagramm_Mockups.png)
 
 
 
 ## 2.4 Anforderungen im Detail
+## 2.4 Anforderungen im Detail
+### 1. Account
 | **ID**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
 |:-----|:----------:|:-------------------|:-------------|:---------|:----------------|
-| 1  |Benutzer| unter dem Reiter Externe Apis alle meine eingebundenen APIS in einer Übersicht aufgelistet haben|ich eine Übersicht meiner APIs habe | APIs korrekt aufgelistet und eingebunden sind | Muss |
-| 2  |Benutzer| eine neue API hinzufügen| diese später in meiner Übersicht zu sehen ist| API korrekt gespeichert und aufgelistet | Muss |
-| 3  |Benutzer| eine neue API hinzufügen| ich Daten von dieser API nutzen kann| Daten korrekt gespeichert und eingearbeitet sind | Muss |
-| 4  |Benutzer| unter dem Reiter Sensoren alle meine eingerichteten Sensoren in einer Übersicht aufgelistet haben | Sensoren korrekt aufgelistet | Muss |
-| 5  |Benutzer| eine neuen Sensor hinzufügen und einrichten können | der Sensor in meiner Übersicht zu sehen ist | Sensor korrekt gespeichert und aufgelistet | Muss |
-| 6  |Benutzer| auf dem Dashboard eine grafische Übersicht der Messdaten meiner Sensoren sehen  | ich den Grad der Luftverschmutzung direkt einsehen kann | Daten korrekt visualisiert und eingelesen sind | Muss |
-| 7  |Benutzer| mich auf der Startsteite(Loginpage) mit meinem Benutzernamen und meinem Passwort anmelden können  | ich auf dem Dashboard meine aktuellen Messdaten grafisch aufbereitet ansehen kann | nach verifiziertem Login das Dashboard angezeigt wird | Muss |
-|8  |Benutzer| unter dem Menü Einstellungen(Nach Auwahl eines Sensors) die Konfiguration des Sensors ändern (Verbindungsinertervall mit dem Server, Name, Bild)   | die Einstellungen geändert werden | die Einstellungen korrekt gespeichert werden | Muss |
-| 9  |Benutzer| unter dem Menü Einstellungen(Nach Auwahl eines Sensors) einen Grenzwert für die Luftbelastung einstellen können   | ich eine Pushmitteilung auf meinem mobilen Endgerät erhalte | die Push-Mitteilung beim Erreichen des eingestellten Grenzwertes auf meinem mobilen Endgerät angezeigt wird | kann |
-| 10  |Benutzer| unter dem Menü Einstellungen(allgemein) meine persönlichen Daten ändern, sowie Email und Pushbenachrichtungen aktivieren/deaktieren  | meine Änderungen gespeichert werden| Daten korrekt gespeichert sind| muss |
-| 11 |Benutzer| Daten, die ich offline gemessen habe, nachträglich mit Standortdaten eintragen(GoogleMapApi)   | die Daten im System gespeichert werden  | die Daten korrekt gespeichert und visualisiert werden | Sollte |
-| 12 |Benutzer| bei kleineren Problemen eine Hilfeseite aufrufen können  | ich mein Problem ggbf. lösen kann | Hilfestellung ausreichend dokumentiert ist | Sollte |
-| 13 |Benutzer| auch offline auf meine Daten zugreifen können  | ich diese im Dashboard angezeigt bekomme | die Daten korrekt angezeigt werden | Sollte |
-| 14 |Entwickler| auf die Daten zugreifen, die auf dem Server gespeichert sind| ich bei Problemen ggbf. nachhelfen kann | Daten können eingesehen und bearbeitet werden| Sollte |
-| 15 |Entwickler| nach Zustimmung des Nutzers auf die Registrierungsdaten zugreifen können| ich diese bei Problemem einsehen kann | man die Daten ändern kann | Sollte |
-| 16  |Entwickler| neue Benutzer mit Benutzernamen und Passwort regisitrieren können  | der Benutzer sich danach einloggen kann | Benutzer erfolgreich angelegt | Muss |
-| 17 |Benutzer| mich ausloggen können | ich wieder auf dem Loginbildschirm lande | Benutzer korrekt ausgeloggt und weitergeleitet | Muss |
-| 18 |Benutzer| das Programm beenden können | sich das Programm beendet und mich korrekt ausloggt | Benutzer korrekt ausgeloggt und Programm beendet | Muss |
+| 1.1  |Benutzer| mich auf der Startsteite(Loginpage) mit meinem Benutzernamen und meinem Passwort anmelden können  | ich auf dem Dashboard meine aktuellen Messdaten grafisch aufbereitet ansehen kann | nach verifiziertem Login das Dashboard angezeigt wird | Muss |
+| 1.2|Benutzer| mich ausloggen können | ich wieder auf dem Loginbildschirm lande | Benutzer korrekt ausgeloggt und weitergeleitet | Muss |
+| 1.3 |Benutzer| das Programm beenden können | sich das Programm beendet und mich korrekt ausloggt | Benutzer korrekt ausgeloggt und Programm beendet | Muss |
+### 2. Overview
+| **ID**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
+|:-----|:----------:|:-------------------|:-------------|:---------|:----------------|
+| 2.1 |Benutzer| unter dem Reiter Externe Apis alle meine eingebundenen APIS in einer Übersicht aufgelistet haben|ich eine Übersicht meiner APIs habe | APIs korrekt aufgelistet und eingebunden sind | Muss |
+| 2.2  |Benutzer| unter dem Reiter Sensoren alle meine eingerichteten Sensoren in einer Übersicht aufgelistet haben | Sensoren korrekt aufgelistet sind | Sensoren korrekt angezeigt | Muss |
+| 2.3 |Benutzer| auf dem Dashboard eine grafische Übersicht der Messdaten meiner Sensoren sehen  | ich den Grad der Luftverschmutzung direkt einsehen kann | Daten korrekt visualisiert und eingelesen sind | Muss |
+
+
+### 3. Konfiguration
+| **ID**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
+|:-----|:----------:|:-------------------|:-------------|:---------|:----------------|
+| 3.1 |Benutzer| unter dem Menü Einstellungen(allgemein) meine persönlichen Daten ändern, sowie Email und Pushbenachrichtungen aktivieren/deaktieren  | meine Änderungen gespeichert werden| Daten korrekt gespeichert sind| muss |
+| 3.2 |Benutzer| eine neue API hinzufügen| diese später in meiner Übersicht zu sehen ist| API korrekt gespeichert und aufgelistet | Muss |
+| 3.3  |Benutzer| eine neue API hinzufügen| ich Daten von dieser API nutzen kann| Daten korrekt gespeichert und eingearbeitet sind | Muss |
+| 3.4 |Benutzer| eine neuen Sensor hinzufügen und einrichten können | der Sensor in meiner Übersicht zu sehen ist | Sensor korrekt gespeichert und aufgelistet | Muss |
+| 3.5 |Benutzer| unter dem Menü Einstellungen(Nach Auwahl eines Sensors) die Konfiguration des Sensors ändern (Verbindungsinertervall mit dem Server, Name, Bild)   | die Einstellungen geändert werden | die Einstellungen korrekt gespeichert werden | Muss |
+| 3.6 |Benutzer| unter dem Menü Einstellungen(Nach Auwahl eines Sensors) einen Grenzwert für die Luftbelastung einstellen können   | ich eine Pushmitteilung auf meinem mobilen Endgerät erhalte | die Push-Mitteilung beim Erreichen des eingestellten Grenzwertes auf meinem mobilen Endgerät angezeigt wird | kann |
+| 3.7 |Benutzer| Daten, die ich offline gemessen habe, nachträglich mit Standortdaten eintragen(GoogleMapApi)   | die Daten im System gespeichert werden  | die Daten korrekt gespeichert und visualisiert werden | Sollte |
+| 3.8 |Benutzer| bei kleineren Problemen eine Hilfeseite aufrufen können  | ich mein Problem ggbf. lösen kann | Hilfestellung ausreichend dokumentiert ist | Sollte |
+| 3.9 |Benutzer| auch offline auf meine Daten zugreifen können  | ich diese im Dashboard angezeigt bekomme | die Daten korrekt angezeigt werden | Sollte |
+### 4. Entwickler
+| **ID**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
+|:-----|:----------:|:-------------------|:-------------|:---------|:----------------|
+| 4.1 |Entwickler| auf die Daten zugreifen, die auf dem Server gespeichert sind| ich bei Problemen ggbf. nachhelfen kann | Daten können eingesehen und bearbeitet werden| Sollte |
+| 4.2 |Entwickler| nach Zustimmung des Nutzers auf die Registrierungsdaten zugreifen können| ich diese bei Problemem einsehen kann | man die Daten ändern kann | Sollte |
+| 4.3  |Entwickler| neue Benutzer mit Benutzernamen und Passwort regisitrieren können  | der Benutzer sich danach einloggen kann | Benutzer erfolgreich angelegt | Muss |
 
 # 3 Technische Beschreibung
 
