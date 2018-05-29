@@ -76,16 +76,19 @@ Theoretisch ist eine Verwendung von älteren Modellen des Raspberry Pis möglich
 
 
 [![Datenblatt Raspberry Pi 3 B+][1]][2]
+
 [1]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Raspberry.jpg
 [2]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_Raspberry.pdf
 
-[![Datenblatt SDS011][1]][2]
-[1]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/sds011.jpg
-[2]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_SDS011.pdf
+[![Datenblatt SDS011][3]][4]
 
-[![Datenblatt DHT22][1]][2]
-[1]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/dht22.jpg
-[2]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_DHT22.pdf
+[3]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/sds011.jpg
+[4]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_SDS011.pdf
+
+[![Datenblatt DHT22][5]][6]
+
+[5]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/dht22.jpg
+[6]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_DHT22.pdf
 
 
 
