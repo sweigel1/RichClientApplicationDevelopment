@@ -143,7 +143,7 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 
 ## 2.3 Graphische Benutzerschnittstelle
 ### Loginpage
-![GuiMockup8-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Login.png)
+![GuiMockup8-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Login.png)
 ### Allgemeine Einstellungen
 ![GuiMockup9-Einstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Einstellungen.png)
 ### Dashboard
@@ -211,13 +211,13 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 
 ## 3.4 Abläufe
 ### Aktivitätsdiagramm Gesamt
-![Aktivitätsdiagramm Gesamt](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_Gesamt.png)
+![Aktivitätsdiagramm Gesamt](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_Gesamt.png)
 ### Aktivitätsdiagramm Login
-![Aktivitätsdiagramm Login](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_Login.png)
+![Aktivitätsdiagramm Login](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_Login.png)
 ### Aktivitätsdiagramm API Hinzufügen
-![Aktivitätsdiagramm API hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_API_Hinzuf%C3%BCgen.png)
+![Aktivitätsdiagramm API hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_API_Hinzuf%C3%BCgen.png)
 ### Aktivitätsdiagramm Sensor Hinzufügen
-![Aktivitätsdiagramm Sensor hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/APC_SensorHinzuf%C3%BCgen.png)
+![Aktivitätsdiagramm Sensor hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_SensorHinzuf%C3%BCgen.png)
 
 
 
