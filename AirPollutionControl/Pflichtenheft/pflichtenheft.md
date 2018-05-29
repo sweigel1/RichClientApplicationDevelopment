@@ -87,7 +87,7 @@ Theoretisch ist eine Verwendung von älteren Modellen des Raspberry Pis möglich
 
 [![Datenblatt DHT22][5]][6]
 
-[5]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/dht22.jpg
+[5]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/dht22.png
 [6]: https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Datenbl%C3%A4tter/Datenblatt_DHT22.pdf
 
 
