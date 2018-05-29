@@ -56,7 +56,7 @@ Gesetzliche Vorschriften:
 In Europa und somit auch in Deutschland wurden mit der Richtlinie 80/779/EWG vom 15.Juli 1980 die Grenzwerte für Feinstaub festgelegt. 
 Seit dem Jahr 2010 ist ein Jahresmittelwert für PM10 auf 40 µg/m³ festgelegt. Zudem wurde die EU-Richtlinie 2008/50/EG mit der 
 39. Bundes-Immissionsschutzverordnung neue Luftqualitätstandards für PM 2,5 festgelegt. (Siehe Grafik 1)
-[11_tab_grenzwerte-feinstaub_2016-11-15.pdf](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/sonstiges/11_tab_grenzwerte-feinstaub_2016-11-15.pdf "Grafik 1")
+[Grenzwerte-Feinstaub](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/11_tab_grenzwerte-feinstaub_2016-11-15.png "Grafik 1")
 	
 Standards:
 Mit einem Luftqualitätsindex wird in verschiedenen Ländern der Grad der Luftverschmutzung angezeigt.
@@ -87,64 +87,62 @@ In unserem Testverfahren wird es folgende Gliederung und Tests geben:
 ### 2.2.2 Betriebsbedingungen
 Die Softwareanwendung wird als PWA(Progressive Web App) implementiert.  
 Dieses wird mit HTML5, CSS3, JavaScript, Service Worker und dem react Framework realisiert.   
-Als Webbrowser soll die Kompabilität und Unterstützung bei Mozilla Firefox (ab Version 58) und  Chrome(ab Version 64.0.3282) gewährleistet sein.
+Als Webbrowser soll die Kompabilität und Unterstützung bei Mozilla Firefox (ab Version 58) und  Chrome(ab Version 64.0.3282) gewährleistet sein.  
 Als Betriebssystem soll Windows (Windows 7/8/10), Linux , sowie Androidsysteme unterstützt werden.
 Eine Unterstützung für iOS-Geräte muss nicht verfügbar sein.
 
 ### 2.2.3 Qualitätsmerkmale
 Die Anforderungen an die Softwarequalität wird im Folgenden an Hand der ISO 25010 aufgezeigt:
-[Funktionalität](mark-50x50.png)  
+[Funktionalität](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/mark-50x50.png)  
 Funktionalität:  
 Die Aufgaben, die an das System gestellt werden, werden laut Anforderungen und Spezifikationen des Pflichtenhefts korrekt ausgeführt.
 Die Anforderungen mit dem Prioritätslevel "muss", müssen in das System implementiert werden und auch in Ausnahmefällen korrekt funktionieren.  
-[Effizienz](speed-meter-50x50.png)
+[Effizienz](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/speed-meter-50x50.png)
 Effizienz: 
 Die Ladezeit der PWA(Progressive Web App) darf 1000ms (1 Sekunde) in keinem Fall überschreiten. 
 Der Ressourcenverbrauch ist bei einer mobilen Datenübertragung so gering wie möglich zu halten.  
 Die Stabilität des Systems muss zu jeder Zeit gewährleistet werden.    
-[Kompabilität](interface-50x50.png)
+[Kompabilität](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/interface-50x50.png)
 Kompabilität:  
 Die einzelnen Softwarebausteine sollen weitesgehend auch einzelnd auch mit anderen Systemen kombiniert werden können.
-[Benutzbarkeit](cursor-50x50.png)
+[Benutzbarkeit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/cursor-50x50.png)
 Benutzbarkeit:  
 Die Software soll leicht zu bedienen sein und Benutzereingaben sollen validiert werden, um mögliche spätere Fehlfunktionen des Systems zu verhindern.
-[Zuverlässigkeit](power-50x50.png)
+[Zuverlässigkeit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/power-50x50.png)
 Zuverlässigkeit:  
 Die Verfügbarkeit des Systems soll auch bei außergewöhnlichen Bedingungen (z.B. plötzlicher Verbindungsabbruch)  gegeben sein.  
-[Sicherheit](weapon-50x50.png)
+[Sicherheit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/weapon-50x50.png)
 Sicherheit:  
 Persönliche Daten, die im System hinterlegt sind, dürfen auf keinen Fall von unberechtigten Personen eingesehen oder kopiert werden können.  
 Daher muss eine dementsprechende Verschlüsselung bzw. Maßnahme implementiert werden. 
-[Wartbarkeit](wrench-50x50.png)
+[Wartbarkeit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/wrench-50x50.png)
 Wartbarkeit:   
 Das System muss wie in 2.2.1 Rahmenbedingungen / Testvorgaben beschriebenen Fällen getestet werden können.  
 Bei einer Veränderung von DIN-Normen o.ä. muss es möglich sein, das System schnell und einfach anzupassen.
-[Portabilität](printed-circuit-50x50.png)
+[Portabilität](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/printed-circuit-50x50.png)
 Portabilität:  
 Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht verständlich und einfach durchführbar sein.
 ## 2.3 Graphische Benutzerschnittstelle
 ### Loginpage
-![GuiMockup8-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Login.png)
+![GuiMockup8-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Login.png)
 ### Allgemeine Einstellungen
-![GuiMockup9-Einstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Einstellungen.png)
+![GuiMockup9-Einstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Einstellungen.png)
 ### Dashboard
-![GuiMockup7-Dashboard](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Dashboard.png)
+![GuiMockup7-Dashboard](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Dashboard.png)
 ### API-Übersicht
-![GuiMockup1-API-Übersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/APIList.png)
+![GuiMockup1-API-Übersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/APIList.png)
 ### API - Hinzufügen
-![GuiMockup2-neueAPI](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20API.png)
+![GuiMockup2-neueAPI](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/new%20API.png)
 ### Sensorübersicht
-![GuiMockup4-Sensorübersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/SensorList.png)
+![GuiMockup4-Sensorübersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/SensorList.png)
 ### Sensor hinzufügen
-![GuiMockup5-NeuerSensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/new%20Sensor.png)
+![GuiMockup5-NeuerSensor](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/new%20Sensor.png)
 ### Sensoreinstellungen bearbeiten
-![GuiMockup6-SensorNotfifications](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Sensor%20Notifications.png)
+![GuiMockup6-SensorNotfifications](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Sensor%20Notifications.png)
 ### Zustandsdiagramm Mockups
-![Zustandsdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/Mockups/exports/Zustandsdiagramm_Mockups.png)
+![Zustandsdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Zustandsdiagramm_Mockups.png)
 
 
-
-## 2.4 Anforderungen im Detail
 ## 2.4 Anforderungen im Detail
 ### 1. Account
 | **ID**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
@@ -182,7 +180,7 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
-    - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
+[Systemarchitekturdiagramm]https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png  
     - Schnittstellenbeschreibung
     - Kommunikationsprotokolle, Datenformate
 
@@ -215,9 +213,10 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
     - Verwendete Technologien (Programmiersprache, Frameworks, etc.)
     - Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
     - Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
-
+Verwendete Technologien
+Programmiersprache:
+Frameworks:
 ## 4.2 Verantwortlichkeiten
-    - Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
 # Rollenzuordnung
 
 |Name | Fachgebiet|
