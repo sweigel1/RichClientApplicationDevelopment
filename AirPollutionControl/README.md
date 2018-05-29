@@ -10,7 +10,7 @@
 |Gerrit Haake | Frontend|
 |Daniels Haering | Frontend|
 
-## Repositorys
+## Repositorys für die einzelnen Softwarebausteine
 Raspberry Pi : https://github.com/tavvar/raspiapc  
 Server       : https://github.com/Frevert/serverapc  
 PouchDB      : https://github.com/ghaake/apc-pouchdb  
