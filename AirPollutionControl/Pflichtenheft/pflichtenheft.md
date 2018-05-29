@@ -145,21 +145,21 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 ### Loginpage
 ![GuiMockup8-Loginpage](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Login.png)
 ### Allgemeine Einstellungen
-![GuiMockup9-Einstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Einstellungen.png)
+![GuiMockup9-Einstellungen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Einstellungen.png)
 ### Dashboard
-![GuiMockup7-Dashboard](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Dashboard.png)
+![GuiMockup7-Dashboard](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Dashboard.png)
 ### API-Übersicht
-![GuiMockup1-API-Übersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/APIList.png)
+![GuiMockup1-API-Übersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/APIList.png)
 ### API - Hinzufügen
-![GuiMockup2-neueAPI](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/new%20API.png)
+![GuiMockup2-neueAPI](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/new%20API.png)
 ### Sensorübersicht
-![GuiMockup4-Sensorübersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/SensorList.png)
+![GuiMockup4-Sensorübersicht](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/SensorList.png)
 ### Sensor hinzufügen
-![GuiMockup5-NeuerSensor](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/new%20Sensor.png)
+![GuiMockup5-NeuerSensor](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/new%20Sensor.png)
 ### Sensoreinstellungen bearbeiten
-![GuiMockup6-SensorNotfifications](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Sensor%20Notifications.png)
+![GuiMockup6-SensorNotfifications](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Sensor%20Notifications.png)
 ### Zustandsdiagramm Mockups
-![Zustandsdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Zustandsdiagramm_Mockups.png)
+![Zustandsdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Mockups/exports/Zustandsdiagramm_Mockups.png)
 
 
 ## 2.4 Anforderungen im Detail
