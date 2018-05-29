@@ -232,9 +232,13 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
     - Verwendete Technologien (Programmiersprache, Frameworks, etc.)
     - Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
     - Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
-Verwendete Technologien
+**Verwendete Technologien**
 Programmiersprache:
 Frameworks:
+
+
+
+
 ## 4.2 Verantwortlichkeiten
 # Rollenzuordnung
 
