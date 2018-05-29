@@ -10,6 +10,25 @@
 |Gerrit Haake | Frontend|
 |Daniels Haering | Frontend|
 
+## Repositorys
+Raspberry Pi : https://github.com/tavvar/raspiapc
+Server       : https://github.com/Frevert/serverapc
+PouchDB      : https://github.com/ghaake/apc-pouchdb
+Frontend     : https://github.com/derbytau/APC-Frontend
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## ToDo
 
 ### Raspberry
