@@ -109,36 +109,36 @@ Eine Unterstützung für iOS-Geräte muss nicht verfügbar sein.
 ### 2.2.3 Qualitätsmerkmale
 Die Anforderungen an die Softwarequalität wird im Folgenden an Hand der **ISO 25010** aufgezeigt:  
 ![Funktionalität](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/mark-50x50.png)  
-Funktionalität:  
+*Funktionalität:*  
 Die Aufgaben, die an das System gestellt werden, werden laut Anforderungen und Spezifikationen des Pflichtenhefts korrekt ausgeführt. Die Anforderungen mit dem Prioritätslevel "muss", müssen in das System implementiert werden und auch in Ausnahmefällen korrekt funktionieren.  
 
 ![Effizienz](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/speed-meter-50x50.png)  
-Effizienz:  
+* Effizienz:*   
 Die Ladezeit der PWA(Progressive Web App) darf 1000ms (1 Sekunde) in keinem Fall überschreiten. Der Ressourcenverbrauch ist bei einer mobilen Datenübertragung so gering wie möglich zu halten. Die Stabilität des Systems muss zu jeder Zeit gewährleistet werden.  
 
 ![Kompabilität](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/interface-50x50.png)  
-Kompabilität:  
+* Kompabilität:*   
 Die einzelnen Softwarebausteine sollen weitesgehend auch einzelnd auch mit anderen Systemen kombiniert werden können.
 ![Benutzbarkeit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/cursor-50x50.png)  
 
-Benutzbarkeit:  
+* Benutzbarkeit: *  
 Die Software soll leicht zu bedienen sein und Benutzereingaben sollen validiert werden, um mögliche spätere Fehlfunktionen des Systems zu verhindern.  
 ![Zuverlässigkeit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/power-50x50.png)  
 
-Zuverlässigkeit:  
+* Zuverlässigkeit:*   
 Die Verfügbarkeit des Systems soll auch bei außergewöhnlichen Bedingungen (z.B. plötzlicher Verbindungsabbruch)  gegeben sein.  
 ![Sicherheit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/weapon-50x50.png)  
 
-Sicherheit:  
-Persönliche Daten, die im System hinterlegt sind, dürfen auf keinen Fall von unberechtigten Personen eingesehen oder kopiert werden können.  
-Daher muss eine dementsprechende Verschlüsselung bzw. Maßnahme implementiert werden. 
+* Sicherheit:*   
+Persönliche Daten, die im System hinterlegt sind, dürfen auf keinen Fall von unberechtigten Personen eingesehen oder kopiert werden können. Daher muss eine dementsprechende Verschlüsselung bzw. Maßnahme implementiert werden.  
+
 ![Wartbarkeit](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/wrench-50x50.png)  
-Wartbarkeit:   
+* Wartbarkeit:*    
 Das System muss wie in 2.2.1 Rahmenbedingungen / Testvorgaben beschriebenen Fällen getestet werden können.  
 Bei einer Veränderung von DIN-Normen o.ä. muss es möglich sein, das System schnell und einfach anzupassen.
 
 ![Portabilität](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/printed-circuit-50x50.png)  
-Portabilität:  
+* Portabilität:*   
 Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht verständlich und einfach durchführbar sein.
 
 ## 2.3 Graphische Benutzerschnittstelle
