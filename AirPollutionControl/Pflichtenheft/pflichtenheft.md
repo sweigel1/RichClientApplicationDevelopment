@@ -199,7 +199,7 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
-[Systemarchitekturdiagramm]https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png  
+![Systemarchitekturdiagramm]https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png  
     - Schnittstellenbeschreibung
     - Kommunikationsprotokolle, Datenformate
 
