@@ -199,7 +199,8 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
-![Systemarchitekturdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png)  
+Im folgendem Diagramm (Grafik 5) ist die Systemarchitektur von unserem Softwaresystem dargestellt. Die Raspberry Pis kommunizieren nur mit dem Server und fragen in einem zeitlich festgelegten Intervall Daten, sowie eine Konigurationsconfig ab. (Siehe Punkt 3.4 - Abläufe) Unsere Applikation unterstützt die Anbindung von bis zu 5. "Messungsstationen".
+![Systemarchitekturdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png "Grafik 5")  
     - Schnittstellenbeschreibung
     - Kommunikationsprotokolle, Datenformate
 
