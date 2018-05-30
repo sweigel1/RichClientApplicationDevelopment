@@ -273,7 +273,7 @@ Frameworks:
 ## 5.1 Glossar 
 <div class="letters-bg"><strong><a href="#letter-a">A</a> <a href="#letter-b">B</a> <a href="#letter-c">C</a> <a href="#letter-d">D</a> <a href="#letter-e">E</a> <a href="#letter-f">F</a> <a href="#letter-g">G</a> <a href="#letter-h">H</a> <a href="#letter-i">I</a> <a href="#letter-j">J</a> <a href="#letter-k">K</a> <a href="#letter-l">L</a> <a href="#letter-m">M</a> <a href="#letter-n">N</a> <a href="#letter-o">O</a> <a href="#letter-p">P</a> <a href="#letter-q">Q</a> <a href="#letter-r">R</a> <a href="#letter-s">S</a> <a href="#letter-t">T</a> <a href="#letter-u">U</a> <a href="#letter-v">V</a> <a href="#letter-w">W</a> <a href="#letter-x">X</a> <a href="#letter-y">Y</a> <a href="#letter-z">Z</a></strong></div>
 
-<div id="letter-a" class="big-letter">A</div>
+<div id="letter-a" class="big-letter"> <h1> A </h1> </div>
 <div class="glossar-bg">
 <h3>Androidsystem</h3>
 Ein Androidsystem ist ein Betriebssystem als auch eine Software-Plattform für mobile Geräte wie Smartphones, Mobiltelefone, Netbooks und Tablets.
@@ -293,7 +293,7 @@ Dient dazu, Informationen(z.B. Daten) zwischer einer Anwendung und einzelnen Pro
  
 </div>
 
-<div id="letter-b" class="big-letter">B</div>
+<div id="letter-b" class="big-letter"> <h1> B </h1> </div>
 <div class="glossar-bg">
 
 <h3>Betriebssystem</h3>
@@ -304,7 +304,7 @@ Als Backend wird der Teil eines IT-Systems bezeichnet, der sich mit der Datenver
 
 </div>
 
-<div id="letter-c" class="big-letter">C</div>
+<div id="letter-c" class="big-letter"> <h1> C </h1> </div>
 <div class="glossar-bg">
 
 <h3>CAQI</h3>
@@ -319,7 +319,7 @@ Deklarative Stylesheet-Sprache
 
 </div>
 
-<div id="letter-d" class="big-letter">D</div>
+<div id="letter-d" class="big-letter"> <h1> D </h1> </div>
 <div class="glossar-bg">
 <h3>Datenbank</h3>
 Eine Datenbank dient zum Speichern, Verwalten und Abrufen von Daten bzw. Datensätzen.
@@ -486,9 +486,9 @@ Ein Webbrowser ist ein Navigationsprogramm, das im Internet HTML-Dokumente ( Hyp
 <div id="letter-z" class="big-letter">Z</div>
 <div class="glossar-bg">
 <h3>Zustandsdiagramm</h3>
-Ein Zustandsdiagramm – auch state diagram, state machine diagram oder Zustandsübergangsdiagramm genannt – visualisiert eine Folge von Zuständen, die ein Objekt im Lebenszyklus einnehmen kann. Es wird benutzt, um das Verhalten eines Systems, eines Teilsystems, einer Komponente oder einer Klasse zu beschreiben. 
-</div>
-
+Ein Zustandsdiagramm – auch state diagram, state machine diagram oder Zustandsübergangsdiagramm genannt – visualisiert eine Folge von Zuständen, die ein Objekt im Lebenszyklus einnehmen kann. Es wird benutzt, um das Verhalten eines Systems, eines Teilsystems, einer Komponente oder einer Klasse zu beschreiben.  
+</div>  
+  
 <div class="letters-bg-bottom"><strong><a href="#letter-a">A</a> <a href="#letter-b">B</a> <a href="#letter-c">C</a> <a href="#letter-d">D</a> <a href="#letter-e">E</a> <a href="#letter-f">F</a> <a href="#letter-g">G</a> <a href="#letter-h">H</a> <a href="#letter-i">I</a> <a href="#letter-j">J</a> <a href="#letter-k">K</a> <a href="#letter-l">L</a> <a href="#letter-m">M</a> <a href="#letter-n">N</a> <a href="#letter-o">O</a> <a href="#letter-p">P</a> <a href="#letter-q">Q</a> <a href="#letter-r">R</a> <a href="#letter-s">S</a> <a href="#letter-t">T</a> <a href="#letter-u">U</a> <a href="#letter-v">V</a> <a href="#letter-w">W</a> <a href="#letter-x">X</a> <a href="#letter-y">Y</a> <a href="#letter-z">Z</a></strong></div>
 
 
