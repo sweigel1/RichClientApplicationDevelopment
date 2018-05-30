@@ -218,6 +218,12 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 ![Aktivitätsdiagramm API hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_API_Hinzuf%C3%BCgen.png)
 ### Aktivitätsdiagramm Sensor Hinzufügen
 ![Aktivitätsdiagramm Sensor hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_SensorHinzuf%C3%BCgen.png)
+### Sequenzdiagramm Datenabfrage der config
+![Sequenzdiagramm_Datenabfrage_config](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Sequenzdiagramm_Datenabfrage_config.png)
+### Sequenzdiagramm Speicherung von Messdaten
+![Sequenzdiagramm_Datenspeicherung_Messdaten](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Sequenzdiagramm_Datenspeicherung_Messdaten.png)
+### Sequenzdiagramm Datensynchronisation
+![Sequenzdiagramm_Datensynchronisation](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Sequenzdiagramm_Ablauf_Datensynchronisation.png)
 
 # 4 Projektorganisation
 
