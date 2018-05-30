@@ -219,12 +219,6 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 ### Aktivitätsdiagramm Sensor Hinzufügen
 ![Aktivitätsdiagramm Sensor hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_SensorHinzuf%C3%BCgen.png)
 
-
-
-
-## 3.5 Entwurf
-    - Detaillierte UML-Diagramme für relevante Softwarebausteine
-
 # 4 Projektorganisation
 
 ## 4.1 Annahmen
@@ -490,12 +484,3 @@ Ein Zustandsdiagramm – auch state diagram, state machine diagram oder Zustands
 </div>  
   
 <div class="letters-bg-bottom"><strong><a href="#letter-a">A</a> <a href="#letter-b">B</a> <a href="#letter-c">C</a> <a href="#letter-d">D</a> <a href="#letter-e">E</a> <a href="#letter-f">F</a> <a href="#letter-g">G</a> <a href="#letter-h">H</a> <a href="#letter-i">I</a> <a href="#letter-j">J</a> <a href="#letter-k">K</a> <a href="#letter-l">L</a> <a href="#letter-m">M</a> <a href="#letter-n">N</a> <a href="#letter-o">O</a> <a href="#letter-p">P</a> <a href="#letter-q">Q</a> <a href="#letter-r">R</a> <a href="#letter-s">S</a> <a href="#letter-t">T</a> <a href="#letter-u">U</a> <a href="#letter-v">V</a> <a href="#letter-w">W</a> <a href="#letter-x">X</a> <a href="#letter-y">Y</a> <a href="#letter-z">Z</a></strong></div>
-
-
-## 5.2 Referenzen
-    - Handbücher, Gesetze
-
-## 5.3 Index
-
-
-
