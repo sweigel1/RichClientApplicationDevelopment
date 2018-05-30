@@ -71,7 +71,7 @@ Für unsere Anwendung betrachten wir nur die Werte PM 10 und PM 2,5.
 Hardware:  
 Für die Hardware wird ein Raspberry Pi 3 B , sowie ein daran angeschlossener Nova SDS011 Feinstaubsensor verwendet.  
 Dieser misst die Partikel  PM10 und PM2,5 mittels Streulichtverfahren.Außerdem wird die Lufttemperatur, sowie die Luftfeuchtigkeit mit einem DHT22-Sensor gemessen.  
-Theoretisch ist eine Verwendung von älteren Modellen des Raspberry Pis möglich, wird jedoch nicht empfohlen, da durch den Raspberry Pi 3 B+ eine bessere Performance und Systemsicherheit gewährleistet ist.  Für die  jeweiligen Datenblätter bitte auf das entsprechende Bild klicken.
+Theoretisch ist eine Verwendung von älteren Modellen des Raspberry Pis möglich, wird jedoch nicht empfohlen, da durch den Raspberry Pi 3 B eine bessere Performance und Systemsicherheit gewährleistet ist.  Für die  jeweiligen Datenblätter bitte auf das entsprechende Bild klicken.
 
 
 
