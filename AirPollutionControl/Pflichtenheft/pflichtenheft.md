@@ -364,7 +364,7 @@ Als Frontend bezeichnet man die Präsentationsebene, das heißt den Teil einer A
 <div id="letter-g" class="big-letter"> <h1> G </h1> </div>
 <div class="glossar-bg">
 <h3>GUI</h3>
-Graphical User Interface  
+Graphical User Interface  <br>
 Grafische Benutzeroberfläche
 </div>
 
