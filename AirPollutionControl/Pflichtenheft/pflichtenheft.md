@@ -288,7 +288,7 @@ Verwaltungsperson mit erweiterten Benutzerrechten
 Air Pollution Control
 
 <h3>API</h3>
-Application Programming Interface  
+Application Programming Interface <br>  
 Dient dazu, Informationen(z.B. Daten) zwischer einer Anwendung und einzelnen Programmteilen standardisiert auszutauschen.
  
 </div>
