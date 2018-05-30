@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>540</x>
+      <y>80</y>
+      <w>1120</w>
+      <h>910</h>
+    </coordinates>
+    <panel_attributes>apc-database.js
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>270</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>ApcDatabase
+--
+-dbhost: String
+-dbuser: String
+-dbpassword: String
+-dbname: String
+-dbport: int
+-defaultLogger: function
+-pouchDB: PouchDB
+--
++getAllDocs(): void
++getDocById(): void
++deleteDocById(): void
++insertDoc(): void
++registerSyncHandler(): void
++destroyDatabase(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>670</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>ApcSensor
+--
+
+--
++getConfig(): void
++insertConfig(): void
++updateConfig(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>670</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>ApcDatabase
+--
+
+--
++getConfig(): void
++insertConfig(): void
++updateConfig(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1340</x>
+      <y>670</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>ApcUsers
+--
+
+--
++insertUser(): void
++updatePassword(): void
++updateEmail(): void
++updatePushNot(): void
++updateEmailNot(): void
++updateImage(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1070</x>
+      <y>510</y>
+      <w>30</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1110</x>
+      <y>510</y>
+      <w>360</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;340.0;70.0;340.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>510</y>
+      <w>340</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>320.0;10.0;320.0;70.0;10.0;70.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>140</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>PouchDB Api
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1070</x>
+      <y>170</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>
