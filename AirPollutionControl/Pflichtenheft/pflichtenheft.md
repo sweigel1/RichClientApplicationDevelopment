@@ -226,6 +226,10 @@ Im folgendem Diagramm (Grafik 5) ist die Systemarchitektur von unserem Softwares
 ### Sequenzdiagramm Datensynchronisation
 ![Sequenzdiagramm_Datensynchronisation](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Sequenzdiagramm_Ablauf_Datensynchronisation.png)
 
+## 3.5 Entwurf
+### Analyseklassendiagramm pouchdb.class
+![Klassendiagramm pouchdb.class](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/apc-pouchdb-class.png)
+
 # 4 Projektorganisation
 
 ## 4.1 Annahmen
