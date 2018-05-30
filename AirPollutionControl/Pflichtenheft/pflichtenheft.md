@@ -271,9 +271,225 @@ Frameworks:
 # 5 Anhänge
 
 ## 5.1 Glossar 
+<div class="letters-bg"><strong><a href="#letter-a">A</a> <a href="#letter-b">B</a> <a href="#letter-c">C</a> <a href="#letter-d">D</a> <a href="#letter-e">E</a> <a href="#letter-f">F</a> <a href="#letter-g">G</a> <a href="#letter-h">H</a> <a href="#letter-i">I</a> <a href="#letter-j">J</a> <a href="#letter-k">K</a> <a href="#letter-l">L</a> <a href="#letter-m">M</a> <a href="#letter-n">N</a> <a href="#letter-o">O</a> <a href="#letter-p">P</a> <a href="#letter-q">Q</a> <a href="#letter-r">R</a> <a href="#letter-s">S</a> <a href="#letter-t">T</a> <a href="#letter-u">U</a> <a href="#letter-v">V</a> <a href="#letter-w">W</a> <a href="#letter-x">X</a> <a href="#letter-y">Y</a> <a href="#letter-z">Z</a></strong></div>
 
-## A  
-### APC - Air Pollution Control  
+<div id="letter-a" class="big-letter">A</div>
+<div class="glossar-bg">
+<h3>Androidsystem</h3>
+Ein Androidsystem ist ein Betriebssystem als auch eine Software-Plattform für mobile Geräte wie Smartphones, Mobiltelefone, Netbooks und Tablets.
+
+<h3>Account</h3>
+Konto des Benutzers
+
+<h3>Administrator</h3>
+Verwaltungsperson mit erweiterten Benutzerrechten
+
+<h3>APC</h3>
+Air Pollution Control
+
+<h3>API</h3>
+Application Programming Interface  
+Dient dazu, Informationen(z.B. Daten) zwischer einer Anwendung und einzelnen Programmteilen standardisiert auszutauschen.
+ 
+</div>
+
+<div id="letter-b" class="big-letter">B</div>
+<div class="glossar-bg">
+
+<h3>Betriebssystem</h3>
+Das Betriebssystem ist ein Vermittler zwischen Hard- und Software.
+
+<h3>Backend</h3>
+Als Backend wird der Teil eines IT-Systems bezeichnet, der sich mit der Datenverarbeitung im Hintergrund beschäftigt – der Data Layer.  
+
+</div>
+
+<div id="letter-c" class="big-letter">C</div>
+<div class="glossar-bg">
+
+<h3>CAQI</h3>
+Common Air Quality Index
+
+<h3>Chrome</h3>
+Webbrowser des Unternehmens Google
+
+<h3>CSS3</h3>
+Cascading Style Sheets Level 3  
+Deklarative Stylesheet-Sprache
+
+</div>
+
+<div id="letter-d" class="big-letter">D</div>
+<div class="glossar-bg">
+<h3>Datenbank</h3>
+Eine Datenbank dient zum Speichern, Verwalten und Abrufen von Daten bzw. Datensätzen.
+
+
+<h3>DB</h3>
+Datenbank
+
+
+<h3>Dashboard</h3>
+Übersichtsfenster um Analyseergebnisse zu veranschaulichen. 
+
+
+<h3>Dichte</h3>
+Die Dichte gibt an, welche Masse ein Kubikzentimeter Volumen eines Stoffes hat.  
+</div>
+
+<div id="letter-e" class="big-letter">E</div>
+<div class="glossar-bg">
+<h3>E2E</h3>
+End to End
+<h3>EG</h3>
+Europäische Gemeinschaft
+<h3>EWG</h3>
+Europäische Wirtschaftsgemeinschaft
+</div>
+
+<div id="letter-f" class="big-letter">F</div>
+<div class="glossar-bg">
+<h3>Feinstaub</h3>
+Als Feinstaub, Schwebstaub oder englisch "Particulate Matter" (PM) bezeichnet man Teilchen in der Luft, die nicht sofort zu Boden sinken, sondern eine gewisse Zeit in der Atmosphäre verweilen. 
+Die winzigen Partikel sind mit bloßem Auge nicht wahrzunehmen. Lediglich während bestimmter Wetterlagen kann man Feinstaub in Form einer "Dunstglocke" sehen. Je nach Korngröße der Staubteilchen wird der Feinstaub in so genannte Fraktionen unterteilt: 
+Unter PM10 versteht man alle Staubteilchen, deren aerodynamischer Durchmesser kleiner als 10 Mikrometer (das sind 10 Millionstel Meter) ist. 
+Eine Teilmenge der PM10-Fraktion sind die feineren Teilchen, deren aerodynamischer Durchmesser weniger als 2,5 Mikrometer beträgt. Diese bezeichnet man als "Feinfraktion" oder 2,5 (im Gegensatz dazu den Größenbereich 2,5 bis 10 Mikrometer "Grobfraktion"). 
+Die kleinsten von ihnen, mit einem aerodynamischen Durchmesser von weniger als 0,1 Mikrometer (das sind 100 Milliardstel Meter), sind die ultrafeinen Partikel.
+<h3>Framework</h3>
+Als Framework bezeichnet man ein Programmiergerüst für Entwickler.
+<h3>Frontend</h3>
+Als Frontend bezeichnet man die Präsentationsebene, das heißt den Teil einer Applikation, den der Betrachter sehen kann.
+</div>
+
+<div id="letter-g" class="big-letter">G</div>
+<div class="glossar-bg">
+<h3>GUI</h3>
+Graphical User Interface  
+Grafische Benutzeroberfläche
+</div>
+
+<div id="letter-h" class="big-letter">H</div>
+<div class="glossar-bg">
+<h3>Hardware</h3>
+Die technischen Komponenten, aus denen das System besteht
+<h3>HTML5</h3>
+Hypertext Markup Language und bezeichnet die fünfte Version der Internet-Auszeichnungssprache.
+</div>
+
+<div id="letter-i" class="big-letter">I</div>
+<div class="glossar-bg">
+<h3>IOS</h3>
+iOS (Internetwork Operating System)ist ein von Apple entwickeltes mobiles Betriebssystem für das iPhone, das iPad und den iPod touch.
+</div>
+
+<div id="letter-j" class="big-letter">J</div>
+<div class="glossar-bg">
+<h3>Javascript</h3>
+JavaScript ist eine interpretierende Programmier- beziehungsweise Skriptsprache, die ursprünglich von Netscape entwickelt wurde.
+</div>
+
+<div id="letter-k" class="big-letter">K</div>
+<div class="glossar-bg">
+<h3>Komponenten</h3>
+Teil eines größeren Systems
+</div>
+
+<div id="letter-l" class="big-letter">L</div>
+<div class="glossar-bg">
+<h3>Luftqualitätsindex</h3>
+Ein Luftqualitätsindex ist ein Index, die von Regierungsbehörden verwendet wird, um der Öffentlichkeit mitzuteilen, wie verschmutzt die Luft derzeit ist oder wie verschmutzt sie wird.
+</div>
+
+<div id="letter-m" class="big-letter">M</div>
+<div class="glossar-bg">
+<h3>Mockups</h3>
+Visueller Prototyp
+</div>
+
+<div id="letter-n" class="big-letter">N</div>
+<div class="glossar-bg">
+<h3></h3>
+
+</div>
+
+<div id="letter-o" class="big-letter">O</div>
+<div class="glossar-bg">
+<h3>Overview</h3>
+Überblick
+</div>
+
+<div id="letter-p" class="big-letter">P</div>
+<div class="glossar-bg">
+<h3>Pushbenachrichtigung</h3>
+Push-Benachrichtigungen sind Meldungen, die ohne das Öffnen der jeweiligen App auf dem Smartphone erscheinen.
+<h3>PM</h3>
+Particulate Matter (Teilchen in der Luft)
+<h3>PWA</h3>
+Progressive Web App
+Anwendung, die in einem Browser ausgeführt wird. Kann über einen Desktop PC oder Smartphone aufgerufen werden. Bietet Offline-Funktionalität.
+</div>
+
+<div id="letter-q" class="big-letter">Q</div>
+<div class="glossar-bg">
+<h3></h3>
+</div>
+
+<div id="letter-r" class="big-letter">R</div>
+<div class="glossar-bg">
+<h3>Raspberry Pi</h3>
+Der Raspberry Pi ist ein Mini-Computer mit einem ARM-Prozessor.
+</div>
+
+<div id="letter-s" class="big-letter">S</div>
+<div class="glossar-bg">
+<h3>Server</h3>
+Server sind leistungsstarke, zentrale Netzwerkrechner, über die funktionale und infrastrukturelle Netzdienste realisiert werden.
+<h3>Streulichtverfahren</h3>
+Das Streulichtverfahren ist ein spezielles Verfahren der Spannungsoptik, zur Untersuchung räumlicher Spannungszustände. Hierbei wird das an kleinen Fremdpartikeln und Fehlstellen im Modell gestreute Licht, das dabei polarisiert wird, analysiert.
+<h3>Service Worker</h3>
+Service Worker bezeichnet eine moderne Browsertechnologie, die mittels JavaScript einen Proxy zwischen dem Webbrowser und dem Server bereitstellt, der vielfältig genutzt werden kann.
+<h3>Schnittstellen</h3>
+Eine Schnittstelle ist ein definierter Übergang zwischen Datenübertragungseinrichtungen, Hardwarekomponenten, logischen Softwareeinheiten oder zwischen Mensch und Computer.
+</div>
+
+<div id="letter-t" class="big-letter">T</div>
+<div class="glossar-bg">
+<h3></h3>
+</div>
+
+<div id="letter-u" class="big-letter">U</div>
+<div class="glossar-bg">
+<h3></h3>
+</div>
+
+<div id="letter-v" class="big-letter">V</div>
+<div class="glossar-bg">
+<h3></h3>
+</div>
+
+<div id="letter-w" class="big-letter">W</div>
+<div class="glossar-bg">
+<h3>Webbrowser</h3>
+Ein Webbrowser ist ein Navigationsprogramm, das im Internet HTML-Dokumente ( Hypertext Markup Language) interpretiert und darstellt.
+</div>
+
+<div id="letter-x" class="big-letter">X</div>
+<div class="glossar-bg">
+<h3></h3>
+</div>
+
+<div id="letter-y" class="big-letter">Y</div>
+<div class="glossar-bg">
+<h3></h3>
+</div>
+
+<div id="letter-z" class="big-letter">Z</div>
+<div class="glossar-bg">
+<h3>Zustandsdiagramm</h3>
+Ein Zustandsdiagramm – auch state diagram, state machine diagram oder Zustandsübergangsdiagramm genannt – visualisiert eine Folge von Zuständen, die ein Objekt im Lebenszyklus einnehmen kann. Es wird benutzt, um das Verhalten eines Systems, eines Teilsystems, einer Komponente oder einer Klasse zu beschreiben. 
+</div>
+
+<div class="letters-bg-bottom"><strong><a href="#letter-a">A</a> <a href="#letter-b">B</a> <a href="#letter-c">C</a> <a href="#letter-d">D</a> <a href="#letter-e">E</a> <a href="#letter-f">F</a> <a href="#letter-g">G</a> <a href="#letter-h">H</a> <a href="#letter-i">I</a> <a href="#letter-j">J</a> <a href="#letter-k">K</a> <a href="#letter-l">L</a> <a href="#letter-m">M</a> <a href="#letter-n">N</a> <a href="#letter-o">O</a> <a href="#letter-p">P</a> <a href="#letter-q">Q</a> <a href="#letter-r">R</a> <a href="#letter-s">S</a> <a href="#letter-t">T</a> <a href="#letter-u">U</a> <a href="#letter-v">V</a> <a href="#letter-w">W</a> <a href="#letter-x">X</a> <a href="#letter-y">Y</a> <a href="#letter-z">Z</a></strong></div>
 
 
 ## 5.2 Referenzen
