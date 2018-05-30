@@ -204,9 +204,7 @@ Für die Kommunikation zwischen den einzelnen Komponenten benutzen wir das HTTP-
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
 ## 3.3 Datenmodell 
-
-
-
+![Klassendiagramm app.js](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Frontend.js.png)
 --> Siehe Punkt 3.5: Analyseklassendiagramm pouchdb.class
 
 ## 3.4 Abläufe
