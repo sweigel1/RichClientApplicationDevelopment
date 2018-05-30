@@ -199,7 +199,7 @@ Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht ve
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
-Im folgendem Diagramm (Grafik 5) ist die Systemarchitektur von unserem Softwaresystem dargestellt. Die Raspberry Pis kommunizieren nur mit dem Server und fragen in einem zeitlich festgelegten Intervall Daten, sowie eine Konigurationsconfig ab. (Siehe Punkt 3.4 - Abläufe) Unsere Applikation unterstützt die Anbindung von bis zu 5. "Messungsstationen". Der Kommunikationsablauf zwischen dem Client und dem Server ist in Abschnitt 3.4 Abläufe in einem Diagramm näher erläutert.  
+Im folgendem Diagramm (Grafik 5) ist die Systemarchitektur von unserem Softwaresystem dargestellt. Die Raspberry Pis kommunizieren nur mit dem Server und fragen in einem zeitlich festgelegten Intervall Daten, sowie eine Konigurationsdatei(config) ab. (Siehe Punkt 3.4 - Abläufe) Unsere Applikation unterstützt die Anbindung von bis zu 5. "Messstationen". Der Kommunikationsablauf zwischen dem Client und dem Server ist in Abschnitt 3.4 Abläufe, in einem Diagramm näher erläutert.  
 Für die Kommunikation zwischen den einzelnen Komponenten benutzen wir das HTTP-Protokoll. Das benutzte Datenformat ist das JSON-Format.
 ![Systemarchitekturdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png "Grafik 5")  
 ## 3.2 Softwarearchitektur
@@ -231,11 +231,7 @@ Für die Kommunikation zwischen den einzelnen Komponenten benutzen wir das HTTP-
 # 4 Projektorganisation
 
 ## 4.1 Annahmen
-Unsere Applikation wird als Open-Source-Projekt realisiert, sodass jeder einzelne Komponenten des Softwaresystems kopieren und wiederverwenden darf. Wie schon in Abschnitt 2.2.2 erwähnt, wird es keine Unterstützung für IOS-Systeme, sowie den Safari-Webbrowser geben. Das beruht darauf, dass die Unterstützung der zwingend erforderlichen Service Worker unter ebend aufgeführten Programmen und Systemen nicht vollständig gewährleistet ist. Somit können wir auf diesen Systemen keine Gewähleistung für Stabilität und Funktionalität der Softwareanwendung geben. Zudem ist eine SSL-Verschlüsselung zwingend notwendig, da die Verwendung von Service Workern diese Verschlüsselung voraussetzt.
-
-    - Verwendete Technologien (Programmiersprache, Frameworks, etc.)
-    - Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
-
+Unsere Applikation wird als Open-Source-Projekt realisiert, sodass jeder, einzelne Komponenten des Softwaresystems kopieren und wiederverwenden darf. Wie schon in Abschnitt 2.2.2 erwähnt, wird es keine Unterstützung für IOS-Systeme, sowie den Safari-Webbrowser geben. Das beruht darauf, dass die Unterstützung der zwingend erforderlichen Service Worker, unter ebend aufgeführten Programmen und Systemen, nicht vollständig gewährleistet ist. Somit können wir auf diesen Systemen keine Gewährleistung für Stabilität und Funktionalität der Softwareanwendung geben. Zudem ist eine SSL-Verschlüsselung zwingend notwendig, da die Verwendung von Service Workern diese Verschlüsselungsmethode voraussetzt.
 **Verwendete Technologien**  
 Programmiersprache:  
 Frameworks:  
