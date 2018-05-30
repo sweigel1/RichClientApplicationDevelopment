@@ -217,7 +217,7 @@ Für die Kommunikation zwischen den einzelnen Komponenten benutzen wir das HTTP-
 ![Aktivitätsdiagramm API hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_API_Hinzuf%C3%BCgen.png)
 ### Aktivitätsdiagramm Sensor Hinzufügen
 ![Aktivitätsdiagramm Sensor hinzufügen](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Aktivit%C3%A4tsdiagramme/APC_SensorHinzuf%C3%BCgen.png)
-### Sequenzdiagramm Datenabfrage der config
+### Sequenzdiagramm Datenabfrage der Configdatei
 ![Sequenzdiagramm_Datenabfrage_config](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Sequenzdiagramm_Datenabfrage_config.png)
 ### Sequenzdiagramm Speicherung von Messdaten
 ![Sequenzdiagramm_Datenspeicherung_Messdaten](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Sequenzdiagramm_Datenspeicherung_Messdaten.png)
@@ -231,10 +231,11 @@ Für die Kommunikation zwischen den einzelnen Komponenten benutzen wir das HTTP-
 # 4 Projektorganisation
 
 ## 4.1 Annahmen
-    - Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
+Unsere Applikation wird als Open-Source-Projekt realisiert, sodass jeder einzelne Komponenten des Softwaresystems kopieren und wiederverwenden darf. Wie schon in Abschnitt 2.2.2 erwähnt, wird es keine Unterstützung für IOS-Systeme, sowie den Safari-Webbrowser geben. Das beruht darauf, dass die Unterstützung der zwingend erforderlichen Service Worker unter ebend aufgeführten Programmen und Systemen nicht vollständig gewährleistet ist. Somit können wir auf diesen Systemen keine Gewähleistung für Stabilität und Funktionalität der Softwareanwendung geben. Zudem ist eine SSL-Verschlüsselung zwingend notwendig, da die Verwendung von Service Workern diese Verschlüsselung voraussetzt.
+
     - Verwendete Technologien (Programmiersprache, Frameworks, etc.)
     - Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
-    - Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+
 **Verwendete Technologien**  
 Programmiersprache:  
 Frameworks:  
@@ -257,9 +258,9 @@ Frameworks:
 # Meilensteine
 |Meilenstein | Datum|
 |-----|-----------|
-|Pflichtenheft | 31.05.2018 |
 |Sensorhardware | 24.05.2018 |
 |Server | 24.05.2018 |
+|Pflichtenheft | 31.05.2018 |
 |GUI-Komponenten |07.06.2018|
 |Server (Node und DB) |07.06.2018|
 |Datenauslesen |07.06.2018|
@@ -389,6 +390,8 @@ iOS (Internetwork Operating System)ist ein von Apple entwickeltes mobiles Betrie
 <div class="glossar-bg">
 <h3>Javascript</h3>
 JavaScript ist eine interpretierende Programmier- beziehungsweise Skriptsprache, die ursprünglich von Netscape entwickelt wurde.
+<h3>JSON</h3>
+JSON (JavaScript Object Notation) ist ein schlankes Datenaustauschformat, das für Menschen einfach zu lesen und zu schreiben und für Maschinen einfach zu parsen (Analysieren von Datenstrukturen) und zu generieren ist. Es basierd auf einer Untermenge der JavaScript Programmiersprache.
 </div>
 
 <div id="letter-k" class="big-letter"> <h1> K </h1> </div>
