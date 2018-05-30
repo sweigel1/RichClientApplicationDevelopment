@@ -248,7 +248,7 @@ Frameworks:
 |Felix Schilk | Raspberry|
 |Michael Frevert | Backend|
 |Gerrit Haake | Frontend|
-|Daniels Haering | Frontend|
+|Daniel Haering | Frontend|
 
 ## 4.3 Grober Projektplan
 # Meilensteine
