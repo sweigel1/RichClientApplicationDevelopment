@@ -204,7 +204,10 @@ Für die Kommunikation zwischen den einzelnen Komponenten benutzen wir das HTTP-
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
 ## 3.3 Datenmodell 
-    - Konzeptionelles Analyseklassendiagramm
+
+
+
+--> Siehe Punkt 3.5: Analyseklassendiagramm pouchdb.class
 
 ## 3.4 Abläufe
 ### Aktivitätsdiagramm Gesamt
