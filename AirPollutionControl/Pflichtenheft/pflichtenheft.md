@@ -24,9 +24,7 @@
              4.2	Verantwortlichkeiten  
              4.3	Grober Projektplan  
  5. [Anhänge](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/SW-Architektur/pflichtenheft.md#5-anh%C3%A4nge)  
-             5.1 Glossar  
-             5.2 Referenzen  
-             5.3 Index  
+             5.1 Glossar   
 
 
 # Einführung
