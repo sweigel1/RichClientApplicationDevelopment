@@ -206,7 +206,7 @@ Für unser Softwaresystem benutzen wir ein Drei-Schicht-Architektur. Diese beinh
 2. Logikschicht		(Beinhaltet alle Verarbeitungsmechanismen)  
 3. Datenhaltungsschicht (Sie enthält die Datenbank und ist verantwortlich für das Speichern und Laden von Daten)  
 Diese wird im folgendem Diagramm dargestellt.
-![Softwarebausteine]()
+![Softwarebausteine](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Softwarebausteine.png)
 
 ## 3.3 Datenmodell 
 ![Klassendiagramm app.js](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Frontend.js.png)
