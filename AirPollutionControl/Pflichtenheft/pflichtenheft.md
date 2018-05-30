@@ -201,7 +201,12 @@ Im folgendem Diagramm (Grafik 5) ist die Systemarchitektur von unserem Softwares
 Für die Kommunikation zwischen den einzelnen Komponenten benutzen wir das HTTP-Protokoll. Das benutzte Datenformat ist das JSON-Format.
 ![Systemarchitekturdiagramm](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/Systemarchitekturdiagramm2.png "Grafik 5")  
 ## 3.2 Softwarearchitektur
-    - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
+Für unser Softwaresystem benutzen wir ein Drei-Schicht-Architektur. Diese beinhalt folgende Schichten:
+1. Präsentationsschicht (Repräsentation von Daten, Benutzereingaben)  
+2. Logikschicht		(Beinhaltet alle Verarbeitungsmechanismen)  
+3. Datenhaltungsschicht (Sie enthält die Datenbank und ist verantwortlich für das Speichern und Laden von Daten)  
+Diese wird im folgendem Diagramm dargestellt.
+![Softwarebausteine]()
 
 ## 3.3 Datenmodell 
 ![Klassendiagramm app.js](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Frontend.js.png)
