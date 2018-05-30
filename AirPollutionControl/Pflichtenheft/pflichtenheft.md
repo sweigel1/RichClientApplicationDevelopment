@@ -208,7 +208,8 @@ Für unser Softwaresystem benutzen wir ein Drei-Schicht-Architektur. Diese beinh
 Diese wird im folgendem Diagramm dargestellt.
 ![Softwarebausteine](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Softwarebausteine.png)
 
-## 3.3 Datenmodell 
+## 3.3 Datenmodell
+### Frontend
 ![Klassendiagramm app.js](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/UML/Frontend.js.png)
 --> Siehe Punkt 3.5: Analyseklassendiagramm pouchdb.class
 
