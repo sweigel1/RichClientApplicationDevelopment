@@ -337,7 +337,7 @@ Datenbank
 Die Dichte gibt an, welche Masse ein Kubikzentimeter Volumen eines Stoffes hat.  
 </div>
 
-<div id="letter-e" class="big-letter">E</div>
+<div id="letter-e" class="big-letter"> <h1> E </h1> </div>
 <div class="glossar-bg">
 <h3>E2E</h3>
 End to End
@@ -347,7 +347,7 @@ Europäische Gemeinschaft
 Europäische Wirtschaftsgemeinschaft
 </div>
 
-<div id="letter-f" class="big-letter">F</div>
+<div id="letter-f" class="big-letter"> <h1> F </h1> </div>
 <div class="glossar-bg">
 <h3>Feinstaub</h3>
 Als Feinstaub, Schwebstaub oder englisch "Particulate Matter" (PM) bezeichnet man Teilchen in der Luft, die nicht sofort zu Boden sinken, sondern eine gewisse Zeit in der Atmosphäre verweilen. 
@@ -361,14 +361,14 @@ Als Framework bezeichnet man ein Programmiergerüst für Entwickler.
 Als Frontend bezeichnet man die Präsentationsebene, das heißt den Teil einer Applikation, den der Betrachter sehen kann.
 </div>
 
-<div id="letter-g" class="big-letter">G</div>
+<div id="letter-g" class="big-letter"> <h1> G </h1> </div>
 <div class="glossar-bg">
 <h3>GUI</h3>
 Graphical User Interface  
 Grafische Benutzeroberfläche
 </div>
 
-<div id="letter-h" class="big-letter">H</div>
+<div id="letter-h" class="big-letter"> <h1> H </h1> </div>
 <div class="glossar-bg">
 <h3>Hardware</h3>
 Die technischen Komponenten, aus denen das System besteht
@@ -376,49 +376,49 @@ Die technischen Komponenten, aus denen das System besteht
 Hypertext Markup Language und bezeichnet die fünfte Version der Internet-Auszeichnungssprache.
 </div>
 
-<div id="letter-i" class="big-letter">I</div>
+<div id="letter-i" class="big-letter"> <h1> I </h1> </div>
 <div class="glossar-bg">
 <h3>IOS</h3>
 iOS (Internetwork Operating System)ist ein von Apple entwickeltes mobiles Betriebssystem für das iPhone, das iPad und den iPod touch.
 </div>
 
-<div id="letter-j" class="big-letter">J</div>
+<div id="letter-j" class="big-letter"> <h1> J </h1> </div>
 <div class="glossar-bg">
 <h3>Javascript</h3>
 JavaScript ist eine interpretierende Programmier- beziehungsweise Skriptsprache, die ursprünglich von Netscape entwickelt wurde.
 </div>
 
-<div id="letter-k" class="big-letter">K</div>
+<div id="letter-k" class="big-letter"> <h1> K </h1> </div>
 <div class="glossar-bg">
 <h3>Komponenten</h3>
 Teil eines größeren Systems
 </div>
 
-<div id="letter-l" class="big-letter">L</div>
+<div id="letter-l" class="big-letter"> <h1> L </h1> </div>
 <div class="glossar-bg">
 <h3>Luftqualitätsindex</h3>
 Ein Luftqualitätsindex ist ein Index, die von Regierungsbehörden verwendet wird, um der Öffentlichkeit mitzuteilen, wie verschmutzt die Luft derzeit ist oder wie verschmutzt sie wird.
 </div>
 
-<div id="letter-m" class="big-letter">M</div>
+<div id="letter-m" class="big-letter"> <h1> M </h1> </div>
 <div class="glossar-bg">
 <h3>Mockups</h3>
 Visueller Prototyp
 </div>
 
-<div id="letter-n" class="big-letter">N</div>
+<div id="letter-n" class="big-letter"> <h1> N </h1> </div>
 <div class="glossar-bg">
 <h3></h3>
 
 </div>
 
-<div id="letter-o" class="big-letter">O</div>
+<div id="letter-o" class="big-letter"> <h1> O </h1> </div>
 <div class="glossar-bg">
 <h3>Overview</h3>
 Überblick
 </div>
 
-<div id="letter-p" class="big-letter">P</div>
+<div id="letter-p" class="big-letter"> <h1> P </h1> </div>
 <div class="glossar-bg">
 <h3>Pushbenachrichtigung</h3>
 Push-Benachrichtigungen sind Meldungen, die ohne das Öffnen der jeweiligen App auf dem Smartphone erscheinen.
@@ -429,18 +429,18 @@ Progressive Web App
 Anwendung, die in einem Browser ausgeführt wird. Kann über einen Desktop PC oder Smartphone aufgerufen werden. Bietet Offline-Funktionalität.
 </div>
 
-<div id="letter-q" class="big-letter">Q</div>
+<div id="letter-q" class="big-letter"> <h1> Q </h1> </div>
 <div class="glossar-bg">
 <h3></h3>
 </div>
 
-<div id="letter-r" class="big-letter">R</div>
+<div id="letter-r" class="big-letter"> <h1> R </h1> </div>
 <div class="glossar-bg">
 <h3>Raspberry Pi</h3>
 Der Raspberry Pi ist ein Mini-Computer mit einem ARM-Prozessor.
 </div>
 
-<div id="letter-s" class="big-letter">S</div>
+<div id="letter-s" class="big-letter"> <h1> S </h1> </div>
 <div class="glossar-bg">
 <h3>Server</h3>
 Server sind leistungsstarke, zentrale Netzwerkrechner, über die funktionale und infrastrukturelle Netzdienste realisiert werden.
@@ -452,38 +452,38 @@ Service Worker bezeichnet eine moderne Browsertechnologie, die mittels JavaScrip
 Eine Schnittstelle ist ein definierter Übergang zwischen Datenübertragungseinrichtungen, Hardwarekomponenten, logischen Softwareeinheiten oder zwischen Mensch und Computer.
 </div>
 
-<div id="letter-t" class="big-letter">T</div>
+<div id="letter-t" class="big-letter"> <h1> T </h1> </div>
 <div class="glossar-bg">
 <h3></h3>
 </div>
 
-<div id="letter-u" class="big-letter">U</div>
+<div id="letter-u" class="big-letter"> <h1> U </h1> </div>
 <div class="glossar-bg">
 <h3></h3>
 </div>
 
-<div id="letter-v" class="big-letter">V</div>
+<div id="letter-v" class="big-letter"> <h1> V </h1> </div>
 <div class="glossar-bg">
 <h3></h3>
 </div>
 
-<div id="letter-w" class="big-letter">W</div>
+<div id="letter-w" class="big-letter"> <h1> W </h1> </div>
 <div class="glossar-bg">
 <h3>Webbrowser</h3>
 Ein Webbrowser ist ein Navigationsprogramm, das im Internet HTML-Dokumente ( Hypertext Markup Language) interpretiert und darstellt.
 </div>
 
-<div id="letter-x" class="big-letter">X</div>
+<div id="letter-x" class="big-letter"> <h1> X </h1> </div>
 <div class="glossar-bg">
 <h3></h3>
 </div>
 
-<div id="letter-y" class="big-letter">Y</div>
+<div id="letter-y" class="big-letter"> <h1> Y </h1> </div>
 <div class="glossar-bg">
 <h3></h3>
 </div>
 
-<div id="letter-z" class="big-letter">Z</div>
+<div id="letter-z" class="big-letter"> <h1> Z </h1> </div>
 <div class="glossar-bg">
 <h3>Zustandsdiagramm</h3>
 Ein Zustandsdiagramm – auch state diagram, state machine diagram oder Zustandsübergangsdiagramm genannt – visualisiert eine Folge von Zuständen, die ein Objekt im Lebenszyklus einnehmen kann. Es wird benutzt, um das Verhalten eines Systems, eines Teilsystems, einer Komponente oder einer Klasse zu beschreiben.  
