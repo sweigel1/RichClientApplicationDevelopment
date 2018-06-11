@@ -137,7 +137,8 @@ Bei einer Veränderung von DIN-Normen o.ä. muss es möglich sein, das System sc
 
 ![Portabilität](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl/Pflichtenheft/Bilder%20und%20Symbole/printed-circuit-50x50.png)  
 *Portabilität:*   
-Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht verständlich und einfach durchführbar sein.
+Die Installation der Hardware (Raspberry PI (inklusive Sensoren)) muss leicht verständlich und einfach durchführbar sein.  
+Andere Sensoren müssen leicht in das Softwaresystem zu integrieren sein.
 
 ## 2.3 Graphische Benutzerschnittstelle
 ### Loginpage
