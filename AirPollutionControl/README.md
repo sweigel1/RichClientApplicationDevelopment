@@ -18,9 +18,9 @@ Frontend     : https://github.com/derbytau/APC-Frontend
 
 <div align="center">
 
-[![Build Status](https://travis-ci.org/dwyl/learn-travis.svg?branch=master)](https://travis-ci.org/dwyl/learn-travis)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/learn-travis/issues)
-[![HitCount](http://hits.dwyl.io/dwyl/learn-travis.svg)](http://hits.dwyl.io/dwyl/learn-travis)
+[![Build Status](https://travis-ci.org/dwyl/learn-travis.svg?branch=master)](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl)
+[![HitCount](http://hits.dwyl.io/dwyl/learn-travis.svg)](https://github.com/sweigel1/RichClientApplicationDevelopment/blob/master/AirPollutionControl)
 
 </div>
 
