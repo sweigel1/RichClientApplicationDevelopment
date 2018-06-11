@@ -4,8 +4,8 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>423</x>
-      <y>306</y>
+      <x>135</x>
+      <y>243</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>459</x>
-      <y>360</y>
+      <x>171</x>
+      <y>297</y>
       <w>18</w>
       <h>351</h>
     </coordinates>
@@ -27,8 +27,8 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>459</x>
-      <y>324</y>
+      <x>171</x>
+      <y>261</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
@@ -38,8 +38,8 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>801</x>
-      <y>360</y>
+      <x>513</x>
+      <y>297</y>
       <w>18</w>
       <h>351</h>
     </coordinates>
@@ -50,8 +50,8 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>801</x>
-      <y>324</y>
+      <x>513</x>
+      <y>261</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
@@ -61,8 +61,8 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>765</x>
-      <y>306</y>
+      <x>477</x>
+      <y>243</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -72,8 +72,8 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1053</x>
-      <y>360</y>
+      <x>765</x>
+      <y>297</y>
       <w>18</w>
       <h>351</h>
     </coordinates>
@@ -84,8 +84,8 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1053</x>
-      <y>324</y>
+      <x>765</x>
+      <y>261</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
@@ -95,8 +95,8 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1017</x>
-      <y>306</y>
+      <x>729</x>
+      <y>243</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -106,8 +106,8 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>387</x>
-      <y>234</y>
+      <x>99</x>
+      <y>171</y>
       <w>324</w>
       <h>27</h>
     </coordinates>
@@ -117,20 +117,20 @@ fg=dark_gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>369</y>
+      <x>180</x>
+      <y>306</y>
       <w>351</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-HTTP PUT</panel_attributes>
+HTTP GET</panel_attributes>
     <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>810</x>
-      <y>405</y>
+      <x>522</x>
+      <y>342</y>
       <w>261</w>
       <h>36</h>
     </coordinates>
@@ -141,8 +141,8 @@ updateConfig()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
-      <y>468</y>
+      <x>558</x>
+      <y>405</y>
       <w>225</w>
       <h>36</h>
     </coordinates>
@@ -153,8 +153,8 @@ alreadyUpToDate</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>819</x>
-      <y>450</y>
+      <x>531</x>
+      <y>387</y>
       <w>234</w>
       <h>117</h>
     </coordinates>
@@ -172,8 +172,8 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>810</x>
-      <y>522</y>
+      <x>522</x>
+      <y>459</y>
       <w>261</w>
       <h>36</h>
     </coordinates>
@@ -184,8 +184,8 @@ updateConfig()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>540</y>
+      <x>180</x>
+      <y>477</y>
       <w>351</w>
       <h>36</h>
     </coordinates>
@@ -196,8 +196,8 @@ HTTP PUT</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>603</x>
-      <y>387</y>
+      <x>315</x>
+      <y>324</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
@@ -208,8 +208,8 @@ HTTP PUT</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>828</x>
-      <y>477</y>
+      <x>540</x>
+      <y>414</y>
       <w>18</w>
       <h>18</h>
     </coordinates>
@@ -219,8 +219,8 @@ HTTP PUT</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>387</x>
-      <y>279</y>
+      <x>99</x>
+      <y>216</y>
       <w>801</w>
       <h>459</h>
     </coordinates>
@@ -238,8 +238,8 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>594</x>
-      <y>558</y>
+      <x>306</x>
+      <y>495</y>
       <w>90</w>
       <h>27</h>
     </coordinates>
