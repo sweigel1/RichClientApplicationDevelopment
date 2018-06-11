@@ -240,7 +240,7 @@ Diese wird im folgendem Diagramm dargestellt.
 Unsere Applikation wird als Open-Source-Projekt realisiert, sodass jeder, einzelne Komponenten des Softwaresystems kopieren und wiederverwenden darf. Wie schon in Abschnitt 2.2.2 erwähnt, wird es keine Unterstützung für IOS-Systeme, sowie den Safari-Webbrowser geben. Das beruht darauf, dass die Unterstützung der zwingend erforderlichen Service Worker, unter ebend aufgeführten Programmen und Systemen, nicht vollständig gewährleistet ist. Somit können wir auf diesen Systemen keine Gewährleistung für Stabilität und Funktionalität der Softwareanwendung geben. Zudem ist eine SSL-Verschlüsselung zwingend notwendig, da die Verwendung von Service Workern diese Verschlüsselungsmethode voraussetzt.
 **Verwendete Technologien**  
 Programmier-/Skript-/sprache: [JavaScript(ES6)](https://sweigel1.github.io/RichClientApplicationDevelopment/ES06/index.html#1), Python  
-Frameworks:  ![react](https://sweigel1.github.io/RichClientApplicationDevelopment/react/index.html#1), nodejs, couchDB, pouchDB, [mocha](https://sweigel1.github.io/RichClientApplicationDevelopment/Tooling/index.html#6)
+Frameworks:  ![react](https://sweigel1.github.io/RichClientApplicationDevelopment/react/index.html#1), nodejs, couchDB, pouchDB, [mocha](https://sweigel1.github.io/RichClientApplicationDevelopment/Tooling/index.html#6), Travis CI
 
 
 ## 4.2 Verantwortlichkeiten
