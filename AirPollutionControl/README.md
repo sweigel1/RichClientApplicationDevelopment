@@ -1,7 +1,7 @@
 # AirPollutionControl
 
 
-[![Build Status](https://travis-ci.org/sweigel1/RichClientApplicationDevelopment.svg?branch=master)](https://travis-ci.org/sweigel1/RichClientApplicationDevelopment/AirPollutionControl)
+
 
 
 
