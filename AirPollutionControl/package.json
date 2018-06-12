@@ -11,6 +11,6 @@
     "jshint": "^2.8.0"
   },
   "scripts": {
-    "test": "./node_modules/jshint/bin/jshint hello.js"
+    "test": "https://github.com/sweigel1/RichClientApplicationDevelopment/tree/master/AirPollutionControl/hello.js"
   }
 }
