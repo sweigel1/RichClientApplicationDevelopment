@@ -1,5 +1,10 @@
 # AirPollutionControl
 
+
+
+
+
+
 ## Aufgabenverteilung
 
 |Name | Fachgebiet|
@@ -9,6 +14,23 @@
 |Michael Frevert | Backend|
 |Gerrit Haake | Frontend|
 |Daniels Haering | Frontend|
+
+## Repositorys für die einzelnen Softwarebausteine
+Raspberry Pi : https://github.com/tavvar/raspiapc  
+Server       : https://github.com/Frevert/serverapc  
+PouchDB      : https://github.com/ghaake/apc-pouchdb  
+Frontend     : https://github.com/derbytau/APC-Frontend  
+
+
+
+
+
+
+
+
+
+
+
 
 ## ToDo
 
@@ -48,7 +70,7 @@
 
 |Meilenstein | Datum|
 |-----|-----------|
-|Pflichtenheft , Server, Sensorhardware | 24.05.2018 |
+|Pflichtenheft | 24.05.2018 |
 |Sensorhardware | 24.05.2018 |
 |Server | 24.05.2018 |
 |GUI-Komponenten |07.06.2018|
