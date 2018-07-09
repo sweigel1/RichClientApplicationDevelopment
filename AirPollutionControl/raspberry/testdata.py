@@ -8,8 +8,8 @@ def getVal():
     values.append(random.uniform(22,27)) #temp
     values.append(random.uniform(1,6))  #pm25
     values.append(random.uniform(5,9))  #pm10
-    values.append(52.296427) #long
-    values.append(8.90375) #lat
+    values.append(8.90375) #long
+    values.append(52.296427) #lat
     return values
 
 
